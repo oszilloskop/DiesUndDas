@@ -1,0 +1,194 @@
+Date: 2016-03-06  
+Title: Fiktive Frankfurter Freifunk Versioning Policy  
+Published: false  
+
+![Logo](https://raw.githubusercontent.com/oszilloskop/DiesUndDas/master/logo-ffm.png)
+
+## Ist-Zustand
+
+Für den Freifunk Router-Betreiber sollte immer ersichtlich sein, welche Firmware er aktuell einsetzt und ob eine neuere Firmware angeboten wird.
+
+Aktuelle Informationen der eingesetzten Firmware kann über die Frankfurter Map, oder durch den Aufruf der Router-Statusseite ermittelt werden. 
+
+Die aktuellste verfügbare Firmware kann über die Änderungshistorie oder über den Frankfurter Download-Server bestimmt werden.
+
+In Frankfurt existieren folgende drei Firmware-Varianten (Branches):
+
+- **stable** -> Stabiles Gluon Release
+- **test** -> Feldtest zukünftiger stabiler Gluon Releases   
+- **dev** -> Entwicklungszweig(e) aktueller oder zukünftiger Gluon Releases
+
+Die Mehrzahl der Router-Betreiber setzen das ofizielle Frankfurter Firmware-Release (stable-Branch) ein.  
+
+ 
+
+## Ziel
+Um jedoch neueren, sogenannten **Rauf-Runter-Branch-Updatewünschen** der Routerbetreibern zu genügen, ist eine Anpassung der Firmware-Versionsbezeichnung notwendig. 
+
+Ziel ist:
+
+- Erfüllung aller bisherigen Vorgaben des **Autoupdaters** 
+- Priorisierung der Firmware-Branches: stabel > test > dev
+- Erfüllung aller **Rauf-Runter-Branch-Updatewünsche** der Routerbetreiber.
+
+Es muß dabei sichergestellt sein, dass:
+
+- innerhalb eines Branches, wie gehabt, immer auf neuere Firmware aktualisiert wird. 
+- bei einer Umstellung auf einen höher priorisierten Branch **immer** nur auf neuere Firmware aktualisiert wird. 
+- bei einer Umstellung auf einen niedriger priorisierten Branch  **immer** nur auf eine passende neuere Firmware aktualisiert wird.
+
+---
+
+# Fiktive Frankfurter Freifunk Versioning Policy
+
+
+
+
+## Grundsätze einer fiktiven Firmware Benamung
+Es gilt zu beachten, dass die Benamung einer Firmware einen großen Einfluss auf die Funktionsweise des **Autoupdaters** hat. Der **Autoupdater** soll nicht nur dafür genutzt werden, einfachst immer auf das neueste Firmware-Release zu aktualisieren, sondern er soll auch Rauf-Runter-Branch-Updates ermöglichen. Daher steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
+
+Aus diesen Gründen sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen:  
+
+- Dem **Branch Name** - Wird durch die Variante der Firmware vorgegeben
+- Der **Branch Buildnummer** - Wird durch den Buildprozess vorgegeben  
+- Der **Versionsnummer** - Wird von dem Entwickler vorgegeben.
+- ggf. noch das Build-Datum 
+
+Werden diese drei Kriterien als String zusammengefügt, so ergibt sich immer eine eineindeutige **Firmware-Bezeichnung**.
+
+Auf Grund des Verhaltens des Autoupdaters und der Vorgabe der Rauf-Runter-Branch-Update-Möglichkeit ist folgende Reihenfolge zu bevorzugen:
+
+**<Versionsnummer&gt;-<Branch Name&gt;-<Branch Buildnummer&gt;**
+
+Für den Autoupdater hat innerhalb eines Branches die Versionsnummer eine höhere Priorität als die Buildnummer.  
+
+Haben innerhalb einen Branches zwei Firmware-Images identische Versionsnummern aber unterschiedliche Buildnummer, so wird der Autoupdater die Buildnummer zur Großenbestimmung heranziehen.
+
+Wenn folgend von dem Namen einer Firmware gesprochen wird, so ist ausschließlich die Kombination aus <Versionsnummer&gt;-<Branch Name&gt;-<Branch Buildnummer&gt; gemeint.
+
+
+## Findung der Versionsnummer
+Die **Versionsnummer** muss durch den Entwickler vorgegeben werden. Dieses muß nicht bei jedem Build eines Branches geschehen.
+Mit der richtigen Wahl der **Versionsnummer** kann, wenn gewünscht, eine sehr feine Rauf-Runter-Branch-Update-Möglichkeit bereitgestellt werden. 
+Es wird hier eine maximal durch drei Punkte getrennte Nummer verwendet.  
+
+Beispiel: 1, 1.2, 1.2.3,  1.2.3.4
+
+Folgend wird beschrieben, wie diese Nummerierung zu wählen ist.
+
+### Versionsnummer der Release-Firmware (stable)
+Die Versionsnummer des **stable** Branches wird sehr wahrscheinlich nicht häufig angepasst werden. Eigentlich würde hier eine einteilige Zahl ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit zwei Zahlenfolgen bevorzugt werden.
+
+Das **X** einer neuen '**stable**' ist frei zu wählen.  
+Das **Y** einer neuen '**stable**' entspricht mindestens dem **Y** der letzten '**Test**' + 1
+ 
+    X.Y-stable  
+    │ │  
+    │ └─ Nebenfunktionalität mindestens wie letzte 'Test' + 1
+    └─── Hauptfunktionalität (z.B. beim Wechsel der Gluon-Hauptversion oder bei erheblichen OpenWrt-Änderungen)
+    
+### Versionsnummer der Release-Kanditat-Firmware (Test)
+Die Versionsnummer des **test** Branches wird mindestens so häufiger wie die Versionsnummer des '**stable**' Branches angepasst werden. Eigentlich würde hier eine zweiteilige Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit drei Zahlenfolgen bevorzugt werden.
+
+**X** und **Y** einer neuen '**Test**' entsprechen immer '**X**' und '**Y**' der letzen '**stable**'.
+Das **Z** einer neuen '**Test**' entspricht mindestens dem **Z** der letzten '**dev**' + 1  
+
+    X.Y.Z-Test
+    │ │ │       
+    │ │ └─ Unterfunktionalität mindestens wie letzte 'dev' + 1
+    │ └─── Nebenfunktionalität wie letzte 'stable'
+    └───── Hauptfunktionalität wie letzte 'stable'
+
+### Versionsnummer des Entwicklungbereiches (dev)
+Die Versionsnummer des **dev** Branches wird unbestimmt häufiger angepasst werden. Eigentlich würde hier eine dreiteilig Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit vier Zahlenfolgen bevorzugt werden.  
+
+Start einer neuen '**dev**'-Entwicklung beginnt immer mit **X** und **Y** der letzten '**stable**'.  
+**Z** und **W** sind frei zu wählen, müssen aber ungleich Null sein.
+
+    X.Y.Z.W-dev
+    │ │ │ │ 
+    │ │ │ └─ Entwicklungsstand > 0 (ein Wechsel ist unwahrscheinlich, oder aus Gründen)
+    │ │ └─── Unterfunktionalität > 0 
+    │ └───── Nebenfunktionalität wie letzte 'stable'
+    └─────── Hauptfunktionalität wie letzte 'stable'
+
+
+### Versionsnummer einer 'broken' Firmware
+Dieser Textbereich ist noch nicht ausgegohren!
+ 
+
+Eine '**broken**' ist immer einer '**dev**' unterzuordnen.
+**X**, **Y** und **Z** wie bei einer der letzten '**stable**'.
+Für **W** muß '0' gewählt werden.
+
+## Ergebnis
+Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vorgegebenen Rauf-Runter-Update**wünschen** erfüllt.
+
+- X.Y-stable-ABC
+- X.Y.Z-Test-DEF
+- X.Y.Z.W-dev-GHI
+- 
+
+### Beispiel
+ 
+Ein fiktiver Entwicklungsverlauf läuft wie folgt ab:
+
+1. Ein aktueller Branch-Zustand sei gegeben 
+2. Entwicklung einer neuen 'dev' Firmware
+3. Entwicklung 'dev' Firmware
+4. Übergang von 'dev' in 'Test'
+5. Weiterentwicklung an alter 'dev' Firmware
+6. Ein weitere 'Test' Firmware 
+7. Übergang von 'Test' in 'stable'
+8. Ein weitere 'dev' Firmware mit alter 'stable' als Basis
+9. Eine 'dev' Firmware mit aktueller 'stable' als Basis
+10. Ein weitere 'dev' Firmware
+11. Übergang von 'dev' in 'Test' 
+12. Ein weitere 'Test' Firmware 
+13. Übergang von 'Test' in 'stable'
+14. Ein weiteres 'stable' Releases 
+15. Ein weitere 'stable' Releases 
+
+Nr | stable        | test           | dev |
+------------- | ------------- | ------------- | -------------
+1 | 1.10-stable-10 | 1.09.5-test-62 | 1.09.4.2-dev-102
+2 |                |                | 1.10.1.1-dev-103
+3 |                |                | 1.10.1.1-dev-104
+4 |                | 1.10.2-test-63 |
+5 |                |                | 1.10.1.2-dev-105
+6 |                | 1.10.2-test-64 |
+7 | 1.11-stable-11 |                |
+8 |                |                | 1.10.1.2-dev-106
+9 |                |                | 1.11.1.1-dev-107
+10 |                |                | 1.11.1.2-dev-108
+11 |                | 1.11.2-test-65 |
+12 |                | 1.11.3-test-66 |
+13 | 1.12-stable-12 |                |
+14 | 1.12-stable-13 |                |
+15 | 1.13-stable-14 |                |
+
+---
+
+# Umstellungskonzept
+Es muß sichergestellt sein, dass es bei einer Umstellung von dem aktuellen Versions-Konzept auf ein neues Versions-Konzept, es zu keinem Autoupdate-Abriss kommt.
+
+### Aktuelle Firmware-Bezeichnung
+
+- ffmstable-1.10
+- ffmtest-3.62
+- ffmdev-3.106
+
+### Fiktive neue Firmware-Bezeichnung
+Das weiter oben beschriebene **fiktive** neue Firmware-Bezeichnungskonzept wird zu Grunde gelegt.
+Aus Sicht des **Autoupdater** sind die Bezeichnungen des neuen Konzeptes immer kleiner als die Bezeichnungen des bisherigen Konzeptes.
+Dieses kann jedoch sehr einfach umgekehrt werden.  
+
+Es kann zum Beispiel einfach ein '**v**' vor die weiter oben beschriebene Firmware-Benamung voran gestellt werden.
+
+#### Beispiel:
+
+- v1.10-stable-12
+- v1.10.2-Test-62
+- v1.10.2.1-dev-106
+
+## Done!
