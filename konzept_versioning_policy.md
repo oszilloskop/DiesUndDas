@@ -8,7 +8,7 @@ Published: false
 
 Für den Freifunk Router-Betreiber sollte immer ersichtlich sein, welche Firmware er aktuell einsetzt und ob eine neuere Firmware angeboten wird.
 
-Aktuelle Informationen der eingesetzten Firmware kann über die Frankfurter Map, oder durch den Aufruf der Router-Statusseite ermittelt werden. 
+Aktuelle Informationen der eingesetzten Router-Firmware kann über die Frankfurter Map, oder durch den Aufruf der Router-Statusseite ermittelt werden. 
 
 Die aktuellste verfügbare Firmware kann über die Änderungshistorie oder über den Frankfurter Download-Server bestimmt werden.
 
@@ -62,7 +62,7 @@ Auf Grund des Verhaltens des Autoupdaters und der Vorgabe der Rauf-Runter-Branch
 
 Für den Autoupdater hat innerhalb eines Branches die Versionsnummer eine höhere Priorität als die Buildnummer.  
 
-Haben innerhalb einen Branches zwei Firmware-Images identische Versionsnummern aber unterschiedliche Buildnummer, so wird der Autoupdater die Buildnummer zur Großenbestimmung heranziehen.
+Haben innerhalb einen Branches zwei Firmware-Images identische Versionsnummern aber unterschiedliche Buildnummer, so wird der Autoupdater die Buildnummer zur Größenbestimmung heranziehen.
 
 Wenn folgend von dem Namen einer Firmware gesprochen wird, so ist ausschließlich die Kombination aus <Versionsnummer&gt;-<Branch Name&gt;-<Branch Buildnummer&gt; gemeint.
 
@@ -85,7 +85,7 @@ Das **Y** einer neuen '**stable**' entspricht mindestens dem **Y** der letzten '
     X.Y-stable  
     │ │  
     │ └─ Nebenfunktionalität mindestens wie letzte 'Test' + 1
-    └─── Hauptfunktionalität (z.B. beim Wechsel der Gluon-Hauptversion oder bei erheblichen OpenWrt-Änderungen)
+    └─── Hauptfunktionalität (z.B. beim Wechsel der Gluon-Hauptversion oder bei erheblichen Änderungen an OpenWrt)
     
 ### Versionsnummer der Release-Kanditat-Firmware (Test)
 Die Versionsnummer des **test** Branches wird mindestens so häufiger wie die Versionsnummer des '**stable**' Branches angepasst werden. Eigentlich würde hier eine zweiteilige Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit drei Zahlenfolgen bevorzugt werden.
@@ -113,21 +113,12 @@ Start einer neuen '**dev**'-Entwicklung beginnt immer mit **X** und **Y** der le
     └─────── Hauptfunktionalität wie letzte 'stable'
 
 
-### Versionsnummer einer 'broken' Firmware
-Dieser Textbereich ist noch nicht ausgegohren!
- 
-
-Eine '**broken**' ist immer einer '**dev**' unterzuordnen.
-**X**, **Y** und **Z** wie bei einer der letzten '**stable**'.
-Für **W** muß '0' gewählt werden.
-
 ## Ergebnis
 Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vorgegebenen Rauf-Runter-Update**wünschen** erfüllt.
 
 - X.Y-stable-ABC
 - X.Y.Z-Test-DEF
 - X.Y.Z.W-dev-GHI
-- 
 
 ### Beispiel
  
@@ -167,6 +158,22 @@ Nr | stable        | test           | dev |
 14 | 1.12-stable-13 |                |
 15 | 1.13-stable-14 |                |
 
+## Vorteile
+- Die einzelnen Branches lassen sich unabhängig von einander entwickeln.  
+    - Soll z.B. eine neue '**Test**', basierend auf der aktuellen '**dev**', erstellt werden, so ist das Wissen über die genaue '**dev**' Version nicht notwendig. Es muß lediglich das '**Z**' der '**test**' erhöht werden.
+    -  '**dev**' Entwickler können ohne zwingend der '**test**' Versionierung folgen zu müssen (siehe Beispiel 5.), z.B. an Packages weiter entwickeln.  
+- Die Darstellung und Bedeutung der Map-Versions-Statistiken ist mit schnellem Blick zu erfassen.   
+- Routerbetreiber werden nicht durch unterschiedlich große '**X.Y**' irritiert. 
+
+## Nachteile
+
+- Umstellungsarbeiten
+    - Anpassung der Buildumgebung (gering)
+    - Testaufwände (mittel bis hoch)
+
+
+
+
 ---
 
 # Umstellungskonzept
@@ -192,3 +199,43 @@ Es kann zum Beispiel einfach ein '**v**' vor die weiter oben beschriebene Firmwa
 - v1.10.2.1-dev-106
 
 ## Done!
+
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+# Anhang
+---
+
+<br>
+## Weitere Ideen
+
+### Versionsnummer einer 'broken' Firmware
+Dieser Textbereich ist noch nicht ausgegoren!  
+
+Eine '**broken**' (Unterstützung von ungetesteten Router Modellen) sollte immer auf einer halbwegs aktuellen '**dev**' basieren.
+
+Eine '**broken**' ist immer einer '**dev**' unterzuordnen.  
+**X**, **Y** und **Z** wie bei einer der letzten '**dev**'.  
+Für **W** muß '0' gewählt werden.  
+
+### Versionsnummer einer 'experimental' Firmware
+Dieser Textbereich ist noch nicht ausgegoren!  
+
+Eine '**experimental**' (Basis ist der Gluon Master-Branch) sollte nicht angeboten werden.  
+Bei einem Update auf einen anderen Branch, ist die Wahrscheinlichkeit groß, dass es sich hier in Wirklichkeit um einen Downgrade handelt.  
+
+Bei einer '**experimental**' ist nicht immer klar:
+
+- welche uci Paramter noch gültig sind oder nur umbenannt wurden.
+- ob ggf. Packages wieder entfernt wurden/werden mussten.
+- ob es Konflikte zwischen neue und älteren Packages gibt. 
+
+**X**, **Y**, **Z**  und **W** ??? 
