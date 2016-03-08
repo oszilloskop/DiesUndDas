@@ -5,6 +5,7 @@
 
 ---
 
+- [ ] fastd4 hängt böse. Verbindung möglich, aber keine mesh-VPN Anzeige (also kein Durchsatz)
 - [ ] Firmware: Wir müssen über 'stable < test' reden.  
 - [ ] Firmware: Welche Luci-Module sollen für den Experten-Modus eingebunden werden.  
 - [ ] Firmware: ebtables Regeln anpassen  
