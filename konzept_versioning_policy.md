@@ -200,17 +200,19 @@ Es muß sichergestellt sein, dass es bei einer Umstellung von dem aktuellen Vers
 - ffmdev-3.106
 
 ### Fiktive neue Firmware-Bezeichnung
-Das weiter oben beschriebene **fiktive** neue Firmware-Bezeichnungskonzept wird zu Grunde gelegt.
-Aus Sicht des **Autoupdater** sind die Bezeichnungen des neuen Konzeptes immer kleiner als die Bezeichnungen des bisherigen Konzeptes.  
+Das weiter oben beschriebene **fiktive** neue Firmware-Bezeichnungskonzept wird zu Grunde gelegt.  
+Aus Sicht des **Autoupdater** sind leider die Bezeichnungen des neuen Konzeptes immer kleiner als die Bezeichnungen des bisherigen Konzeptes.  
 
 Dieses kann jedoch sehr einfach umgekehrt werden.  
+
 Es kann zum Beispiel einfach ein '**v**' vor die weiter oben beschriebene Firmware-Benamung voran gestellt werden.
 
 #### Beispiel:
 
-- v1.10-stable-12
-- v1.10.2-Test-62
-- v1.10.2.1-dev-106
+- **v**1.10-stable-12
+- **v**1.10.2-Test-62
+- **v**1.10.2.1-dev-106
+
 
 ## Done!
 
