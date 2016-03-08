@@ -2,7 +2,12 @@ Date: 2016-03-06
 Title: Fiktive Frankfurter Freifunk Versioning Policy  
 Published: false  
 
-![Logo](https://raw.githubusercontent.com/oszilloskop/DiesUndDas/master/logo-ffm.png)
+![Logo](https://raw.githubusercontent.com/oszilloskop/DiesUndDas/master/logo-ffm.png)  
+
+<br>
+<br>
+
+---
 
 ## Ist-Zustand
 
@@ -12,24 +17,27 @@ Aktuelle Informationen der eingesetzten Router-Firmware kann über die Frankfurt
 
 Die aktuellste verfügbare Firmware kann über die Änderungshistorie oder über den Frankfurter Download-Server bestimmt werden.
 
-In Frankfurt existieren folgende drei Firmware-Varianten (Branches):
+In Frankfurt existieren folgende drei Freifunk Firmware-Varianten (Branches):
 
 - **stable** -> Stabiles Gluon Release
 - **test** -> Feldtest zukünftiger stabiler Gluon Releases   
-- **dev** -> Entwicklungszweig(e) aktueller oder zukünftiger Gluon Releases
+- **dev** -> Entwicklungszweig eines aktuellen oder zukünftigen Gluon Releases (z.B. v2016.1.x)
 
-Die Mehrzahl der Router-Betreiber setzen das ofizielle Frankfurter Firmware-Release (stable-Branch) ein.  
+Die Mehrzahl der Router-Betreiber setzen das ofizielle Frankfurter Firmware-Release (stable-Branch) ein. 
+
+Der Autoupdater nutzt leider den eingeschränkten Package Manager 'opkg'. 
+Im Gegensatz zu dpkg ist z.B. für opkg eine Version X.Y kleiner als eine Version X.Y.Z :o( 
 
  
 
-## Ziel
-Um jedoch neueren, sogenannten **Rauf-Runter-Branch-Updatewünschen** der Routerbetreibern zu genügen, ist eine Anpassung der Firmware-Versionsbezeichnung notwendig. 
+## Mögliches Ziel
+Um neueren **Branch-Rauf-Runter-Updatewünschen** der Routerbetreibern zu genügen, ist eine Anpassung der Firmware-Versionsbezeichnung notwendig. 
 
 Ziel ist:
 
 - Erfüllung aller bisherigen Vorgaben des **Autoupdaters** 
 - Priorisierung der Firmware-Branches: stabel > test > dev
-- Erfüllung aller **Rauf-Runter-Branch-Updatewünsche** der Routerbetreiber.
+- Erfüllung aller **Branch-Rauf-Runter-Updatewünsche** der Routerbetreiber.
 
 Es muß dabei sichergestellt sein, dass:
 
@@ -37,7 +45,11 @@ Es muß dabei sichergestellt sein, dass:
 - bei einer Umstellung auf einen höher priorisierten Branch **immer** nur auf neuere Firmware aktualisiert wird. 
 - bei einer Umstellung auf einen niedriger priorisierten Branch  **immer** nur auf eine passende neuere Firmware aktualisiert wird.
 
+<br>
+
 ---
+
+<br>
 
 # Fiktive Frankfurter Freifunk Versioning Policy
 
@@ -45,7 +57,9 @@ Es muß dabei sichergestellt sein, dass:
 
 
 ## Grundsätze einer fiktiven Firmware Benamung
-Es gilt zu beachten, dass die Benamung einer Firmware einen großen Einfluss auf die Funktionsweise des **Autoupdaters** hat. Der **Autoupdater** soll nicht nur dafür genutzt werden, einfachst immer auf das neueste Firmware-Release zu aktualisieren, sondern er soll auch Rauf-Runter-Branch-Updates ermöglichen. Daher steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
+Es gilt zu beachten, dass die Benamung einer Firmware einen großen Einfluss auf die Funktionsweise des **Autoupdaters** hat. Der **Autoupdater** soll nicht nur dafür genutzt werden, einfachst immer auf das neueste Firmware-Release zu aktualisieren, sondern er soll auch Branch-Rauf-Runter-Update-Möglichkeiten ermöglichen.  
+
+Daher steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
 
 Aus diesen Gründen sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen:  
 
@@ -56,7 +70,7 @@ Aus diesen Gründen sollte die Firmware-Bezeichnung mindestens drei unterschiedl
 
 Werden diese drei Kriterien als String zusammengefügt, so ergibt sich immer eine eineindeutige **Firmware-Bezeichnung**.
 
-Auf Grund des Verhaltens des Autoupdaters und der Vorgabe der Rauf-Runter-Branch-Update-Möglichkeit ist folgende Reihenfolge zu bevorzugen:
+Auf Grund des Verhaltens des Autoupdaters und der Vorgabe der Branch-Rauf-Runter-Update-Möglichkeit ist folgende Reihenfolge zu bevorzugen:
 
 **<Versionsnummer&gt;-<Branch Name&gt;-<Branch Buildnummer&gt;**
 
@@ -68,8 +82,8 @@ Wenn folgend von dem Namen einer Firmware gesprochen wird, so ist ausschließlic
 
 
 ## Findung der Versionsnummer
-Die **Versionsnummer** muss durch den Entwickler vorgegeben werden. Dieses muß nicht bei jedem Build eines Branches geschehen.
-Mit der richtigen Wahl der **Versionsnummer** kann, wenn gewünscht, eine sehr feine Rauf-Runter-Branch-Update-Möglichkeit bereitgestellt werden. 
+Die **Versionsnummer** muss durch den Entwickler vorgegeben werden. Dieses muß nicht bei jedem Build eines Branches geschehen.  
+Mit der richtigen Wahl der **Versionsnummer** kann, wenn gewünscht, eine sehr feine Branch-Rauf-Runter-Update-Möglichkeit bereitgestellt werden.
 Es wird hier eine maximal durch drei Punkte getrennte Nummer verwendet.  
 
 Beispiel: 1, 1.2, 1.2.3,  1.2.3.4
@@ -90,7 +104,7 @@ Das **Y** einer neuen '**stable**' entspricht mindestens dem **Y** der letzten '
 ### Versionsnummer der Release-Kanditat-Firmware (Test)
 Die Versionsnummer des **test** Branches wird mindestens so häufiger wie die Versionsnummer des '**stable**' Branches angepasst werden. Eigentlich würde hier eine zweiteilige Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit drei Zahlenfolgen bevorzugt werden.
 
-**X** und **Y** einer neuen '**Test**' entsprechen immer '**X**' und '**Y**' der letzen '**stable**'.
+**X** und **Y** einer neuen '**Test**' entsprechen immer '**X**' und '**Y**' der letzen '**stable**'.  
 Das **Z** einer neuen '**Test**' entspricht mindestens dem **Z** der letzten '**dev**' + 1  
 
     X.Y.Z-Test
@@ -114,7 +128,7 @@ Start einer neuen '**dev**'-Entwicklung beginnt immer mit **X** und **Y** der le
 
 
 ## Ergebnis
-Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vorgegebenen Rauf-Runter-Update**wünschen** erfüllt.
+Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vorgegebenen Branch-Rauf-Runter-Update**wünsche** erfüllt.
 
 - X.Y-stable-ABC
 - X.Y.Z-Test-DEF
@@ -187,9 +201,9 @@ Es muß sichergestellt sein, dass es bei einer Umstellung von dem aktuellen Vers
 
 ### Fiktive neue Firmware-Bezeichnung
 Das weiter oben beschriebene **fiktive** neue Firmware-Bezeichnungskonzept wird zu Grunde gelegt.
-Aus Sicht des **Autoupdater** sind die Bezeichnungen des neuen Konzeptes immer kleiner als die Bezeichnungen des bisherigen Konzeptes.
-Dieses kann jedoch sehr einfach umgekehrt werden.  
+Aus Sicht des **Autoupdater** sind die Bezeichnungen des neuen Konzeptes immer kleiner als die Bezeichnungen des bisherigen Konzeptes.  
 
+Dieses kann jedoch sehr einfach umgekehrt werden.  
 Es kann zum Beispiel einfach ein '**v**' vor die weiter oben beschriebene Firmware-Benamung voran gestellt werden.
 
 #### Beispiel:
