@@ -236,7 +236,7 @@ Es kann zum Beispiel einfach ein '**v**' vor die weiter oben beschriebene Firmwa
 ### Versionsnummer einer 'broken' Firmware
 Dieser Textbereich ist noch nicht ausgegoren!  
 
-Eine '**broken**' (Unterstützung von ungetesteten Router Modellen) sollte immer auf einer halbwegs aktuellen '**dev**' basieren.
+Eine '**broken**' (Unterstützung von ungetesteten Router Modellen) sollte immer mindestens auf einer halbwegs aktuellen '**dev**' basieren.
 
 Eine '**broken**' ist immer einer '**dev**' unterzuordnen.  
 **X**, **Y** und **Z** wie bei einer der letzten '**dev**'.  
@@ -245,7 +245,7 @@ Für **W** muß '0' gewählt werden.
 ### Versionsnummer einer 'experimental' Firmware
 Dieser Textbereich ist noch nicht ausgegoren!  
 
-Eine '**experimental**' (Basis ist der Gluon Master-Branch) sollte nicht angeboten werden.  
+Es ist zu überlegen, ob überhaupt eine '**experimental**' (Basis ist der Gluon Master-Branch) angeboten werden sollte.  
 Bei einem Update auf einen anderen Branch, ist die Wahrscheinlichkeit groß, dass es sich hier in Wirklichkeit um einen Downgrade handelt.  
 
 Bei einer '**experimental**' ist nicht immer klar:
