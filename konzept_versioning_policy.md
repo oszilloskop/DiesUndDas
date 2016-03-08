@@ -102,7 +102,7 @@ Das **Y** einer neuen '**stable**' entspricht mindestens dem **Y** der letzten '
     └─── Hauptfunktionalität (z.B. beim Wechsel der Gluon-Hauptversion oder bei erheblichen Änderungen an OpenWrt)
     
 ### Versionsnummer der Release-Kanditat-Firmware (Test)
-Die Versionsnummer des **test** Branches wird mindestens so häufiger wie die Versionsnummer des '**stable**' Branches angepasst werden. Eigentlich würde hier eine zweiteilige Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit drei Zahlenfolgen bevorzugt werden.
+Die Versionsnummer des **Test** Branches wird mindestens so häufiger wie die Versionsnummer des '**stable**' Branches angepasst werden. Eigentlich würde hier eine zweiteilige Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit drei Zahlenfolgen bevorzugt werden.
 
 **X** und **Y** einer neuen '**Test**' entsprechen immer '**X**' und '**Y**' der letzen '**stable**'.  
 Das **Z** einer neuen '**Test**' entspricht mindestens dem **Z** der letzten '**dev**' + 1  
@@ -156,26 +156,26 @@ Ein fiktiver Entwicklungsverlauf läuft wie folgt ab:
 
 Nr | stable        | test           | dev |
 ------------- | ------------- | ------------- | -------------
-1 | 1.10-stable-10 | 1.09.5-test-62 | 1.09.4.2-dev-102
+1 | 1.10-stable-10 | 1.09.5-Test-62 | 1.09.4.2-dev-102
 2 |                |                | 1.10.1.1-dev-103
 3 |                |                | 1.10.1.1-dev-104
-4 |                | 1.10.2-test-63 |
+4 |                | 1.10.2-Test-63 |
 5 |                |                | 1.10.1.2-dev-105
-6 |                | 1.10.2-test-64 |
+6 |                | 1.10.2-Test-64 |
 7 | 1.11-stable-11 |                |
 8 |                |                | 1.10.1.2-dev-106
 9 |                |                | 1.11.1.1-dev-107
 10 |                |                | 1.11.1.2-dev-108
-11 |                | 1.11.2-test-65 |
-12 |                | 1.11.3-test-66 |
+11 |                | 1.11.2-Test-65 |
+12 |                | 1.11.3-Test-66 |
 13 | 1.12-stable-12 |                |
 14 | 1.12-stable-13 |                |
 15 | 1.13-stable-14 |                |
 
 ## Vorteile
 - Die einzelnen Branches lassen sich unabhängig von einander entwickeln.  
-    - Soll z.B. eine neue '**Test**', basierend auf der aktuellen '**dev**', erstellt werden, so ist das Wissen über die genaue '**dev**' Version nicht notwendig. Es muß lediglich das '**Z**' der '**test**' erhöht werden.
-    -  '**dev**' Entwickler können ohne zwingend der '**test**' Versionierung folgen zu müssen (siehe Beispiel 5.), z.B. an Packages weiter entwickeln.  
+    - Soll z.B. eine neue '**Test**', basierend auf der aktuellen '**dev**', erstellt werden, so ist das Wissen über die genaue '**dev**' Version nicht notwendig. Es muß lediglich das '**Z**' der '**Test**' erhöht werden.
+    -  '**dev**' Entwickler können ohne zwingend der '**Test**' Versionierung folgen zu müssen (siehe Beispiel 5.), z.B. an Packages weiter entwickeln.  
 - Die Darstellung und Bedeutung der Map-Versions-Statistiken ist mit schnellem Blick zu erfassen.   
 - Routerbetreiber werden nicht durch unterschiedlich große '**X.Y**' irritiert. 
 
