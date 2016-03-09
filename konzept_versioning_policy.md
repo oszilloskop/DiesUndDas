@@ -60,7 +60,7 @@ Es gilt zu beachten, dass die Benamung einer Firmware einen großen Einfluss auf
 
 Es steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
 
-Daher, und auf Grund der Einschränkungen von 'opkg', sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen. 
+Daher, und auf Grund der Einschränkungen von 'opkg', sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen: 
 
 - Dem **Branch Name** - Wird durch die Variante der Firmware vorgegeben
 - Der **Branch Buildnummer** - Wird durch den Buildprozess vorgegeben  
