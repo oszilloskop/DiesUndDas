@@ -26,7 +26,6 @@ In Frankfurt existieren folgende drei Freifunk Firmware-Varianten (Branches):
 Die Mehrzahl der Router-Betreiber setzen das ofizielle Frankfurter Firmware-Release (stable-Branch) ein. 
 
 Der Autoupdater nutzt leider den eingeschränkten Package Manager 'opkg'.  
-Im Gegensatz zu dpkg ist z.B. für opkg eine Version X.Y kleiner als eine Version X.Y.Z :o( 
 
  
 
@@ -60,7 +59,7 @@ Es gilt zu beachten, dass die Benamung einer Firmware einen großen Einfluss auf
 
 Es steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
 
-Daher, und auf Grund der Einschränkungen von 'opkg', sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen: 
+Daher sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen: 
 
 - Dem **Branch Name** - Wird durch die Variante der Firmware vorgegeben
 - Der **Branch Buildnummer** - Wird durch den Buildprozess vorgegeben  
