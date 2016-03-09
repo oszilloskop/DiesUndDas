@@ -25,7 +25,7 @@ In Frankfurt existieren folgende drei Freifunk Firmware-Varianten (Branches):
 
 Die Mehrzahl der Router-Betreiber setzen das ofizielle Frankfurter Firmware-Release (stable-Branch) ein. 
 
-Der Autoupdater nutzt leider den eingeschränkten Package Manager 'opkg'. 
+Der Autoupdater nutzt leider den eingeschränkten Package Manager 'opkg'.  
 Im Gegensatz zu dpkg ist z.B. für opkg eine Version X.Y kleiner als eine Version X.Y.Z :o( 
 
  
@@ -55,22 +55,21 @@ Es muß dabei sichergestellt sein, dass:
 
 
 
-
 ## Grundsätze einer fiktiven Firmware Benamung
 Es gilt zu beachten, dass die Benamung einer Firmware einen großen Einfluss auf die Funktionsweise des **Autoupdaters** hat. Der **Autoupdater** soll nicht nur dafür genutzt werden, einfachst immer auf das neueste Firmware-Release zu aktualisieren, sondern er soll auch Branch-Rauf-Runter-Update-Möglichkeiten ermöglichen.  
 
-Daher steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
+Es steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
 
-Aus diesen Gründen sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen:  
+Daher, und auf Grund der Einschränkungen von 'opkg', sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen. 
 
 - Dem **Branch Name** - Wird durch die Variante der Firmware vorgegeben
 - Der **Branch Buildnummer** - Wird durch den Buildprozess vorgegeben  
 - Der **Versionsnummer** - Wird von dem Entwickler vorgegeben.
 - ggf. noch das Build-Datum 
 
-Werden diese drei Kriterien als String zusammengefügt, so ergibt sich immer eine eineindeutige **Firmware-Bezeichnung**.
+Werden diese drei Kriterien als ein String zusammengefügt, getrennt durch das Zeichen '-', so ergibt sich immer eine eineindeutige **Firmware-Bezeichnung**.
 
-Auf Grund des Verhaltens des Autoupdaters und der Vorgabe der Branch-Rauf-Runter-Update-Möglichkeit ist folgende Reihenfolge zu bevorzugen:
+Bezüglich des Autoupdaters und der Vorgabe der Branch-Rauf-Runter-Update-Möglichkeit, ist folgende Reihenfolge zu bevorzugen:
 
 **<Versionsnummer&gt;-<Branch Name&gt;-<Branch Buildnummer&gt;**
 
@@ -78,7 +77,10 @@ Für den Autoupdater hat innerhalb eines Branches die Versionsnummer eine höher
 
 Haben innerhalb einen Branches zwei Firmware-Images identische Versionsnummern aber unterschiedliche Buildnummer, so wird der Autoupdater die Buildnummer zur Größenbestimmung heranziehen.
 
-Wenn folgend von dem Namen einer Firmware gesprochen wird, so ist ausschließlich die Kombination aus <Versionsnummer&gt;-<Branch Name&gt;-<Branch Buildnummer&gt; gemeint.
+<br>
+**Anmerkung:**  
+Wenn folgend von dem Namen einer Firmware gesprochen wird, so ist ausschließlich die Kombination  
+<Versionsnummer&gt;-<Branch Name&gt;-<Branch Buildnummer&gt; gemeint.
 
 
 ## Findung der Versionsnummer
