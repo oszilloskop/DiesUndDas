@@ -41,7 +41,7 @@ Ziel ist:
 
 Es muß dabei sichergestellt sein, dass:
 
-- innerhalb eines Branches, wie gehabt, immer auf neuere Firmware aktualisiert wird. 
+- innerhalb eines Branches, wie gehabt, **immer** auf neuere Firmware aktualisiert wird. 
 - bei einer Umstellung auf einen höher priorisierten Branch **immer** nur auf neuere Firmware aktualisiert wird. 
 - bei einer Umstellung auf einen niedriger priorisierten Branch  **immer** nur auf eine passende neuere Firmware aktualisiert wird.
 
