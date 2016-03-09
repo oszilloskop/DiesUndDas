@@ -10,6 +10,7 @@
 - [ ] Firmware: Welche Luci-Module sollen für den Experten-Modus eingebunden werden.  
 - [ ] Firmware: ebtables Regeln anpassen  
 - [ ] Downloadserver: Jenkins Hol-Skript anpassen (wg. Modules etc.)  
+- [ ] Ich müßte mal in den Jenkins Deploy-Ordner schauen.
 - [ ] Downloadserver: Wie gehen wir mit alten Daten um ( Hash-Dateien, alte Images etc.)  
 - [ ] Gibt es einen PGP-Key auf dem Jenkinsserver. Wegen Signierung der Module.
 
