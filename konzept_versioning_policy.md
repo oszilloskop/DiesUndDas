@@ -31,7 +31,7 @@ Im Gegensatz zu dpkg ist z.B. für opkg eine Version X.Y kleiner als eine Versio
  
 
 ## Mögliches Ziel
-Um neueren **Branch-Rauf-Runter-Updatewünschen** der Routerbetreibern zu genügen, ist eine Anpassung der Firmware-Versionsbezeichnung notwendig. 
+Um neueren **Branch-Rauf-Runter-Updatewünschen** einiger Routerbetreiber zu genügen, ist eine Anpassung der Firmware-Versionsbezeichnung notwendig. 
 
 Ziel ist:
 
