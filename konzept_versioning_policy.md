@@ -145,16 +145,16 @@ Ein fiktiver Entwicklungsverlauf läuft wie folgt ab:
 3. Entwicklung 'dev' Firmware
 4. Übergang von 'dev' in 'Test'
 5. Weiterentwicklung an alter 'dev' Firmware
-6. Ein weitere 'Test' Firmware 
+6. Eine weitere 'Test' Firmware 
 7. Übergang von 'Test' in 'stable'
-8. Ein weitere 'dev' Firmware mit alter 'stable' als Basis
+8. Eine weitere 'dev' Firmware mit alter 'stable' als Basis
 9. Eine 'dev' Firmware mit aktueller 'stable' als Basis
-10. Ein weitere 'dev' Firmware
+10. Eine weitere 'dev' Firmware
 11. Übergang von 'dev' in 'Test' 
-12. Ein weitere 'Test' Firmware 
+12. Eine weitere 'Test' Firmware 
 13. Übergang von 'Test' in 'stable'
-14. Ein weiteres 'stable' Releases 
-15. Ein weitere 'stable' Releases 
+14. Eine weiteres 'stable' Releases 
+15. Eine weitere 'stable' Releases 
 
 Nr | stable        | test           | dev |
 ------------- | ------------- | ------------- | -------------
