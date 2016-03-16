@@ -24,7 +24,7 @@
 ### Doku
 
 - [ ] Die Wiki-Seite überprüfen und aktualisieren ()http://wiki.freifunk.net/Freifunk_Frankfurt)
-- [ ] Frankfurt-ip-Konzept sollte überprüfen und aktualisieren ()http://wiki.freifunk.net/Frankfurt-ip-Konzept)
+- [ ] Frankfurt-ip-Konzept überprüfen und aktualisieren ()http://wiki.freifunk.net/Frankfurt-ip-Konzept)
 
 ### Sonstiges
 
