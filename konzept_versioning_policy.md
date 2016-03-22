@@ -105,7 +105,7 @@ Das **Y** einer neuen '**stable**' entspricht mindestens dem **Y** der letzten '
 ### Versionsnummer der Release-Kanditat-Firmware (Test)
 Die Versionsnummer des **Test** Branches wird mindestens so häufiger wie die Versionsnummer des '**stable**' Branches angepasst werden. Eigentlich würde hier eine zweiteilige Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit drei Zahlenfolgen bevorzugt werden.
 
-**X** und **Y** einer neuen '**Test**' entsprechen immer '**X**' und '**Y**' der letzen '**stable**'.  
+**X** und **Y** einer neuen '**Test**' entsprechen immer '**X**' und '**Y**' der letzten '**stable**'.  
 Das **Z** einer neuen '**Test**' entspricht mindestens dem **Z** der letzten '**dev**' + 1  
 
     X.Y.Z-Test
@@ -118,7 +118,7 @@ Das **Z** einer neuen '**Test**' entspricht mindestens dem **Z** der letzten '**
 Die Versionsnummer des **dev** Branches wird unbestimmt häufiger angepasst werden. Eigentlich würde hier eine dreiteilig Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit vier Zahlenfolgen bevorzugt werden.  
 
 Start einer neuen '**dev**'-Entwicklung beginnt immer mit **X** und **Y** der letzten '**stable**'.  
-**Z** und **W** sind frei zu wählen, müssen aber ungleich Null sein.
+**Z** und **W** sind frei zu wählen, müssen aber ungleich Null sein (Grund: siehe weiter unten bezüglich 'broken'-Firmware).
 
     X.Y.Z.W-dev
     │ │ │ │ 
@@ -134,6 +134,15 @@ Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vo
 - X.Y-stable-ABC
 - X.Y.Z-Test-DEF
 - X.Y.Z.W-dev-GHI
+
+#### Beispiel:
+
+- 1.10.2.1-dev-106
+- 1.10.3-Test-62
+- 1.11-stable-12
+
+
+
 
 ### Beispiel
  
