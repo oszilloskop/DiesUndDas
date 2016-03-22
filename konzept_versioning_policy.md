@@ -44,6 +44,12 @@ Es muß dabei sichergestellt sein, dass:
 - bei einer Umstellung auf einen höher priorisierten Branch **immer** nur auf neuere Firmware aktualisiert wird. 
 - bei einer Umstellung auf einen niedriger priorisierten Branch  **immer** nur auf eine passende neuere Firmware aktualisiert wird.
 
+#### Vorgegriffenes Lösungsbeispiel:
+
+- **1.10.2.1-dev-106**
+- **1.10.3-Test-62**
+- **1.11-stable-12** 
+
 <br>
 
 ---
@@ -137,10 +143,9 @@ Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vo
 
 #### Beispiel:
 
-- 1.10.2.1-dev-106
-- 1.10.3-Test-62
 - 1.11-stable-12
-
+- 1.10.3-Test-62
+- 1.10.2.1-dev-106
 
 
 
