@@ -24,8 +24,7 @@ In Frankfurt existieren folgende drei Freifunk Firmware-Varianten (Branches):
 - **dev** -> Entwicklungszweig eines aktuellen oder zukünftigen Gluon Releases (z.B. v2016.1.x)
 
 Die Mehrzahl der Router-Betreiber setzen das ofizielle Frankfurter Firmware-Release (stable-Branch) ein. 
-
-Der Autoupdater nutzt leider den eingeschränkten Package Manager 'opkg'.  
+ 
 
  
 
