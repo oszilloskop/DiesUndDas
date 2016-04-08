@@ -5,10 +5,12 @@
 
 ---
 
+# ToDo
+
 ### Backend
 - [ ] fastd2 hängt böse. Verbindung möglich, aber keine Durchsatz möglich
-- [ ] Grafana zeigt nur Daten für einen Tag an. Das ist unschön.
 - [ ] Port 10001 und 10002 auf allen Supernodes öffen 
+- [ ] NTP-Server: Ist der Zeitserver auch für neuere Firmware erreichbar (unterschiedliche IPv6 Präfixe)
 - [x] fastd4 hängt böse. Verbindung möglich, aber keine mesh-VPN Anzeige (also kein Durchsatz)
 
 
@@ -32,5 +34,6 @@
 
 ### Sonstiges
 
+- [ ] Grafana zeigt nur Daten für einen Tag an. Das ist unschön.
 - [ ] Die Api-Datei sollte aktualisiert werden, HTTPS://, Jenkins raus, Kanonensteppel raus, IPv6 noch korrekt? (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator)
 - [x] http://www.freifunk-karte.de zeigt ein Loch über Frankfurt
