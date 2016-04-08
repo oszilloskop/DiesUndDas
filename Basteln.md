@@ -1,12 +1,8 @@
 ![Logo](https://raw.githubusercontent.com/oszilloskop/DiesUndDas/master/logo-ffm.png)  
 
 # ToDo
-<br>
-<br>
 
 ---
-
-
 
 ### Backend
 - [ ] fastd2 hängt böse. Verbindung möglich, aber keine Durchsatz möglich
