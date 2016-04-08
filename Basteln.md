@@ -6,27 +6,31 @@
 ---
 
 ### Backend
+- [ ] fastd2 hängt böse. Verbindung möglich, aber keine Durchsatz möglich
+- [ ] Grafana zeigt nur Daten für einen Tag an. Das ist unschön.
+- [ ] Port 10001 und 10002 auf allen Supernodes öffen 
 - [x] fastd4 hängt böse. Verbindung möglich, aber keine mesh-VPN Anzeige (also kein Durchsatz)
-- [ ] Grafana
-- [ ] Port 10001 und 10002 auf allen Supernodes offen? 
+
 
 ### Firmware 
 
-- [ ] Firmware: Wir müssen über 'stable < test' reden.
-- [ ] Firmware: Welche Luci-Module sollen für den Experten-Modus eingebunden werden.  
-- [ ] Firmware: ebtables Regeln anpassen  
-- [x] Ich müßte mal in den Jenkins Deploy-Ordner schauen.
+
+- [ ] Firmware: Welche Luci-Module sollen für den Experten-Modus eingebunden werden?  
 - [ ] Downloadserver: Jenkins Hol-Skript anpassen (wg. Modules etc.)  
-- [ ] Downloadserver: Wie gehen wir mit alten Daten um ( Hash-Dateien, alte Images etc.)  
-- [x] Gibt es einen PGP-Key auf dem Jenkinsserver? (Nein)
+- [ ] Downloadserver: Wie gehen wir mit Dateien alter Firmwareversionen um? 
 - [ ] Wollen wir einen **Broken**-Branch?
+- [x] Firmware: ebtables Regeln anpassen 
+- [x] Ich müßte mal in den Jenkins Deploy-Ordner schauen.
+- [x] Gibt es einen PGP-Key auf dem Jenkinsserver? (Nein)
+- [x] Firmware: Wir müssen über 'stable < test' reden.
+
 
 ### Doku
 
-- [ ] Die Wiki-Seite überprüfen und aktualisieren ()http://wiki.freifunk.net/Freifunk_Frankfurt)
-- [ ] Frankfurt-ip-Konzept überprüfen und aktualisieren ()http://wiki.freifunk.net/Frankfurt-ip-Konzept)
+- [ ] Die Wiki-Seite überprüfen und aktualisieren (http://wiki.freifunk.net/Freifunk_Frankfurt)
+- [ ] Frankfurt-ip-Konzept überprüfen und aktualisieren (http://wiki.freifunk.net/Frankfurt-ip-Konzept)
 
 ### Sonstiges
 
-- [ ] http://www.freifunk-karte.de zeigt ein Loch über Frankfurt
 - [ ] Die Api-Datei sollte aktualisiert werden, HTTPS://, Jenkins raus, Kanonensteppel raus, IPv6 noch korrekt? (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator)
+- [x] http://www.freifunk-karte.de zeigt ein Loch über Frankfurt
