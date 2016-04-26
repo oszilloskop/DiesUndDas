@@ -5,7 +5,7 @@
 ---
 
 ### Backend
-- [ ] fastd2 hängt böse. Verbindung möglich, aber keine Durchsatz möglich
+- [ ] fastd2 hängt böse.
 - [ ] fastd6 hängt
 - [x] Port 10001 und 10002 auf allen Supernodes öffen (Firewall)
 - [ ] Große und kleine MTUs Unterstützung auf den Supernode / FastdInstanzen einrichten. 
