@@ -150,7 +150,7 @@ Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vo
 
 ### Beispiel
  
-Ein fiktiver Entwicklungsverlauf läuft wie folgt ab:
+Eine fiktive Entwicklung läuft wie folgt ab:
 
 1. Ein aktueller Branch-Zustand sei gegeben 
 2. Entwicklung einer neuen 'dev' Firmware
@@ -213,8 +213,8 @@ Es muß sichergestellt sein, dass es bei einer Umstellung von dem aktuellen Vers
 - ffmtest-3.62
 - ffmdev-3.106
 
-### Fiktive neue Firmware-Bezeichnung
-Das weiter oben beschriebene **fiktive** neue Firmware-Bezeichnungskonzept wird zu Grunde gelegt.  
+### Neue Firmware-Bezeichnung
+Das weiter oben beschriebene neue Firmware-Bezeichnungskonzept wird zu Grunde gelegt.  
 Aus Sicht des **Autoupdater** sind leider die Bezeichnungen des neuen Konzeptes immer kleiner als die Bezeichnungen des bisherigen Konzeptes.  
 
 Dieses kann jedoch sehr einfach umgekehrt werden.  
