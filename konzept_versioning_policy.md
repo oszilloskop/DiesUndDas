@@ -28,7 +28,7 @@ Die Mehrzahl der Router-Betreiber setzen das ofizielle Frankfurter Firmware-Rele
 
  
 
-## Mögliches Ziel
+## Ziel
 Um neueren **Branch-Rauf-Runter-Updatewünschen** einiger Routerbetreiber zu genügen, ist eine Anpassung der Firmware-Versionsbezeichnung notwendig. 
 
 Ziel ist:
@@ -46,7 +46,7 @@ Es muß dabei sichergestellt sein, dass:
 #### Vorgegriffenes Lösungsbeispiel:
 
 - **1.10.2.1-dev-106**
-- **1.10.3-Test-62**
+- **1.10.3-test-62**
 - **1.11-stable-12** 
 
 <br>
@@ -55,11 +55,11 @@ Es muß dabei sichergestellt sein, dass:
 
 <br>
 
-# Fiktive Frankfurter Freifunk Versioning Policy
+# Frankfurter Freifunk Versioning Policy
 
 
 
-## Grundsätze einer fiktiven Firmware Benamung
+## Grundsätze der Firmware Benamung
 Es gilt zu beachten, dass die Benamung einer Firmware einen großen Einfluss auf die Funktionsweise des **Autoupdaters** hat. Der **Autoupdater** soll nicht nur dafür genutzt werden, einfachst immer auf das neueste Firmware-Release zu aktualisieren, sondern er soll auch Branch-Rauf-Runter-Update-Möglichkeiten ermöglichen.  
 
 Es steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
@@ -137,13 +137,13 @@ Start einer neuen '**dev**'-Entwicklung beginnt immer mit **X** und **Y** der le
 Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vorgegebenen Branch-Rauf-Runter-Update**wünsche** erfüllt.
 
 - X.Y-stable-ABC
-- X.Y.Z-Test-DEF
+- X.Y.Z-test-DEF
 - X.Y.Z.W-dev-GHI
 
 #### Beispiel:
 
 - 1.11-stable-12
-- 1.10.3-Test-62
+- 1.10.3-test-62
 - 1.10.2.1-dev-106
 
 
@@ -157,31 +157,31 @@ Ein fiktiver Entwicklungsverlauf läuft wie folgt ab:
 3. Entwicklung 'dev' Firmware
 4. Übergang von 'dev' in 'Test'
 5. Weiterentwicklung an alter 'dev' Firmware
-6. Eine weitere 'Test' Firmware 
-7. Übergang von 'Test' in 'stable'
+6. Eine weitere 'test' Firmware 
+7. Übergang von 'test' in 'stable'
 8. Eine weitere 'dev' Firmware mit alter 'stable' als Basis
 9. Eine 'dev' Firmware mit aktueller 'stable' als Basis
 10. Eine weitere 'dev' Firmware
 11. Übergang von 'dev' in 'Test' 
-12. Eine weitere 'Test' Firmware 
-13. Übergang von 'Test' in 'stable'
+12. Eine weitere 'test' Firmware 
+13. Übergang von 'test' in 'stable'
 14. Eine weiteres 'stable' Releases 
 15. Eine weitere 'stable' Releases 
 
 Nr | stable        | test           | dev |
 ------------- | ------------- | ------------- | -------------
-1 | 1.10-stable-10 | 1.09.5-Test-62 | 1.09.4.2-dev-102
+1 | 1.10-stable-10 | 1.09.5-test-62 | 1.09.4.2-dev-102
 2 |                |                | 1.10.1.1-dev-103
 3 |                |                | 1.10.1.1-dev-104
-4 |                | 1.10.2-Test-63 |
+4 |                | 1.10.2-test-63 |
 5 |                |                | 1.10.1.1-dev-105
-6 |                | 1.10.2-Test-64 |
+6 |                | 1.10.2-test-64 |
 7 | 1.11-stable-11 |                |
 8 |                |                | 1.10.1.2-dev-106
 9 |                |                | 1.11.1.1-dev-107
 10 |                |                | 1.11.1.2-dev-108
-11 |                | 1.11.2-Test-65 |
-12 |                | 1.11.3-Test-66 |
+11 |                | 1.11.2-test-65 |
+12 |                | 1.11.3-test-66 |
 13 | 1.12-stable-12 |                |
 14 | 1.12-stable-13 |                |
 15 | 1.13-stable-14 |                |
@@ -224,7 +224,7 @@ Es kann zum Beispiel einfach ein '**v**' vor die weiter oben beschriebene Firmwa
 #### Beispiel:
 
 - **v**1.10-stable-12
-- **v**1.10.2-Test-62
+- **v**1.10.2-test-62
 - **v**1.10.2.1-dev-106
 
 
