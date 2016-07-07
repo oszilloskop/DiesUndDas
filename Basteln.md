@@ -54,8 +54,8 @@
 ### Firmware Download Anforderungen
 
 - [ ] Sollte nicht auf dem gleichen Server laufen müssen, auf dem auch die Firmware liegt  
-- [ ] Design wie Webseite  
-- [ ] Einbindung in Wordpress  
+- [ ] Design wie Frankfurter Webseite  
+- [ ] Einbindung in Wordpress sollte möglich sein  
 - [ ] Layout vertikal  
 - [ ] Bestimmung der folgenden Auswahlmöglichkeiten nur zur Laufzeit   
 - [ ] Auswahl Hersteller  
