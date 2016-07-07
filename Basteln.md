@@ -51,7 +51,7 @@
 ---
 
 
-### FirmwareDonload Anforderungen
+### Firmware Download Anforderungen
 
 - [ ] Sollte nicht auf dem gleichen Server laufen auf dem auch die Firmware liegt  
 - [ ] Bestimmung der unten genannten Auswahlmöglichkeiten zur Laufzeit  
