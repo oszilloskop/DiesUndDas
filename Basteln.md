@@ -57,9 +57,9 @@
 - [ ] Aliases (wegen Router Falschbenennungen)  
 - [ ] Auswahl Hersteller  
 - [ ] Auswahl Routername  
-- [ ] Auswahl Hardwarerevision (neueste als default)  
-- [ ] Auswahl Branch (wenn möglich stable als default)  
+- [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
+- [ ] Auswahl Branch (wenn möglich stable als default)    
+- [ ] Anzeige Routergrafik Vorder-/Hinterseite anzeigen sobald Hersteller und Modell ausgewählt wurden.
 - [ ] Download Button (nur aktiv, wenn eine Firmware ausgewählt wurde)  
-- [ ] Anzeige Routergrafik Vorder-/Hinterseite  
 
 ![Design](https://raw.githubusercontent.com/oszilloskop/DiesUndDas/master/images/fw-downloader-design-01.png)  
