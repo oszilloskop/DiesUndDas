@@ -53,17 +53,17 @@
 
 ### Firmware Download Anforderungen
 
-- [ ] Sollte nicht auf dem gleichen Server laufen auf dem auch die Firmware liegt  
-- [ ] Bestimmung der unten genannten Auswahlmöglichkeiten zur Laufzeit  
+- [ ] Sollte nicht auf dem gleichen Server laufen müssen, auf dem auch die Firmware liegt  
 - [ ] Design wie Webseite  
 - [ ] Einbindung in Wordpress  
 - [ ] Layout vertikal  
-- [ ] Aliases (wegen Router Falschbenennungen)  
+- [ ] Bestimmung der folgenden Auswahlmöglichkeiten nur zur Laufzeit   
 - [ ] Auswahl Hersteller  
 - [ ] Auswahl Routername  (ggf. Herstellerbezeichnung entfernen)
 - [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
 - [ ] Auswahl Branch (wenn möglich stable als default)    
 - [ ] Anzeige Routergrafik Vorder-/Hinterseite anzeigen sobald Hersteller und Modell ausgewählt wurden.
 - [ ] Download Button (nur aktiv, wenn eine Firmware ausgewählt wurde)  
+- [ ] Routennamen-Aliases ermöglichen (wegen Router Falschbenennungen)
 
 ![Design](https://raw.githubusercontent.com/oszilloskop/DiesUndDas/master/images/fw-downloader-design-01.png)  
