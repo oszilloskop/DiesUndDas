@@ -47,6 +47,10 @@
 - [x] Grafana zeigt nur Daten für einen Tag an. Das ist unschön  
 - [x] http://www.freifunk-karte.de zeigt ein Loch über Frankfurt  
 
+
+---
+
+
 ### FirmwareDonload Anforderungen
 
 - [ ] Sollte nicht auf dem gleichen Server laufen auf dem auch die Firmware liegt  
@@ -56,7 +60,7 @@
 - [ ] Layout vertikal  
 - [ ] Aliases (wegen Router Falschbenennungen)  
 - [ ] Auswahl Hersteller  
-- [ ] Auswahl Routername  
+- [ ] Auswahl Routername  (ggf. Herstellerbezeichnung entfernen)
 - [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
 - [ ] Auswahl Branch (wenn möglich stable als default)    
 - [ ] Anzeige Routergrafik Vorder-/Hinterseite anzeigen sobald Hersteller und Modell ausgewählt wurden.
