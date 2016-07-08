@@ -53,7 +53,7 @@
 
 ### Firmware Download Anforderungen
 
-8. Juli 2016
+08.07.2016
 
 - [ ] Sollte nicht auf dem gleichen Server laufen müssen, auf dem auch die Firmware liegt  
 - [ ] Design wie Frankfurter Webseite  
