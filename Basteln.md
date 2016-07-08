@@ -65,7 +65,7 @@
 - [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
 - [ ] Auswahl Branch (wenn möglich stable als default)   
 - [ ] Auswahl Factory / Sysupgrade
-- [ ] Die Auswahlstruktur so aufbauen, das weitere Auswahlmöglichkeiten leicht hinzufügbar sind (z.B. Batman/Babel, Fastd/L2TP, Frankfurt/Offenbach oder ähnliches)
+- [ ] Die Auswahlstruktur so aufbauen, das weitere Auswahlmöglichkeiten leicht hinzufügbar sind (z.B. Batman/Babel, Fastd/L2TP, Frankfurt/Offenbach/Taunus oder ähnliches)
 - [ ] Anzeige Routergrafik Vorder-/Hinterseite anzeigen sobald Hersteller und Modell ausgewählt wurden.
 - [ ] Download Button (nur aktiv, wenn eine Firmware ausgewählt wurde)  
 - [ ] Routennamen-Aliases ermöglichen (wegen Router Falschbenennungen)
