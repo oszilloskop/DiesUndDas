@@ -55,13 +55,14 @@
 
 - [ ] Sollte nicht auf dem gleichen Server laufen müssen, auf dem auch die Firmware liegt  
 - [ ] Design wie Frankfurter Webseite  
-- [ ] Einbindung in Wordpress sollte möglich sein  
-- [ ] Layout vertikal  
+- [ ] Layout vertikal 
+- [ ] Einbindung in Wordpress wäre toll  
 - [ ] Bestimmung der folgenden Auswahlmöglichkeiten nur zur Laufzeit   
 - [ ] Auswahl Hersteller  
 - [ ] Auswahl Routername  (ggf. Herstellerbezeichnung entfernen)
 - [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
-- [ ] Auswahl Branch (wenn möglich stable als default)    
+- [ ] Auswahl Branch (wenn möglich stable als default)   
+- [ ] Auswahl Factory / Sysupgrade     
 - [ ] Anzeige Routergrafik Vorder-/Hinterseite anzeigen sobald Hersteller und Modell ausgewählt wurden.
 - [ ] Download Button (nur aktiv, wenn eine Firmware ausgewählt wurde)  
 - [ ] Routennamen-Aliases ermöglichen (wegen Router Falschbenennungen)
