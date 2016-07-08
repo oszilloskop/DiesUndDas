@@ -68,7 +68,7 @@
 - [ ] Die Auswahlstruktur so aufbauen, das weitere Auswahlmöglichkeiten leicht hinzufügbar sind (z.B. Batman/Babel, Fastd/L2TP, Frankfurt/Offenbach/Taunus oder ähnliches)
 - [ ] Anzeige Routergrafik Vorder-/Hinterseite anzeigen sobald Hersteller und Modell ausgewählt wurden.
 - [ ] Download Button (nur aktiv, wenn eine Firmware ausgewählt wurde)  
-- [ ] Routennamen-Aliases ermöglichen (wegen Router Falschbenennungen)
+- [ ] Routernamen-Aliases ermöglichen (wegen Router Falschbenennungen)
 
 **Beispiel:**  
 
