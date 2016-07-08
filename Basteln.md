@@ -53,11 +53,13 @@
 
 ### Firmware Download Anforderungen
 
+8. Juli 2016
+
 - [ ] Sollte nicht auf dem gleichen Server laufen müssen, auf dem auch die Firmware liegt  
 - [ ] Design wie Frankfurter Webseite  
 - [ ] Layout vertikal 
 - [ ] Einbindung in Wordpress wäre toll  
-- [ ] Bestimmung der folgenden Auswahlmöglichkeiten nur zur Laufzeit   
+- [ ] Bestimmung aller Auswahlmöglichkeiten zur Laufzeit in Abhängigkeit der wirklich angebotenen Firmware-Dateien   
 - [ ] Auswahl Hersteller  
 - [ ] Auswahl Routername  (ggf. Herstellerbezeichnung entfernen)
 - [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
