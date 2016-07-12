@@ -41,7 +41,7 @@
 
 
 ### Sonstiges
-- [ ] Hopglass als einzige Map aktivieren. Was mus gemacht werden?
+- [ ] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
 - [ ] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator) 
   - [ ] Alle Links auf HTTPS:// setzen
   - [ ] Ist die IPv6 noch korrekt?
