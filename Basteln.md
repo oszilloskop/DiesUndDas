@@ -34,8 +34,8 @@
 - [ ] Die Wiki-Seite überprüfen und aktualisieren (http://wiki.freifunk.net/Freifunk_Frankfurt)  
 - [ ] Frankfurt-ip-Konzept überprüfen, aktualisieren oder neu Aufsetzen. (http://wiki.freifunk.net/Frankfurt-ip-Konzept)  
 - [ ] Kommen [readthedocs](https://docs.readthedocs.io/en/latest/) / [sphinx](http://www.sphinx-doc.org/en/stable/) für uns in Betracht?
- - [ ] Doku-Beispiel: [MWU Gateway Doku](http://gluon-gateway-doku.readthedocs.io/de/latest/index.html)  
  - [ ] Doku-Beispiel: [Eulenfunk](http://eulenfunk.readthedocs.io/en/stable/)  
+ - [ ] Doku-Beispiel: [MWU Gateway Doku](http://gluon-gateway-doku.readthedocs.io/de/latest/index.html)  
  - [ ] Wie funktioniert readthedocs.io in Kombination mit Github?  
 
 
