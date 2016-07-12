@@ -31,25 +31,25 @@
 
 ### Doku
 
-- [ ] Kommen [readthedocs](https://docs.readthedocs.io/en/latest/) / [sphinx](http://www.sphinx-doc.org/en/stable/) für uns in Betracht?
-  - [ ] Doku-Beispiel: [MWU Gateway Doku](http://gluon-gateway-doku.readthedocs.io/de/latest/index.html)  
- - [ ] Doku-Beispiel: [Eulenfunk](http://eulenfunk.readthedocs.io/en/stable/)  
- - [ ] Wie funktioniert readthedocs.io in Kombination mit Github?  
 - [ ] Die Wiki-Seite überprüfen und aktualisieren (http://wiki.freifunk.net/Freifunk_Frankfurt)  
 - [ ] Frankfurt-ip-Konzept überprüfen, aktualisieren oder neu Aufsetzen. (http://wiki.freifunk.net/Frankfurt-ip-Konzept)  
+- [ ] Kommen [readthedocs](https://docs.readthedocs.io/en/latest/) / [sphinx](http://www.sphinx-doc.org/en/stable/) für uns in Betracht?
+ - [ ] Doku-Beispiel: [MWU Gateway Doku](http://gluon-gateway-doku.readthedocs.io/de/latest/index.html)  
+ - [ ] Doku-Beispiel: [Eulenfunk](http://eulenfunk.readthedocs.io/en/stable/)  
+ - [ ] Wie funktioniert readthedocs.io in Kombination mit Github?  
 
 
 
 ### Sonstiges
 - [ ] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
 - [ ] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator) 
-  - [ ] Alle Links auf HTTPS:// setzen
-  - [ ] Ist die IPv6 noch korrekt?
-  - [ ] Muß DNS-Eintrag aktualisiert werden?
-  - [ ] Contact bearbeiten (IRC, Jabber ?)
-  - [ ] Jenkins raus, 
-  - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
-  - [ ] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
+ - [ ] Alle Links auf HTTPS:// setzen
+ - [ ] Ist die IPv6 noch korrekt?
+ - [ ] Muß DNS-Eintrag aktualisiert werden?
+ - [ ] Contact bearbeiten (IRC, Jabber ?)
+ - [ ] Jenkins raus, 
+ - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
+ - [ ] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
 - [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
 - [x] Umgang mit den FFM-Repositories "Packages" und "Packages-1" überdenken  
 - [x] Grafana zeigt nur Daten für einen Tag an. Das ist unschön  
@@ -68,12 +68,12 @@
 - [ ] Layout vertikal 
 - [ ] Einbindung in Wordpress wäre toll  
 - [ ] Bestimmung aller Auswahlmöglichkeiten zur Laufzeit in Abhängigkeit der wirklich angebotenen Firmware-Dateien   
-  - [ ] Auswahl Hersteller  
-  - [ ] Auswahl Routername  (ggf. Herstellerbezeichnung entfernen)
-  - [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
-  - [ ] Auswahl Branch (wenn möglich stable als default)   
-  - [ ] Auswahl Factory / Sysupgrade
-  - [ ] Die Auswahlstruktur so aufbauen, das weitere Auswahlmöglichkeiten leicht hinzufügbar sind (z.B. Batman/Babel, Fastd/L2TP, Frankfurt/Offenbach/Taunus oder ähnliches)
+ - [ ] Auswahl Hersteller  
+ - [ ] Auswahl Routername  (ggf. Herstellerbezeichnung entfernen)
+ - [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
+ - [ ] Auswahl Branch (wenn möglich stable als default)   
+ - [ ] Auswahl Factory / Sysupgrade
+ - [ ] Die Auswahlstruktur so aufbauen, das weitere Auswahlmöglichkeiten leicht hinzufügbar sind (z.B. Batman/Babel, Fastd/L2TP, Frankfurt/Offenbach/Taunus oder ähnliches)
 - [ ] Anzeige Routergrafik Vorder-/Hinterseite anzeigen sobald Hersteller und Modell ausgewählt wurden.
 - [ ] Download Button (nur aktiv, wenn eine Firmware ausgewählt wurde)  
 - [ ] Routernamen-Aliases ermöglichen (wegen Router Falschbenennungen)
