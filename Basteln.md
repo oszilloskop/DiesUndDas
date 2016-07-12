@@ -16,6 +16,7 @@
 
 ### Firmware 
 
+- [ ] Signieren der neuen Test v1.10.4-test-96
 - [ ] Wollen wir einen **Broken**-Branch?  
 - [ ] Eine neue "Stable" bauen  
 - [x] Eine neue "Test" bauen  
@@ -30,18 +31,25 @@
 
 ### Doku
 
-- [ ] Doku-Beispiel: [MWU Gateway Doku](http://gluon-gateway-doku.readthedocs.io/de/latest/index.html)  
-- [ ] Doku-Beispiel: [Eulenfunk](http://eulenfunk.readthedocs.io/en/stable/)  
-- [ ] Wie funktioniert readthedocs.io in Kombination mit Github?  
+- [ ] Kommen readthedocs.io / sphinx-doc.org für uns in Betracht?
+- - [ ] Doku-Beispiel: [MWU Gateway Doku](http://gluon-gateway-doku.readthedocs.io/de/latest/index.html)  
+- - [ ] Doku-Beispiel: [Eulenfunk](http://eulenfunk.readthedocs.io/en/stable/)  
+- - [ ] Wie funktioniert readthedocs.io in Kombination mit Github?  
 - [ ] Die Wiki-Seite überprüfen und aktualisieren (http://wiki.freifunk.net/Freifunk_Frankfurt)  
 - [ ] Frankfurt-ip-Konzept überprüfen, aktualisieren oder neu Aufsetzen. (http://wiki.freifunk.net/Frankfurt-ip-Konzept)  
 
 
 
 ### Sonstiges
-
-
-- [ ] Die Api-Datei sollte aktualisiert werden, HTTPS://, Jenkins raus, Kanonensteppel raus, IPv6 noch korrekt? (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator)  
+- [ ] Hopglass als einzige Map aktivieren. Was mus gemacht werden?
+- [ ] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator) 
+- - [ ] Alle Links auf HTTPS:// setzen
+- - [ ] Ist die IPv6 noch korrekt?
+- - [ ] Muß DNS-Eintrag aktualisiert werden?
+- - [ ] Contact bearbeiten (IRC, Jabber ?)
+- - [ ] Jenkins raus, 
+- - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
+- - [ ] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
 - [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
 - [x] Umgang mit den FFM-Repositories "Packages" und "Packages-1" überdenken  
 - [x] Grafana zeigt nur Daten für einen Tag an. Das ist unschön  
