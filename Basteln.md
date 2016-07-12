@@ -31,7 +31,7 @@
 
 ### Doku
 
-- [ ] Kommen readthedocs.io / sphinx-doc.org für uns in Betracht?
+- [ ] Kommen [readthedocs](https://docs.readthedocs.io/en/latest/) / [sphinx](http://www.sphinx-doc.org/en/stable/) für uns in Betracht?
   - [ ] Doku-Beispiel: [MWU Gateway Doku](http://gluon-gateway-doku.readthedocs.io/de/latest/index.html)  
  - [ ] Doku-Beispiel: [Eulenfunk](http://eulenfunk.readthedocs.io/en/stable/)  
  - [ ] Wie funktioniert readthedocs.io in Kombination mit Github?  
