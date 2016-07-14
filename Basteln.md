@@ -43,11 +43,11 @@
 ### Sonstiges
 - [ ] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
 - [ ] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator) 
- - [ ] Alle Links auf HTTPS:// setzen
- - [ ] Ist die IPv6 noch korrekt?
- - [ ] Muß DNS-Eintrag aktualisiert werden?
- - [ ] Contact bearbeiten (IRC, Jabber ?)
- - [ ] Jenkins raus, 
+ - [x] Alle Links auf HTTPS:// setzen
+ - [x] Ist die IPv6 noch korrekt?
+ - [x] Muß DNS-Eintrag aktualisiert werden? (Nein)
+ - [x] Contact bearbeiten (IRC, Jabber ?)
+ - [x] Jenkins raus, 
  - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
  - [ ] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
 - [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
