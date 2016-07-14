@@ -42,15 +42,15 @@
 
 ### Sonstiges
 - [ ] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
-- [ ] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator) 
+- [ ] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
+- [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
+ - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
+- [x] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator) 
  - [x] Alle Links auf HTTPS:// setzen
  - [x] Ist die IPv6 noch korrekt?
  - [x] Muß DNS-Eintrag aktualisiert werden? (Nein)
  - [x] Contact bearbeiten (IRC, Jabber ?)
- - [x] Jenkins raus, 
- - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
- - [ ] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
-- [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
+ - [x] Jenkins raus 
 - [x] Umgang mit den FFM-Repositories "Packages" und "Packages-1" überdenken  
 - [x] Grafana zeigt nur Daten für einen Tag an. Das ist unschön  
 - [x] http://www.freifunk-karte.de zeigt ein Loch über Frankfurt  
