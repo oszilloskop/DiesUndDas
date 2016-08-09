@@ -5,6 +5,10 @@
 ---
 
 ### Backend
+- [ ] sstats Sägezahn von fastd2 (klein), fastd4 (groß) und fastd5 (groß)
+- [ ] Die neue Stable unterstützt jetzt DNS-Cache. Dieses sollte auch über das Backend freigeschaltet werden.
+- [ ] Schon mal Gedanken über eine mögliche Segmentierung machen. Was für unterschiedliche Möglichkeiten gibt es da? Per Firmware, oder dynamisch zur Laufzeit, unterschiedliche Fastd etc.
+- [ ] Überlegen, ob wir das Rauschen des Netzes messen können. Wegen Netz vor und nach der neuen Stable.
 - [ ] sstats sollte trotz Alfred-Entfall die Anzahl der Frankfurter Clients korrekt anzeigen
 - [ ] NTP-Server 2.ntp. und 3.ntp. bitte im DNS aufnehmen  
 - [ ] NTP-Server: Ist der Zeitserver auch für neuere Firmware erreichbar? (unterschiedliche IPv6 Präfixe)  
@@ -15,7 +19,7 @@
 - [x] Port 10001 und 10002 auf allen Supernodes öffen (Firewall)  
 
 ### Firmware 
-
+- [ ] War das hochstehen des DNS-Buffers auf 5000 Einträge (ca. 400KByte) wirklich sinnvoll?
 - [ ] Signieren der neuen Test v2.0-stable-34
 - [ ] Wollen wir einen **Broken**-Branch?  
 - [x] Signieren der neuen Test v1.10.4-test-96
@@ -42,7 +46,7 @@
 
 
 ### Sonstiges
-- [ ] Magnus hat im Github am Repo SSH-Public-Key rumgemacht. Irgendwie gibt es jetzt zwei Heads -> Mergen
+
 - [ ] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
 - [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
  - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
@@ -75,7 +79,7 @@
  - [ ] Auswahl Hardwarerevision (falls mehrere vorhanden, ältestes anzeigen)  
  - [ ] Auswahl Branch (wenn möglich stable als default)   
  - [ ] Auswahl Factory / Sysupgrade
- - [ ] Die Auswahlstruktur so aufbauen, das weitere Auswahlmöglichkeiten leicht hinzufügbar sind (z.B. Batman/Babel, Fastd/L2TP, Frankfurt/Offenbach/Taunus oder ähnliches)
+ - [ ] Die Auswahlstruktur so aufbauen, das weitere Auswahlmöglichkeiten leicht hinzufügbar sind (z.B. Batman/Babel, Fastd/L2TP, Frankfurt/Umland oder ähnliches)
 - [ ] Anzeige Routergrafik Vorder-/Hinterseite anzeigen sobald Hersteller und Modell ausgewählt wurden.
 - [ ] Download Button (nur aktiv, wenn eine Firmware ausgewählt wurde)  
 - [ ] Routernamen-Aliases ermöglichen (wegen Router Falschbenennungen)
