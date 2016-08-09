@@ -5,7 +5,7 @@
 ---
 
 ### Backend
-
+- [ ] sstats sollte trotz Alfred-Entfall die Anzahl der Frankfurter Clients korrekt anzeigen
 - [ ] NTP-Server 2.ntp. und 3.ntp. bitte im DNS aufnehmen  
 - [ ] NTP-Server: Ist der Zeitserver auch für neuere Firmware erreichbar? (unterschiedliche IPv6 Präfixe)  
 - [ ] Große und kleine MTUs Unterstützung auf den Supernode / FastdInstanzen einrichten  
@@ -16,9 +16,10 @@
 
 ### Firmware 
 
-- [ ] Signieren der neuen Test v1.10.4-test-96
+- [ ] Signieren der neuen Test v2.0-stable-34
 - [ ] Wollen wir einen **Broken**-Branch?  
-- [ ] Eine neue "Stable" bauen  
+- [x] Signieren der neuen Test v1.10.4-test-96
+- [x] Eine neue "Stable" bauen  
 - [x] Eine neue "Test" bauen  
 - [x] Firmware: Welche Luci-Module sollen für den Experten-Modus eingebunden werden?  
 - [x] Downloadserver: Jenkins Hol-Skript anpassen (wg. Modules etc.)  
@@ -41,11 +42,12 @@
 
 
 ### Sonstiges
+- [ ] Magnus hat im Github am Repo SSH-Public-Key rumgemacht. Irgendwie gibt es jetzt zwei Heads -> Mergen
 - [ ] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
-- [ ] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
 - [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
  - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
-- [x] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://freifunk.net/api-generator) 
+- [x] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
+- [x] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://- freifunk.net/api-generator) 
  - [x] Alle Links auf HTTPS:// setzen
  - [x] Ist die IPv6 noch korrekt?
  - [x] Muß DNS-Eintrag aktualisiert werden? (Nein)
