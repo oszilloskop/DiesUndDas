@@ -47,6 +47,7 @@
 
 ### Sonstiges
 
+- [ ] Der Kalender-Server Radical läuft irgendwie nicht.
 - [ ] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
 - [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
  - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
