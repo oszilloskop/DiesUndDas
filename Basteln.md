@@ -5,23 +5,23 @@
 ---
 
 ### Backend
-- [ ] sstats Sägezahn von fastd2 (klein), fastd4 (groß) und fastd5 (groß)
-- [ ] Die neue Stable unterstützt jetzt DNS-Cache. Dieses sollte auch über das Backend freigeschaltet werden.
-- [ ] Schon mal Gedanken über eine mögliche Segmentierung machen. Was für unterschiedliche Möglichkeiten gibt es da? Per Firmware, oder dynamisch zur Laufzeit, unterschiedliche Fastd etc.
+
 - [ ] Überlegen, ob wir das Rauschen des Netzes messen können. Wegen Netz vor und nach der neuen Stable.
 - [ ] sstats sollte trotz Alfred-Entfall die Anzahl der Frankfurter Clients korrekt anzeigen
 - [ ] NTP-Server 2.ntp. und 3.ntp. bitte im DNS aufnehmen  
 - [ ] NTP-Server: Ist der Zeitserver auch für neuere Firmware erreichbar? (unterschiedliche IPv6 Präfixe)  
 - [ ] Große und kleine MTUs Unterstützung auf den Supernode / FastdInstanzen einrichten  
+- [ ] Schon mal Gedanken über eine mögliche Segmentierung machen. Was für unterschiedliche Möglichkeiten gibt es da? Per Firmware, oder dynamisch zur Laufzeit, unterschiedliche Fastd etc.
+- [x] Die neue Stable unterstützt jetzt DNS-Cache. Dieses sollte auch über das Backend freigeschaltet werden.
 - [x] fastd4 hängt böse. Verbindung möglich, aber keine mesh-VPN Anzeige (also kein Durchsatz)  
 - [x] fastd2 hängt böse  
 - [x] fastd6 hängt  
 - [x] Port 10001 und 10002 auf allen Supernodes öffen (Firewall)  
 
 ### Firmware 
-- [ ] War das hochstehen des DNS-Buffers auf 5000 Einträge (ca. 400KByte) wirklich sinnvoll?
-- [ ] Signieren der neuen Test v2.0-stable-34
-- [ ] Wollen wir einen **Broken**-Branch?  
+- [ ] Wollen wir einen **Broken**-Branch? 
+- [x] War das hochstehen des DNS-Buffers auf 5000 Einträge (ca. 400KByte) wirklich sinnvoll?
+- [x] Signieren der neuen Test v2.0-stable-34
 - [x] Signieren der neuen Test v1.10.4-test-96
 - [x] Eine neue "Stable" bauen  
 - [x] Eine neue "Test" bauen  
@@ -47,10 +47,10 @@
 
 ### Sonstiges
 
-- [ ] Der Kalender auf Radicale läuft irgendwie nicht.
-- [ ] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
 - [ ] http://www.freifunk-karte.de verlinkt nicht korrekt auf unsere Community Web-Seite  
  - [ ] Workaround für http://www.freifunk-karte.de überprüfen lassen (Achtung: Mapviewer vs. Hopglass) 
+- [x] Der Kalender auf Radicale läuft irgendwie nicht. (Hat sich erledigt. Der Block hat jetzt ein eigenes Event-Plugin)
+- [x] Hopglass als einzige Map aktivieren. Was muß gemacht werden?
 - [x] Mal schauen, ob es neue API Felder gibt. Diese ggf. mit aufnehmen.
 - [x] Die JSON-API-Datei sollte aktualisiert werden (http://api-viewer.freifunk.net/frankfurt_am_main.html http://- freifunk.net/api-generator) 
  - [x] Alle Links auf HTTPS:// setzen
