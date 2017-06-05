@@ -7,18 +7,17 @@
 ### Backend
 
 - [ ] Überlegen, ob wir das Rauschen des Netzes messen können. Wegen Netz vor und nach der neuen Stable.
-- [ ] ARP-Pakete schwirren durxhs Netz -> test auf Knoten mit "batctl tcpdump bat0 2>&1 | grep ARP"
+- [ ] ARP-Pakete schwirren durch das Netz -> Test auf einem Knoten mit: "batctl tcpdump bat0 2>&1 | grep ARP"  
+siehe auch https://forum.freifunk.net/t/ffdus-bitte-keine-portscans-auf-16/14469
 - [ ] Das Datum auf den Routern stimmt mal wieder nicht
+- [ ] Map: Routerstatistiken wieder aktivieren
 
 ### Firmware 
 
 ### Doku
 
 - [ ] Die Wiki-Seite überprüfen und aktualisieren (http://wiki.freifunk.net/Freifunk_Frankfurt)  
-- [ ] Frankfurt-ip-Konzept überprüfen, aktualisieren oder neu Aufsetzen. (http://wiki.freifunk.net/Frankfurt-ip-Konzept)  
- - [ ] Doku-Beispiel: [Eulenfunk](http://eulenfunk.readthedocs.io/en/stable/)  
- - [ ] Doku-Beispiel: [MWU Gateway Doku](http://gluon-gateway-doku.readthedocs.io/de/latest/index.html)  
- - [ ] Wie funktioniert readthedocs.io in Kombination mit Github?  
+- [ ] Frankfurt-ip-Konzept überprüfen, aktualisieren oder neu Aufsetzen. (http://wiki.freifunk.net/Frankfurt-ip-Konzept)
 
 
 
