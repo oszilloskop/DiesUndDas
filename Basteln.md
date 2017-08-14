@@ -25,12 +25,15 @@ siehe auch https://forum.freifunk.net/t/ffdus-bitte-keine-portscans-auf-16/14469
  
 ### Doku
 
-- [ ] Die Wiki-Seite überprüfen und aktualisieren (http://wiki.freifunk.net/Freifunk_Frankfurt)  
-- [ ] Frankfurt-ip-Konzept überprüfen, aktualisieren oder neu Aufsetzen. (http://wiki.freifunk.net/Frankfurt-ip-Konzept)
+- [ ] Die Wiki-Seite überprüfen und aktualisieren (http://wiki.freifunk.net/Freifunk_Frankfurt) 
+  - [x] Verweise auf die Spielwiese entfernen
+  - [x] Routerempfehlung anpassen
+  
+- [ ] Frankfurt-IP-Konzept überprüfen, aktualisieren oder neu Aufsetzen. (http://wiki.freifunk.net/Frankfurt-ip-Konzept)
 
 
 
 ### Sonstiges
 
-- [ ] http://www.freifunk-karte.de zeigt eine riesen Lücke über Frankfurt an
+- [x] http://www.freifunk-karte.de zeigt eine riesen Lücke über Frankfurt an
 
