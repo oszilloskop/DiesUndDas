@@ -16,10 +16,9 @@ siehe auch https://forum.freifunk.net/t/ffdus-bitte-keine-portscans-auf-16/14469
 - [x] Routerstatistiken wieder aktivieren
 - [ ] Router-Statistiken auf der Map etwas sortieren (z.B. Traffic weiter nach oben)
 - [ ] Offline-Knoten verschwinden erst nach 3 Monaten von der Map
-- [ ] Supernodes tachen permanent als neue Knoten auf der Map auf (1-5 mal am Tag). Alle Offline Supernodes verschwinden erst nach 3 Monaten aus der Statistik.
-- [ ] Die Anzahl der Gesamtknoten (online wie offline) stimmt hinten und vorne nicht.
+- [ ] Supernodes tauchen permanent als neue Knoten auf der Map auf. Alle Offline Supernodes verschwinden erst nach 3 Monaten aus der Statistik. Die Anzahl der Gesamtknoten stimmt daher hinten und vorne nicht.
 - [ ] Map zeigt offline Knoten noch mit ihrem letzen Status im Grafen als online an (zum Glück nur, wenn sie in einem Mesh hängen).
-- [ ] Die Map zeigt letztendlich zuviele nicht korrekte Informationen an. Das mach sie unglaubwürdig.
+- [ ] Die Map zeigt letztendlich zuviele nicht korrekte Informationen an. Das mach sie "nicht nutzbar".
 
 ### Firmware 
  - [ ] LEDE mal in angriff nehmen.
