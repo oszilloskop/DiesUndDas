@@ -66,7 +66,7 @@ Es steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Fu
 
 Daher sollte die Firmware-Bezeichnung mindestens drei unterschiedlichen Zuordnungskriterien genügen: 
 
-- Dem **Branch Name** - Wird durch die Variante der Firmware vorgegeben
+- Dem **Branch Namen** - Wird durch die Variante der Firmware vorgegeben
 - Der **Branch Buildnummer** - Wird durch den Buildprozess vorgegeben  
 - Der **Versionsnummer** - Wird von dem Entwickler vorgegeben.
 - ggf. noch das Build-Datum 
