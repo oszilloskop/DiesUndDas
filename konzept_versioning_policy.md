@@ -11,9 +11,9 @@ Published: false
 
 ## Ist-Zustand
 
-Für den Freifunk Router-Betreiber sollte immer ersichtlich sein, welche Firmware er aktuell einsetzt und ob eine neuere Firmware angeboten wird.
+Für den Freifunk-Router-Betreiber sollte immer ersichtlich sein, welche Firmware er aktuell einsetzt und ob eine neuere Firmware angeboten wird.
 
-Aktuelle Informationen der eingesetzten Router-Firmware kann über die Frankfurter Map, oder durch den Aufruf der Router-Statusseite ermittelt werden. 
+Informationen der aktuell eingesetzten Router-Firmware kann über die Frankfurter Map, oder durch den Aufruf der Router-Statusseite ermittelt werden. 
 
 Die aktuellste verfügbare Firmware kann über die Änderungshistorie oder über den Frankfurter Download-Server bestimmt werden.
 
@@ -79,7 +79,7 @@ Bezüglich des Autoupdaters und der Vorgabe der Branch-Rauf-Runter-Update-Mögli
 
 Für den Autoupdater hat innerhalb eines Branches die Versionsnummer eine höhere Priorität als die Buildnummer.  
 
-Haben innerhalb einen Branches zwei Firmware-Images identische Versionsnummern aber unterschiedliche Buildnummer, so wird der Autoupdater die Buildnummer zur Größenbestimmung heranziehen.
+Haben innerhalb eines Branches zwei Firmware-Images identische Versionsnummern, aber unterschiedliche Buildnummer, so wird der Autoupdater die Buildnummer zur Größenbestimmung heranziehen.
 
 <br>
 **Anmerkung:**  
@@ -97,7 +97,7 @@ Beispiel: 1, 1.2, 1.2.3,  1.2.3.4
 Folgend wird beschrieben, wie diese Nummerierung zu wählen ist.
 
 ### Versionsnummer der Release-Firmware (stable)
-Die Versionsnummer des **stable** Branches wird sehr wahrscheinlich nicht häufig angepasst werden. Eigentlich würde hier eine einteilige Zahl ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit zwei Zahlenfolgen bevorzugt werden.
+Die Versionsnummer des **stable** Branches wird sehr wahrscheinlich nicht häufig angepasst werden. Eigentlich würde hier eine Ziffer ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit einer zweiteiligen Ziffernfolge bevorzugt werden.
 
 Das **X** einer neuen '**stable**' ist frei zu wählen.  
 Das **Y** einer neuen '**stable**' entspricht mindestens dem **Y** der letzten '**Test**' + 1
@@ -105,10 +105,10 @@ Das **Y** einer neuen '**stable**' entspricht mindestens dem **Y** der letzten '
     X.Y-stable  
     │ │  
     │ └─ Nebenfunktionalität mindestens wie letzte 'Test' + 1
-    └─── Hauptfunktionalität (z.B. beim Wechsel der Gluon-Hauptversion oder bei erheblichen Änderungen an OpenWrt)
+    └─── Hauptfunktionalität (z.B. +1 bei dem Wechsel der Gluon-Hauptversion oder bei erheblichen Änderungen an OpenWrt/Lede)
     
 ### Versionsnummer der Release-Kanditat-Firmware (Test)
-Die Versionsnummer des **Test** Branches wird mindestens so häufiger wie die Versionsnummer des '**stable**' Branches angepasst werden. Eigentlich würde hier eine zweiteilige Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit drei Zahlenfolgen bevorzugt werden.
+Die Versionsnummer des **Test** Branches wird mindestens so häufiger wie die Versionsnummer des '**stable**' Branches angepasst werden. Eigentlich würde hier eine zweiteilige Ziffernfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit dreiteiliger Ziffernfolge bevorzugt werden.
 
 **X** und **Y** einer neuen '**Test**' entsprechen immer '**X**' und '**Y**' der letzten '**stable**'.  
 Das **Z** einer neuen '**Test**' entspricht mindestens dem **Z** der letzten '**dev**' + 1  
@@ -120,7 +120,7 @@ Das **Z** einer neuen '**Test**' entspricht mindestens dem **Z** der letzten '**
     └───── Hauptfunktionalität wie letzte 'stable'
 
 ### Versionsnummer des Entwicklungbereiches (dev)
-Die Versionsnummer des **dev** Branches wird unbestimmt häufiger angepasst werden. Eigentlich würde hier eine dreiteilig Zahlenfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit vier Zahlenfolgen bevorzugt werden.  
+Die Versionsnummer des **dev** Branches wird unbestimmt häufiger angepasst werden. Eigentlich würde hier eine dreiteilige Ziffernfolge ausreichen. Aus Gründen wird aber wohl eine Versionsnummer mit vierteiliger Ziffernfolge bevorzugt werden.  
 
 Start einer neuen '**dev**'-Entwicklung beginnt immer mit **X** und **Y** der letzten '**stable**'.  
 **Z** und **W** sind frei zu wählen, müssen aber ungleich Null sein (Grund: siehe weiter unten bezüglich 'broken'-Firmware).
