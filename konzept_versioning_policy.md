@@ -2,7 +2,7 @@ Date: 2016-03-06
 Title: Fiktive Frankfurter Freifunk Versioning Policy  
 Published: false  
 
-![Logo](https://raw.githubusercontent.com/oszilloskop/DiesUndDas/master/logo-ffm.png)  
+![Logo](https://github.com/oszilloskop/DiesUndDas/blob/master/images/logo-ffm.png)  
 
 <br>
 <br>
