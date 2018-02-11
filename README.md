@@ -37,7 +37,7 @@ Mit dem Sysupgrade kann dann ein Gluon-Sysupgrade-Image einer beliebigen Communi
 # Los geht's: Gluon auf EdgeRouter X flashen
 Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benötigt:
 - Das hier bereitgestellen Gluon-initramfs-Factory-Image: [gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar](http://)
-- Ein Community-spezifisches Gluon-Sysupgrade-Image für den EdgeRouter X  
+- Ein Community-spezifisches Gluon-Sysupgrade-Image für den EdgeRouter X, EdgeRouter X-SFP oder EdgePoint R6  
 
 ## Phase 1 - Gluon-Factory über UBNT Web-GUI
 - Ein neuer EdgeRouter X hat die feste IP 192.168.1.1, es läuft kein DHCP auf dem Router.  
@@ -45,7 +45,7 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Ein zu verbindender PC muss mit einer passenden statischen IP konfiguriert werden (z.B. 192.168.1.20).    
 - Der EdgeRouter X ist nun über https://192.168.1.1 zu erreichen .  
 - Nach dem Login (Benutzer: "ubnt", Passwort: "ubnt") dann unten links auf 'System' klicken. 
-- Im Fenster runterscrollen und bei "Upgrade System Image" das Image `gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar` (aus diesem Projekt) verwenden.
+- Im Fenster runterscrollen und bei "Upgrade System Image" das Image `gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar` verwenden.
 - Den Anweisungen folgen (inkl. Reboot).
 - Weiter mit Phase 2
 
@@ -73,7 +73,7 @@ Bei diesem Projekt fällt auch ein initramfs-Kernel ab. Der EdgeRouter X kann mi
   
 Wenn ein Gluon- oder Lede-Router umgeflasht werde soll, dann wird folgendes benötigt:
 - Das hier bereitgestellen initramfs-Binary: [back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin](http://)
-- Eine original UBNT Stockfirmware für den EdgeRouter X: [https://www.ubnt.com/download/edgemax/edgerouter-x](https://www.ubnt.com/download/edgemax/edgerouter-x)
+- Eine original UBNT Stockfirmware für den EdgeRouter X, EdgeRouter X-SFP oder EdgePoint R6: [https://www.ubnt.com/download/edgemax/edgerouter-x](https://www.ubnt.com/download/edgemax/edgerouter-x)
 
 ## Phase 1 - Flashen des initramfs Binaries
 - Das initramfs-Binary `back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin` irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
