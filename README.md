@@ -83,20 +83,18 @@ Wenn ein Gluon- oder Lede-EdgeRouter zurück auf die UBNT-Stockfirmware geflasht
 ## Phase 1 -> Flashen des initramfs-Binaries
 - Das "Back to Stock"-initramfs-Binary irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Mit dem umzuflashenden Gluon- bzw. Lede-EdgeRouter per SSH verbinden.
-- Auf der Router-Konsole wird mit folgenden Befehlen das "Back to Stock"-initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen:
-    - Bei einem EdgeRouter X das hier verwenden:
-```
-dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock3
-dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock4
-```
-
-    - Bei einem EdgeRouter X-SFP oder EdgePount R6 das hier verwenden:
-    
-```
-dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-sfp-initramfs-kernel.bin of=/dev/mtdblock3
-dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-sfp-initramfs-kernel.bin of=/dev/mtdblock4
-```
-- Mit `reboot' den EdgeRouter X neu starten.
+- Auf der Router-Konsole wird mit folgenden Befehlen das "Back to Stock"-initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen:  
+    - Bei einem EdgeRouter X das hier verwenden:  
+    ```
+    dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock3
+    dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock4
+    ```
+    - Bei einem EdgeRouter X-SFP oder EdgePount R6 das hier verwenden:  
+    ```
+    dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-sfp-initramfs-kernel.bin of=/dev/mtdblock3
+    dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-sfp-initramfs-kernel.bin of=/dev/mtdblock4
+    ```
+- Mit `reboot` den EdgeRouter X neu starten.
 - Weiter mit Phase 2
 
 ## Phase 2 -> Flashen der UBNT-Stockfirmware
@@ -119,7 +117,7 @@ cp /tmp/squashfs.tmp.md5 /mnt/squashfs.img.md5
 dd if=/tmp/vmlinux.tmp of=/dev/mtdblock3
 dd if=/tmp/vmlinux.tmp of=/dev/mtdblock4
 ```
-- Mit `reboot' den EdgeRouter X neu starten.
+- Mit `reboot` den EdgeRouter X neu starten.
 - Weiter mit Phase 3
 
 ## Phase 3 -> Einrichten der UBNT-Stockfirmware
