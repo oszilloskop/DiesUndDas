@@ -24,7 +24,7 @@ Beim dem Bauen der Gluon-Firmware (aktuell 2017.1.x) fällt aus Router-technisch
 ### Neuer Lösungsansatz
 Folgend wird eine weitere, aber deutlich einfachere Flash-Möglichkeit beschrieben. Ein Community-spezifisches Gluon kann über den Weg des Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden. Die Prozedur ist mehrphasig.  
   
-Die hier downloadbare generische Gluon-Factory-Firmware bietet dem Nutzer die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade des Routers durchzuführen (ansonsten ist sie funktionslos).  
+Das hier downloadbare generische Gluon-Factory-Image bietet dem Nutzer die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade des Routers durchzuführen (ansonsten ist sie funktionslos).  
   
 Mit dem Sysupgrade kann dann eine Gluon-Sysupgrade-Image einer beliebigen Community auf den EdgeRouter X geflasht werden.  
   
