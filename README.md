@@ -4,7 +4,7 @@ Mit diesem Projekt kann eine Gluon-Firmware sehr einfach über das Web-GUI der U
   
 Weiterhin wird beschrieben, wie ein EdgeRouter X mit einer bereits aufgespielter Gluon- bzw. Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
   
-Die folgende Anleitung gilt gleichwertig für die Ubiquiti Router **EdgeRouter X**, **EdgeRouter X-SFP** und **EdgePoint R6**.  
+Die folgende Anleitung gilt gleichwertig für folgend aufgeführte Ubiquiti Router:
   
   
 EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
