@@ -44,7 +44,7 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Der EdgeRouter X muß über den eth0-Port (WAN) mit einem PC verbunden werden.
 - Ein zu verbindender PC muss mit einer passenden statischen IP konfiguriert werden (z.B. 192.168.1.20).    
 - Der EdgeRouter X ist nun über https://192.168.1.1 zu erreichen .  
-- Nach dem Login (Benutzer: "ubnt", Passwort: "ubnt"), dann unten links auf 'System' klicken. 
+- Nach dem Login (Benutzer: "ubnt", Passwort: "ubnt") dann unten links auf 'System' klicken. 
 - Im Fenster runterscrollen und bei "Upgrade System Image" das Image `gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar` (aus diesem Projekt) verwenden.
 - Den Anweisungen folgen (inkl. Reboot).
 - Weiter mit Phase 2
