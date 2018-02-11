@@ -54,11 +54,11 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Den PC wieder so konfigurieren, dass er seine IP per DHCP erhält.
 - Nach dem Booten des EdgeRouters ist die Gluon-Konfigseite per Web-Browser über http://192.168.1.1 zu ereichen.
 - Evtl. den Browser-Cache, -Verlauf, etc. löschen. Es kann sonst zu Browser-Problemen wegen des vorherigen http**s**-Zugriffs auf 192.168.1.1 kommen.
-- Nun im Gluon-Konfigmodus ein Sysupgrade mit einem Image eurer Community durchführen.
+- Nun im Gluon-Konfigmodus ein Sysupgrade mit einem Image einer beliebigen Community durchführen.
 - Weiter mit Phase 3
 
 ## Phase 3 - Einrichten der eigenen Community-Firmware
-- Nach dem Booten sollte über http://192.168.1.1 die Gluon-Konfigseite eurer Community-Firmware angezeigt werden.
+- Nach dem Booten sollte über http://192.168.1.1 die Gluon-Konfigseite der Community-spezifischen Firmware angezeigt werden.
 
 Done!
 
