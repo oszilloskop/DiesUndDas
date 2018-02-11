@@ -1,10 +1,10 @@
 # Gluon auf UBNT EdgeRouter X, EdgeRouter X-SFP und EdgePoint R6
-</br>
-Mit diesem Projekt kann eine Gluon-Firmware sehr einfach über das Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden.  
+  
+Mit diesem Projekt kann eine Gluon-Firmware sehr einfach über das Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden.   
 Weiterhin wird beschrieben, wie ein EdgeRouter X mit Gluon- bzw. Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
-</br>
-Die folgende Anleitung gilt gleichwertig für die Ubiquiti Router **EdgeRouter X**, **EdgeRouter X-SFP** und **EdgePoint R6**.  
-</br>
+  
+Die folgende Anleitung gilt gleichwertig für die Ubiquiti Router **"EdgeRouter X"**, **"EdgeRouter X-SFP"** und **"EdgePoint R6"**.  
+  
 Dieses Projekt stellt ein generisches (Community unabhängige) Gluon-initramfs-Factory-Image bereit.  
 Es handelt sich bei dem Image um eine abgespeckte Gluon-Version.  
 Das bereitgestellte Image ist für alle drei Router-Typen verwendbar.</br>
@@ -37,7 +37,7 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Der EdgeRouter X muß über den eth0-Port (WAN) mit dem PC verbunden werden.  
 - Der EdgeRouter X ist nun über https://192.168.1.1 zu erreichen .  
 - Nach dem Login (Benutzer: "'ubnt'", Passwort: "'ubnt'"), dann unten links auf 'System' klicken. 
-- Im Fenster runterscrollen und bei "Upgrade System Image" das Image "'gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar'" (aus diesem Projekt) verwenden.
+- Im Fenster runterscrollen und bei "Upgrade System Image" das Image `gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar` (aus diesem Projekt) verwenden.
 - Den Anweisungen folgen (inkl. Reboot).
 - Weiter mit Phase 2
 
