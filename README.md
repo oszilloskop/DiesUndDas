@@ -83,7 +83,8 @@ Wenn ein Gluon- oder Lede-Router umgeflasht werde soll, dann wird folgendes ben�
 dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock3
 dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock4
 ```
-- Dann mit `reboot' den EdgeRouter X neustarten.
+- Mit `reboot' den EdgeRouter X neu starten.
+- Weiter mit Phase 2
 
 ## Phase 2 -> Flashen der UBNT-Stockfirmware
 - Der EdgeRouter X muß über einen der Ports eth1-4 (LAN) mit dem PC verbunden werden.
@@ -105,7 +106,8 @@ cp /tmp/squashfs.tmp.md5 /mnt/squashfs.img.md5
 dd if=/tmp/vmlinux.tmp of=/dev/mtdblock3
 dd if=/tmp/vmlinux.tmp of=/dev/mtdblock4
 ```
-- Dann mit `reboot' den EdgeRouter X neustarten.
+- Mit `reboot' den EdgeRouter X neu starten.
+- Weiter mit Phase 3
 
 ## Phase 3 -> Einrichten der UBNT-Stockfirmware
 - Ein neuer EdgeRouter X hat die feste IP 192.168.1.1, es läuft kein DHCP auf dem Router.  
