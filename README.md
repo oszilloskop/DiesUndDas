@@ -75,7 +75,7 @@ Wenn ein Gluon- oder Lede-Router umgeflasht werde soll, dann wird folgendes ben�
 - Das hier bereitgestellen initramfs-Binary: [back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin](http://)
 - Eine original UBNT Stockfirmware für den EdgeRouter X, EdgeRouter X-SFP oder EdgePoint R6: [https://www.ubnt.com/download/edgemax/edgerouter-x](https://www.ubnt.com/download/edgemax/edgerouter-x)
 
-## Phase 1 - Flashen des initramfs Binaries
+## Phase 1 - Flashen des initramfs-Binaries
 - Das initramfs-Binary `back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin` irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Mit dem umzuflashenden Gluon- bzw. Lede-EdgeRouter X per SSH verbinden.
 - Auf der Router-Konsole wird mit folgenden Befehlen das initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen:  
