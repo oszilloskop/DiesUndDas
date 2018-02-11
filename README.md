@@ -3,12 +3,11 @@
 Mit diesem Projekt kann eine Gluon-Firmware sehr einfach über das Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden.   
 Weiterhin wird beschrieben, wie ein EdgeRouter X mit Gluon- bzw. Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
   
-Die folgende Anleitung gilt gleichwertig für die Ubiquiti Router **"EdgeRouter X"**, **"EdgeRouter X-SFP"** und **"EdgePoint R6"**.  
+Die folgende Anleitung gilt gleichwertig für die Ubiquiti Router **EdgeRouter X**, **EdgeRouter X-SFP** und **EdgePoint R6**.  
   
 Dieses Projekt stellt ein generisches (Community unabhängige) Gluon-initramfs-Factory-Image bereit.  
-Es handelt sich bei dem Image um eine abgespeckte Gluon-Version.  
-Das bereitgestellte Image ist für alle drei Router-Typen verwendbar.</br>
-</br>
+Es handelt sich bei dem Image um eine abgespeckte Gluon-Version. Das Image ist für alle drei Router-Typen verwendbar.  
+  
   
 EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
 :-------------: | :-------------: | :-------------:
@@ -18,14 +17,17 @@ Anmerkung:
 Der EdgePoint R6 ist von der Hardware identisch zum EdgeRouter X-SFP
 
 ## UBNT EdgeRouter X und Gluon
-Beim dem Bauen der Gluon-Firmware (aktuell 2017.1.x) fällt aus Router-technischen Gründen kein Factory-Image für die UBNT-EdgeRouter X heraus. Daher muss man bisher auf die [interne serielle Schnittstelle des Routers](http://sector5d.org/openwrt-on-the-ubiquiti-edgerouter-x.html) zurückgreifen, oder sich mit einem [Lede-Initramfs-Factory-Image](https://www.freifunk-winterberg.net/die-nutzung-von-ubiquiti-edgerouter-x-als-freifunk-offloader/) über die Stockfirme-Konsole aushelfen. Es ist auf jeden Fall immer ein mehrphasiges Vorgehen inkl. Konsolennutzung notwendig.  
+Beim dem Bauen der Gluon-Firmware (aktuell 2017.1.x) fällt aus Router-technischen Gründen kein Factory-Image für den UBNT-EdgeRouter X heraus. Wenn Gluon auf einen EdgeRouter X aufgespielt werden soll, dann muss man bisher auf die [interne serielle Schnittstelle des Routers](http://sector5d.org/openwrt-on-the-ubiquiti-edgerouter-x.html) zurückgreifen, oder sich mit einem [Lede-Initramfs-Factory-Image](https://www.freifunk-winterberg.net/die-nutzung-von-ubiquiti-edgerouter-x-als-freifunk-offloader/) über die Stockfirme-Konsole aushelfen. Es ist auf jeden Fall immer ein mehrphasiges Vorgehen inkl. Konsolennutzung notwendig.  
 
+### Neuer Lösungsansatz
 Folgend wird eine weitere, aber deutlich einfachere Flash-Möglichkeit beschrieben. Eine Gluon-Firmware kann direkt über das Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden. Die Prozedur ist weiterhin mehrphasig.  
-Die hier downloadbare Factory-Firmware bietet dem Nutzer lediglich die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade durchzuführen (ansonsten ist sie funktionslos). Mit dem Sysupgrade kann dann eine Community-spezifische Gluon-Firmeware auf den EdgeRouter X geflasht werden.
-
-![](https://upimg.de/img/bildschirmfoto2_0ywtzy.png)
+Die hier downloadbare Factory-Firmware bietet dem Nutzer lediglich die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade durchzuführen (ansonsten ist sie funktionslos).
+![](https://upimg.de/img/bildschirmfoto2_0ywtzy.png)  
+Mit dem Sysupgrade kann dann eine Community-spezifische Gluon-Firmeware auf den EdgeRouter X geflasht werden.
 
 ---
+
+</br>
 
 # Los geht's: Gluon auf EdgeRouer X flashen
 Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benötigt:
