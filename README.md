@@ -15,7 +15,6 @@ EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
 
 Dieses Projekt stellt generische (Community-unabhängige) Gluon-initramfs-Factory-Images bereit.  
 Es handelt sich bei den Images um eine abgespeckte Gluon-Version.  
-  
 </br>
 
 Anmerkung:  
