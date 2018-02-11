@@ -4,7 +4,7 @@ Mit Hilfe dieses Projektes kann ein EdgeRouter X sehr einfach über das Web-GUI 
   
 Weiterhin wird beschrieben, wie ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
   
-Die folgenden Anleitungen gelten gleichwertig für folgend aufgeführte Ubiquiti Router:
+Die folgenden Anleitungen gelten gleichwertig für die Ubiquiti Router ER-X, ER-X-SFP und EP-R6:
   
   
 EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
