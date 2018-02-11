@@ -43,18 +43,18 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Ein neuer EdgeRouter X hat die feste IP 192.168.1.1, es läuft kein DHCP auf dem Router.  
 - Der EdgeRouter X muß über den eth0-Port (WAN) mit einem PC verbunden werden.
 - Ein zu verbindender PC muss mit einer passenden statischen IP konfiguriert werden (z.B. 192.168.1.20).    
-- Der EdgeRouter X ist nun über https://192.168.1.1 zu erreichen .  
+- Der EdgeRouter X ist nun über https://192.168.1.1 zu erreichen.  
 - Nach dem Login (Benutzer: "ubnt", Passwort: "ubnt") dann unten links auf 'System' klicken. 
 - Im Fenster runterscrollen und bei "Upgrade System Image" das Image `gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar` verwenden.
 - Den Anweisungen folgen (inkl. Reboot).
 - Weiter mit Phase 2
 
 ## Phase 2 - Gluon-Sysupgrade über die Gluon-Konfigseite
-- Der EdgeRouter X muß nun über einen der Ports eth1-4 (LAN) mit dem PC verbunden werden.
-- Den PC wieder so konfigurieren, dass er seine IP per DHCP erhält.
 - Nach dem Booten des EdgeRouters ist die Gluon-Konfigseite per Web-Browser über http://192.168.1.1 zu ereichen.
+- Der EdgeRouter X muß nun über einen der Ports eth1-4 (LAN) mit dem PC verbunden werden.
+- Den PC ggf. wieder so konfigurieren, dass er seine IP per DHCP erhält.
 - Evtl. den Browser-Cache, -Verlauf, etc. löschen. Es kann sonst zu Browser-Problemen wegen des vorherigen http**s**-Zugriffs auf 192.168.1.1 kommen.
-- Nun im Gluon-Konfigmodus ein Sysupgrade mit einem Image einer beliebigen Community durchführen.
+- Nun über die Gluon-Konfigseite ein Sysupgrade mit einem Image einer beliebigen Community durchführen.
 - Weiter mit Phase 3
 
 ## Phase 3 - Einrichten der eigenen Community-Firmware
@@ -69,7 +69,7 @@ Gute Nachrichten:
 Ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware läßt sich sehr einfach über die Konsole auf die original UBNT-Stockfrimware zurückflashen.  
   
   
-Bei diesem Projekt fällt auch ein initramfs-Kernel ab. Der EdgeRouter X kann mit Hilfe der folgenden Anleitung überredet werden, diesen Kernel beim Booten zu laden. Danach liegt ein Gluon-System vor, welches vollständig im RAM abläuft (der Kernel, wie auch das Filesystem). Dadurch wird der Flash-Speicher von der laufenden Firmware nicht eingebunden und die UBNT-Stockfirmware kann ohne Probleme im Flash-Speicher abgelegt werden. Die Prozedur ist mehrphasig.  
+Bei diesem Projekt fällt auch ein initramfs-Kernel ab. Der EdgeRouter X kann mit Hilfe der folgenden Anleitung überredet werden, diesen Kernel beim Booten zu laden. Danach liegt ein Gluon-System vor, welches vollständig im RAM abläuft (der Kernel, wie auch das Filesystem). Dadurch wird der Flash-Speicher von der laufenden Firmware nicht eingebunden und die UBNT-Stockfirmware kann dort ohne Probleme abgespeichert werden. Die Prozedur ist mehrphasig.  
   
 Wenn ein Gluon- oder Lede-Router umgeflasht werde soll, dann wird folgendes benötigt:
 - Das hier bereitgestellen initramfs-Binary: [back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin](http://)
@@ -78,21 +78,22 @@ Wenn ein Gluon- oder Lede-Router umgeflasht werde soll, dann wird folgendes ben�
 ## Phase 1 - Flashen des initramfs Binaries
 - Das initramfs-Binary `back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin` irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Mit dem umzuflashenden Gluon- bzw. Lede-EdgeRouter X per SSH verbinden.
-- Mit folgenden Befehlen das initramfs-Binary in die Kernel-Flashpartition mtdblock3 und mtdblock4 übertragen:  
+- Auf der Router-Konsole wird mit folgenden Befehlen das initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen:  
 ```
 dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock3
 dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock4
 ```
 - Dann mit `reboot' den EdgeRouter X neustarten.
 
-## Phase 2 - Flashen des initramfs Binaries
+## Phase 2 - Flashen der UBNT-Stockfirmware
 - Der EdgeRouter X muß über einen der Ports eth1-4 (LAN) mit dem PC verbunden werden.
 - Den PC ggf. so konfigurieren, dass er seine IP per DHCP erhält.
-- Die UBNT-Stockfirmware lokal auf dem PC entpacken und die Dateien `version.tmp, squashfs.tmp, squashfs.tmp.md5, and vmlinux.tmp` irgendwie auf den umzuflashenden EdgeRouter X in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Nach dem Booten mittels `ssh root@192.168.1.1' auf dem EdgeRouters X anmelden.
-- Mit folgenden Befehlen wird die UBNT-Stockfirmware auf den EdgeRouters X geflasht:  
+- Die UBNT-Stockfirmware auf dem PC lokal entpacken und die Dateien `version.tmp, squashfs.tmp, squashfs.tmp.md5, and vmlinux.tmp` irgendwie auf den umzuflashenden EdgeRouter X in den Ordner `/tmp` transferieren (z.B. mit "scp").
+- **Bitte wirklich /tmp als Zielpfad verwenden. Ansonsten können die folgenden Befehlsfolgen zu einem Brick des Routers führen!**
+- Auf der Router-Konsole wird mit folgenden Befehlen die UBNT-Stockfirmware auf den EdgeRouters X geflasht:  
 ```
-ubdetach -p /dev/mtd5
+ubidetach -p /dev/mtd5
 ubiformat /dev/mtd5
 ubiattach -p /dev/mtd5
 ubimkvol /dev/ubi0 --vol_id=0 --lebs=1925 --name=troot
