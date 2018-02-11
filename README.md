@@ -39,7 +39,7 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Das hier bereitgestellen Gluon-initramfs-Factory-Image: [gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar](http://)
 - Ein Community-spezifisches Gluon-Sysupgrade-Image für den EdgeRouter X, EdgeRouter X-SFP oder EdgePoint R6  
 
-## Phase 1 - Gluon-Factory über UBNT Web-GUI
+## Phase 1 -> Gluon-Factory über UBNT Web-GUI
 - Ein neuer EdgeRouter X hat die feste IP 192.168.1.1, es läuft kein DHCP auf dem Router.  
 - Der EdgeRouter X muß über den eth0-Port (WAN) mit einem PC verbunden werden.
 - Ein zu verbindender PC muss mit einer passenden statischen IP konfiguriert werden (z.B. 192.168.1.20).    
@@ -49,7 +49,7 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Den Anweisungen folgen (inkl. Reboot).
 - Weiter mit Phase 2
 
-## Phase 2 - Gluon-Sysupgrade über die Gluon-Konfigseite
+## Phase 2 -> Gluon-Sysupgrade über die Gluon-Konfigseite
 - Nach dem Booten des EdgeRouters ist die Gluon-Konfigseite per Web-Browser über http://192.168.1.1 zu ereichen.
 - Der EdgeRouter X muß nun über einen der Ports eth1-4 (LAN) mit dem PC verbunden werden.
 - Den PC ggf. wieder so konfigurieren, dass er seine IP per DHCP erhält.
@@ -57,7 +57,7 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Nun über die Gluon-Konfigseite ein Sysupgrade mit einem Image einer beliebigen Community durchführen.
 - Weiter mit Phase 3
 
-## Phase 3 - Einrichten der eigenen Community-Firmware
+## Phase 3 -> Einrichten der eigenen Community-Firmware
 - Nach dem Booten sollte über http://192.168.1.1 die Gluon-Konfigseite der Community-spezifischen Firmware angezeigt werden.
 
 Done!
@@ -75,7 +75,7 @@ Wenn ein Gluon- oder Lede-Router umgeflasht werde soll, dann wird folgendes ben�
 - Das hier bereitgestellen initramfs-Binary: [back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin](http://)
 - Eine original UBNT Stockfirmware für den EdgeRouter X, EdgeRouter X-SFP oder EdgePoint R6: [https://www.ubnt.com/download/edgemax/edgerouter-x](https://www.ubnt.com/download/edgemax/edgerouter-x)
 
-## Phase 1 - Flashen des initramfs-Binaries
+## Phase 1 -> Flashen des initramfs-Binaries
 - Das initramfs-Binary `back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin` irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Mit dem umzuflashenden Gluon- bzw. Lede-EdgeRouter X per SSH verbinden.
 - Auf der Router-Konsole wird mit folgenden Befehlen das initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen:  
@@ -85,7 +85,7 @@ dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtd
 ```
 - Dann mit `reboot' den EdgeRouter X neustarten.
 
-## Phase 2 - Flashen der UBNT-Stockfirmware
+## Phase 2 -> Flashen der UBNT-Stockfirmware
 - Der EdgeRouter X muß über einen der Ports eth1-4 (LAN) mit dem PC verbunden werden.
 - Den PC ggf. so konfigurieren, dass er seine IP per DHCP erhält.
 - Nach dem Booten mittels `ssh root@192.168.1.1' auf dem EdgeRouters X anmelden.
@@ -107,7 +107,7 @@ dd if=/tmp/vmlinux.tmp of=/dev/mtdblock4
 ```
 - Dann mit `reboot' den EdgeRouter X neustarten.
 
-## Phase 3 - Einrichten der UBNT-Stockfirmware
+## Phase 3 -> Einrichten der UBNT-Stockfirmware
 - Ein neuer EdgeRouter X hat die feste IP 192.168.1.1, es läuft kein DHCP auf dem Router.  
 - Der EdgeRouter X muß über den eth0-Port (WAN) mit einem PC verbunden werden.  
 - Ein zu verbindender PC muss daher mit einer passenden statischen IP konfiguriert werden (z.B. 192.168.1.20).  
