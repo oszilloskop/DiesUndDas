@@ -5,16 +5,17 @@ Weiterhin wird beschrieben, wie ein EdgeRouter X mit Gluon- bzw. Lede-Firmware e
   
 Die folgende Anleitung gilt gleichwertig für die Ubiquiti Router **EdgeRouter X**, **EdgeRouter X-SFP** und **EdgePoint R6**.  
   
-Dieses Projekt stellt ein generisches (Community unabhängige) Gluon-initramfs-Factory-Image bereit.  
-Es handelt sich bei dem Image um eine abgespeckte Gluon-Version. Das Image ist für alle drei Router-Typen verwendbar.  
-  
   
 EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
 :-------------: | :-------------: | :-------------:
 ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti-edgerouter-x.png?w=300&tok=cd9c12 "ER-X")  | ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti-edgerouter-x-sfp.png?w=300&tok=afa2d9 "ER-X-SFP")  | ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti_edgepoint_r6_ep-r6.png?w=149&tok=74cc15 "EP-R6")
 
 Anmerkung:  
-Der EdgePoint R6 ist von der Hardware identisch zum EdgeRouter X-SFP
+Der EdgePoint R6 ist von der Hardware identisch zum EdgeRouter X-SFP  
+  
+Dieses Projekt stellt ein generisches (Community unabhängige) Gluon-initramfs-Factory-Image bereit.  
+Es handelt sich bei dem Image um eine abgespeckte Gluon-Version. Das Image ist für alle drei Router-Typen verwendbar.  
+
 
 ## UBNT EdgeRouter X und Gluon
 Beim dem Bauen der Gluon-Firmware (aktuell 2017.1.x) fällt aus Router-technischen Gründen kein Factory-Image für den UBNT-EdgeRouter X heraus. Wenn Gluon auf einen EdgeRouter X aufgespielt werden soll, dann muss man bisher auf die [interne serielle Schnittstelle des Routers](http://sector5d.org/openwrt-on-the-ubiquiti-edgerouter-x.html) zurückgreifen, oder sich mit einem [generischen Lede-Image](https://www.freifunk-winterberg.net/die-nutzung-von-ubiquiti-edgerouter-x-als-freifunk-offloader/) aushelfen. Es ist auf jeden Fall immer ein mehrphasiges Vorgehen inkl. Konsolennutzung notwendig.  
