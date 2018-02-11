@@ -24,7 +24,7 @@ Beim dem Bauen der Gluon-Firmware (aktuell 2017.1.x) fällt aus Router-technisch
 ### Neuer Lösungsansatz
 Folgend wird eine weitere, aber deutlich einfachere Flash-Möglichkeit beschrieben. Ein Community-spezifisches Gluon kann über den Weg des Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden. Die Prozedur ist mehrphasig.  
   
-Das hier downloadbare generische Gluon-Factory-Image bietet dem Nutzer die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade des Routers durchzuführen (ansonsten ist sie funktionslos).  
+Die hier downloadbaren generischen Gluon-Factory-Images bieten dem Nutzer die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade des Routers durchzuführen (ansonsten ist sie funktionslos).  
   
 Mit dem Sysupgrade kann dann ein Gluon-Sysupgrade-Image einer beliebigen Community auf den EdgeRouter X geflasht werden.  
   
@@ -36,7 +36,9 @@ Mit dem Sysupgrade kann dann ein Gluon-Sysupgrade-Image einer beliebigen Communi
 
 # Los geht's: Gluon auf EdgeRouter X flashen
 Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benötigt:
-- Das hier bereitgestellen Gluon-initramfs-Factory-Image: [gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar](http://)
+- Ein hier bereitgestelltes Gluon-initramfs-Factory-Image:
+- - Für EdgeRouter X: [gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar](http://)
+- - Für EdgeRouter X-SFP und EdgePount R6: [gluon-ramips-mt7621-ubnt-erx-sfp-initramfs-factory.tar](http://) 
 - Ein Community-spezifisches Gluon-Sysupgrade-Image für den EdgeRouter X, EdgeRouter X-SFP oder EdgePoint R6  
 
 ## Phase 1 -> Gluon-Factory über das UBNT Web-GUI
@@ -71,17 +73,26 @@ Ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware läß
   
 Bei diesem Projekt fällt auch ein initramfs-Kernel ab. Der EdgeRouter X kann mit Hilfe der folgenden Anleitung überredet werden, diesen Kernel beim Booten zu laden. Danach liegt ein Gluon-System vor, welches vollständig im RAM abläuft (der Kernel, wie auch das Filesystem). Dadurch wird der Flash-Speicher von der laufenden Firmware nicht eingebunden und die UBNT-Stockfirmware kann dort ohne Probleme abgespeichert werden. Die Prozedur ist mehrphasig.  
   
-Wenn ein Gluon- oder Lede-Router umgeflasht werde soll, dann wird folgendes benötigt:
-- Das hier bereitgestellen initramfs-Binary: [back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin](http://)
+Wenn ein Gluon- oder Lede-EdgeRouter zurück auf die UBNT-Stockfirmware geflasht werde soll, dann wird folgendes benötigt:
+- Ein hier bereitgestelltes "Back to Stock"-initramfs-Binary
+- - Für EdgeRouter X: [back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin](http://)
+- - Für EdgeRouter X-SFP und EdgePount R6: [back-to-stock-ramips-mt7621-ubnt-erx-sfp-initramfs-kernel.bin](http://) 
 - Eine original UBNT Stockfirmware für den EdgeRouter X, EdgeRouter X-SFP oder EdgePoint R6: [https://www.ubnt.com/download/edgemax/edgerouter-x](https://www.ubnt.com/download/edgemax/edgerouter-x)
 
 ## Phase 1 -> Flashen des initramfs-Binaries
-- Das initramfs-Binary `back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin` irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
-- Mit dem umzuflashenden Gluon- bzw. Lede-EdgeRouter X per SSH verbinden.
-- Auf der Router-Konsole wird mit folgenden Befehlen das initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen:  
+- Das "Back to Stock"-initramfs-Binary irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
+- Mit dem umzuflashenden Gluon- bzw. Lede-EdgeRouter per SSH verbinden.
+- Auf der Router-Konsole wird mit folgenden Befehlen das "Back to Stock"-initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen.  
+
+Bei einem EdgeRouter X das hier verwenden:
 ```
 dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock3
 dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtdblock4
+```
+Bei einem EdgeRouter X-SFP oder EdgePount R6 das hier verwenden:
+```
+dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-sfp-initramfs-kernel.bin of=/dev/mtdblock3
+dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-sfp-initramfs-kernel.bin of=/dev/mtdblock4
 ```
 - Mit `reboot' den EdgeRouter X neu starten.
 - Weiter mit Phase 2
