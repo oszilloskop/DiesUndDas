@@ -139,8 +139,9 @@ folgt
 ---
 
 # Interessante Links
-- [OpenWRT Wiki - Ubiquiti EdgeRouter X (ER-X), EdgeRouter X-SFP (ER-X-SFP) and EdgePoint R6 (EP-R6)](https://wiki.openwrt.org/toh/ubiquiti/ubiquiti_edgerouter_x_er-x_ka) 
-- [Sector5D-Blog - OpenWRT on the Ubiquiti EdgeRouter X](http://sector5d.org/openwrt-on-the-ubiquiti-edgerouter-x.html)
+- [UBNT: Quickstart Guide EdgeRouter X](https://dl.ubnt.com/guides/edgemax/EdgeRouter_ER-X_QSG.pdf)
+- [OpenWRT Wiki: Ubiquiti EdgeRouter X (ER-X), EdgeRouter X-SFP (ER-X-SFP) and EdgePoint R6 (EP-R6)](https://wiki.openwrt.org/toh/ubiquiti/ubiquiti_edgerouter_x_er-x_ka) 
+- [Sector5D-Blog: OpenWRT on the Ubiquiti EdgeRouter X](http://sector5d.org/openwrt-on-the-ubiquiti-edgerouter-x.html)
 - [ERX, ERX-SFP System Recovery per serieller Schnittstelle und TFTP](https://community.ubnt.com/t5/EdgeMAX/ERX-ERX-SFP-System-Recovery/td-p/2056921) 
-- [FF-Wintergerg - Die Nutzung von Ubiquiti EdgeRouter-X als Freifunk Offloader](https://www.freifunk-winterberg.net/die-nutzung-von-ubiquiti-edgerouter-x-als-freifunk-offloader)
-- [Download original UBNT-Stockfirmware für EdgeRouter X, EdgeRouter X-SF und EdgePoint R6](https://www.ubnt.com/download/edgemax/edgerouter-x)
+- [FF-Wintergerg: Die Nutzung von Ubiquiti EdgeRouter-X als Freifunk Offloader](https://www.freifunk-winterberg.net/die-nutzung-von-ubiquiti-edgerouter-x-als-freifunk-offloader)
+- [UBNT: Downloadseite der original UBNT-Stockfirmware für EdgeRouter X, EdgeRouter X-SF und EdgePoint R6](https://www.ubnt.com/download/edgemax/edgerouter-x)
