@@ -26,7 +26,7 @@ Folgend wird eine weitere, aber deutlich einfachere Flash-Möglichkeit beschrieb
   
 Das hier downloadbare generische Gluon-Factory-Image bietet dem Nutzer die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade des Routers durchzuführen (ansonsten ist sie funktionslos).  
   
-Mit dem Sysupgrade kann dann eine Gluon-Sysupgrade-Image einer beliebigen Community auf den EdgeRouter X geflasht werden.  
+Mit dem Sysupgrade kann dann ein Gluon-Sysupgrade-Image einer beliebigen Community auf den EdgeRouter X geflasht werden.  
   
 ![](https://upimg.de/img/bildschirmfoto2_0ywtzy.png)  
 
