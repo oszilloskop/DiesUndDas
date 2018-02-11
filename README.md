@@ -106,7 +106,7 @@ dd if=/tmp/vmlinux.tmp of=/dev/mtdblock4
 - Ein neuer EdgeRouter X hat die feste IP 192.168.1.1, es läuft kein DHCP auf dem Router.  
 - Ein zu verbindender PC muss daher mit einer statischen IP konfiguriert werden (z.B. 192.168.1.20).  
 - Der EdgeRouter X muß über den eth0-Port (WAN) mit dem PC verbunden werden.  
-- Das UBNT Web-GUI ist nach dem Booten nach ca. 2 Minuten per Web-Browser über https://192.168.1.1 zu ereichen.  
+- Das UBNT Web-GUI ist nach dem Booten nach ca. 2 Minuten per Web-Browser über https://192.168.1.1 zu erreichen.  
 - Nach dem Login (Benutzer: "ubnt", Passwort: "ubnt"), dann unten links auf 'System' klicken.
 - Den EdgeRouter X nach Belieben konfigurieren.
 
