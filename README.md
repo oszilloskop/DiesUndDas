@@ -4,7 +4,7 @@ Mit Hilfe dieses Projektes kann ein EdgeRouter X sehr einfach über das Web-GUI 
   
 Weiterhin wird beschrieben, wie über die Konsole ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
   
-Die folgenden Anleitungen gelten gleichwertig für die Ubiquiti Router ER-X, ER-X-SFP und EP-R6:
+Die folgende Anleitung gilt für die Ubiquiti Router ER-X, ER-X-SFP und EP-R6:
   
   
 EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
@@ -12,10 +12,10 @@ EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
 ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti-edgerouter-x.png?w=300&tok=cd9c12 "ER-X")  | ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti-edgerouter-x-sfp.png?w=300&tok=afa2d9 "ER-X-SFP")  | ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti_edgepoint_r6_ep-r6.png?w=149&tok=74cc15 "EP-R6")
 
 Anmerkung:  
-Der EdgeRouter X-SFP und der EdgePoint R6 sind als identisch zu betrachten.  
+Der EdgeRouter X-SFP und der EdgePoint R6 sind Firmware-technisch als identisch zu betrachten.  
   
-Dieses Projekt stellt ein generisches (Community-unabhängiges) Gluon-initramfs-Factory-Image bereit.  
-Es handelt sich bei dem Image um eine abgespeckte Gluon-Version. Das Image ist für alle drei Router-Typen identisch verwendbar.  
+Dieses Projekt stellt generische (Community-unabhängige) Gluon-initramfs-Factory-Images bereit.  
+Es handelt sich bei den Images um eine abgespeckte Gluon-Version.  
 
 
 ## UBNT EdgeRouter X und Gluon
@@ -35,7 +35,7 @@ Mit dem Sysupgrade kann dann ein Gluon-Sysupgrade-Image einer beliebigen Communi
 </br>
 
 # Los geht's: Gluon auf EdgeRouter X flashen
-Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benötigt:
+Wenn ein EdgeRouter X auf Gluon umgeflasht werde soll, dann wird folgendes benötigt:
 - Ein hier bereitgestelltes Gluon-initramfs-Factory-Image:
 - - Für EdgeRouter X: [gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar](http://)
 - - Für EdgeRouter X-SFP und EdgePount R6: [gluon-ramips-mt7621-ubnt-erx-sfp-initramfs-factory.tar](http://) 
