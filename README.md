@@ -83,7 +83,7 @@ Wenn ein Gluon- oder Lede-EdgeRouter zurück auf die UBNT-Stockfirmware geflasht
 ## Phase 1 -> Flashen des initramfs-Binaries
 - Das "Back to Stock"-initramfs-Binary irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Mit dem umzuflashenden Gluon- bzw. Lede-EdgeRouter per SSH verbinden.
-- Auf der Router-Konsole wird mit folgenden Befehlen das "Back to Stock"-initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen.  
+- Auf der Router-Konsole wird mit folgenden Befehlen das "Back to Stock"-initramfs-Binary in die Kernel-Flash-Partitionen "mtdblock3" und "mtdblock4" übertragen:  
 
 Bei einem EdgeRouter X das hier verwenden:
 ```
