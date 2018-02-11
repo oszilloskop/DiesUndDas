@@ -19,7 +19,9 @@ Es handelt sich bei den Images um eine abgespeckte Gluon-Version.
 
 Anmerkung:  
 Der EdgeRouter X-SFP und der EdgePoint R6 sind Firmware-technisch als identisch zu betrachten.  
-  
+
+---
+
 ## UBNT EdgeRouter X und Gluon
 Beim dem Bauen der Gluon-Firmware (aktuell 2017.1.x) fällt aus Router-technischen Gründen kein Factory-Image für den UBNT-EdgeRouter X heraus. Wenn Gluon auf einen EdgeRouter X aufgespielt werden soll, dann muss man bisher auf die [interne serielle Schnittstelle des Routers](http://sector5d.org/openwrt-on-the-ubiquiti-edgerouter-x.html) zurückgreifen, oder man muß sich mit einem [generischen Lede-Image](https://www.freifunk-winterberg.net/die-nutzung-von-ubiquiti-edgerouter-x-als-freifunk-offloader/) aushelfen. Es ist auf jeden Fall immer ein mehrphasiges Vorgehen inkl. Konsolennutzung notwendig.  
 
