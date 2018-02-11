@@ -13,7 +13,7 @@ EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
 Anmerkung:  
 Der EdgePoint R6 ist von der Hardware identisch zum EdgeRouter X-SFP  
   
-Dieses Projekt stellt ein generisches (Community unabhängige) Gluon-initramfs-Factory-Image bereit.  
+Dieses Projekt stellt ein generisches (Community unabhängiges) Gluon-initramfs-Factory-Image bereit.  
 Es handelt sich bei dem Image um eine abgespeckte Gluon-Version. Das Image ist für alle drei Router-Typen verwendbar.  
 
 
