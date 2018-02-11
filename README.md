@@ -12,7 +12,7 @@ EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
 ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti-edgerouter-x.png?w=300&tok=cd9c12 "ER-X")  | ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti-edgerouter-x-sfp.png?w=300&tok=afa2d9 "ER-X-SFP")  | ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti_edgepoint_r6_ep-r6.png?w=149&tok=74cc15 "EP-R6")
 
 Anmerkung:  
-Der EdgePoint R6 ist von der Hardware identisch zum EdgeRouter X-SFP  
+Der EdgePoint R6 und der EdgeRouter X-SFP sind als identisch zu betrachten.  
   
 Dieses Projekt stellt ein generisches (Community unabhängiges) Gluon-initramfs-Factory-Image bereit.  
 Es handelt sich bei dem Image um eine abgespeckte Gluon-Version. Das Image ist für alle drei Router-Typen verwendbar.  
