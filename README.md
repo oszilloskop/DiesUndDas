@@ -22,10 +22,11 @@ Es handelt sich bei dem Image um eine abgespeckte Gluon-Version. Das Image ist f
 Beim dem Bauen der Gluon-Firmware (aktuell 2017.1.x) fällt aus Router-technischen Gründen kein Factory-Image für den UBNT-EdgeRouter X heraus. Wenn Gluon auf einen EdgeRouter X aufgespielt werden soll, dann muss man bisher auf die [interne serielle Schnittstelle des Routers](http://sector5d.org/openwrt-on-the-ubiquiti-edgerouter-x.html) zurückgreifen, oder man muß sich mit einem [generischen Lede-Image](https://www.freifunk-winterberg.net/die-nutzung-von-ubiquiti-edgerouter-x-als-freifunk-offloader/) aushelfen. Es ist auf jeden Fall immer ein mehrphasiges Vorgehen inkl. Konsolennutzung notwendig.  
 
 ### Neuer Lösungsansatz
-Folgend wird eine weitere, aber deutlich einfachere Flash-Möglichkeit beschrieben. Eine Gluon-Firmware kann direkt über das Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden. Die Prozedur ist weiterhin mehrphasig.  
-Die hier downloadbare Factory-Firmware bietet dem Nutzer lediglich die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade durchzuführen (ansonsten ist sie funktionslos).  
+Folgend wird eine weitere, aber deutlich einfachere Flash-Möglichkeit beschrieben. Ein Community-spezifisches Gluon kann über den Weg des Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden. Die Prozedur ist mehrphasig.  
   
-Mit dem Sysupgrade kann dann eine Community-spezifische Gluon-Firmeware auf den EdgeRouter X geflasht werden.  
+Die hier downloadbare generische Gluon-Factory-Firmware bietet dem Nutzer die Möglichkeit, über die Gluon-Web-Konfigseite ein Sysupgrade des Routers durchzuführen (ansonsten ist sie funktionslos).  
+  
+Mit dem Sysupgrade kann dann eine Gluon-Sysupgrade-Image einer beliebigen Community auf den EdgeRouter X geflasht werden.  
   
 ![](https://upimg.de/img/bildschirmfoto2_0ywtzy.png)  
 
@@ -36,6 +37,7 @@ Mit dem Sysupgrade kann dann eine Community-spezifische Gluon-Firmeware auf den 
 # Los geht's: Gluon auf EdgeRouter X flashen
 Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benötigt:
 - Das hier bereitgestellen Gluon-initramfs-Factory-Image: [gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar](http://)
+- Ein Community-spezifisches Gluon-Sysupgrade-Image für den EdgeRouter X  
 
 ## Phase 1 - Gluon-Factory über UBNT Web-GUI
 - Ein neuer EdgeRouter X hat die feste IP 192.168.1.1, es läuft kein DHCP auf dem Router.  
