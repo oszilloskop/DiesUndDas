@@ -72,7 +72,7 @@ Wenn ein Gluon- oder Lede-Router umgeflasht werde soll, dann wird folgendes ben�
 - Eine original UBNT Stockfirmware für den EdgeRouter X: [https://www.ubnt.com/download/edgemax/edgerouter-x](https://www.ubnt.com/download/edgemax/edgerouter-x)
 
 ## Phase 1 - Flashen des initramfs Binaries
-- Das initramfs-Binary `back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin` irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit `'scp'`).
+- Das initramfs-Binary `back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin` irgendwie auf den umzuflashenden Gluon- bzw. Lede-EdgeRouter in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Mit dem umzuflashenden Gluon- bzw. Lede-EdgeRouter X per SSH verbinden.
 - Mit folgenden Befehlen das initramfs-Binary in die Kernel-Flashpartition mtdblock3 und mtdblock4 übertragen:  
 ```
@@ -84,7 +84,7 @@ dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtd
 ## Phase 2 - Flashen des initramfs Binaries
 - Der EdgeRouter X muß ggf. über einen Port eth1-4 (LAN) mit dem PC verbunden werden.
 - Den PC ggf. so konfigurieren, dass er seine IP per DHCP erhält.
-- Die UBNT-Stockfirmware lokal auf dem PC entpacken und die Dateien `version.tmp, squashfs.tmp, squashfs.tmp.md5, and vmlinux.tmp` irgendwie auf den umzuflashenden EdgeRouter X in den Ordner `/tmp` transferieren (z.B. mit "`scp`").
+- Die UBNT-Stockfirmware lokal auf dem PC entpacken und die Dateien `version.tmp, squashfs.tmp, squashfs.tmp.md5, and vmlinux.tmp` irgendwie auf den umzuflashenden EdgeRouter X in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Nach dem Booten mittels `ssh root@192.168.1.1' auf dem EdgeRouters X anmelden.
 - Mit folgenden Befehlen wird die UBNT-Stockfirmware auf den EdgeRouters X geflasht:  
 ```
