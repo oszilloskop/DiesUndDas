@@ -47,7 +47,7 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Weiter mit Phase 2
 
 ## Phase 2 - Gluon-Sysupgrade über die Gluon-Konfigseite
-- Der EdgeRouter X muß nun über einen Port eth1-4 (LAN) mit dem PC verbunden werden.
+- Der EdgeRouter X muß nun über einen der Ports eth1-4 (LAN) mit dem PC verbunden werden.
 - Den PC wieder so konfigurieren, dass er seine IP per DHCP erhält.
 - Nach dem Booten des EdgeRouters ist die Gluon-Konfigseite per Web-Browser über http://192.168.1.1 zu ereichen.
 - Evtl. den Browser-Cache, -Verlauf, etc. löschen. Es kann sonst zu Browser-Problemen wegen des vorherigen http**s**-Zugriffs auf 192.168.1.1 kommen.
@@ -83,7 +83,7 @@ dd if=/tmp/back-to-stock-ramips-mt7621-ubnt-erx-initramfs-kernel.bin of=/dev/mtd
 - Dann mit `reboot' den EdgeRouter X neustarten.
 
 ## Phase 2 - Flashen des initramfs Binaries
-- Der EdgeRouter X muß ggf. über einen Port eth1-4 (LAN) mit dem PC verbunden werden.
+- Der EdgeRouter X muß über einen der Ports eth1-4 (LAN) mit dem PC verbunden werden.
 - Den PC ggf. so konfigurieren, dass er seine IP per DHCP erhält.
 - Die UBNT-Stockfirmware lokal auf dem PC entpacken und die Dateien `version.tmp, squashfs.tmp, squashfs.tmp.md5, and vmlinux.tmp` irgendwie auf den umzuflashenden EdgeRouter X in den Ordner `/tmp` transferieren (z.B. mit "scp").
 - Nach dem Booten mittels `ssh root@192.168.1.1' auf dem EdgeRouters X anmelden.
