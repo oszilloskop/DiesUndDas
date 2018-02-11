@@ -3,7 +3,7 @@
 Mit diesem Projekt kann eine Gluon-Firmware sehr einfach über das Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden.  
 Weiterhin wird beschrieben, wie ein EdgeRouter X mit Gluon- bzw. Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
 </br>
-Die folgende Anleitung gilt gleichwertig für die Ubiquiti Router "**EdgeRouter X**", "**EdgeRouter X-SFP**" und "**EdgePoint R6**".  
+Die folgende Anleitung gilt gleichwertig für die Ubiquiti Router **EdgeRouter X**, **EdgeRouter X-SFP** und **EdgePoint R6**.  
 </br>
 Dieses Projekt stellt ein generisches (Community unabhängige) Gluon-initramfs-Factory-Image bereit.  
 Es handelt sich bei dem Image um eine abgespeckte Gluon-Version.  
@@ -13,6 +13,7 @@ Das bereitgestellte Image ist für alle drei Router-Typen verwendbar.</br>
 EdgeRouter X | EdgeRouter X-SFP | EdgePoint R6
 :-------------: | :-------------: | :-------------:
 ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti-edgerouter-x.png?w=300&tok=cd9c12 "ER-X")  | ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti-edgerouter-x-sfp.png?w=300&tok=afa2d9 "ER-X-SFP")  | ![image](https://wiki.openwrt.org/_media/media/ubiquiti/ubiquiti_edgepoint_r6_ep-r6.png?w=149&tok=74cc15 "EP-R6")
+
 Anmerkung:  
 Der EdgePoint R6 ist von der Hardware identisch zum EdgeRouter X-SFP
 
