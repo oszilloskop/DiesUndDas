@@ -2,7 +2,7 @@
   
 Mit Hilfe dieses Projektes kann ein EdgeRouter X sehr einfach über das Web-GUI der UBNT-Stockfirmware in einen Gluon-Router umgeflasht werden.  
   
-Weiterhin wird beschrieben, wie ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
+Weiterhin wird beschrieben, wie über die Konsole ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
   
 Die folgenden Anleitungen gelten gleichwertig für die Ubiquiti Router ER-X, ER-X-SFP und EP-R6:
   
