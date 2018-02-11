@@ -1,6 +1,6 @@
 # Gluon auf UBNT EdgeRouter X, EdgeRouter X-SFP und EdgePoint R6
   
-Mit diesem Projekt kann ein EdgeRouter X sehr einfach über das Web-GUI der UBNT-Stockfirmware in einen Gluon-Router umgeflasht werden.  
+Mit Hilfe dieses Projektes kann ein EdgeRouter X sehr einfach über das Web-GUI der UBNT-Stockfirmware in einen Gluon-Router umgeflasht werden.  
   
 Weiterhin wird beschrieben, wie ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
   
