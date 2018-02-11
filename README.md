@@ -39,7 +39,7 @@ Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benöti
 - Das hier bereitgestellen Gluon-initramfs-Factory-Image: [gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar](http://)
 - Ein Community-spezifisches Gluon-Sysupgrade-Image für den EdgeRouter X, EdgeRouter X-SFP oder EdgePoint R6  
 
-## Phase 1 -> Gluon-Factory über UBNT Web-GUI
+## Phase 1 -> Gluon-Factory über das UBNT Web-GUI
 - Ein neuer EdgeRouter X hat die feste IP 192.168.1.1, es läuft kein DHCP auf dem Router.  
 - Der EdgeRouter X muß über den eth0-Port (WAN) mit einem PC verbunden werden.
 - Ein zu verbindender PC muss mit einer passenden statischen IP konfiguriert werden (z.B. 192.168.1.20).    
