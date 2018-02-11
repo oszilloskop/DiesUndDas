@@ -31,7 +31,7 @@ Mit dem Sysupgrade kann dann eine Community-spezifische Gluon-Firmeware auf den 
 
 </br>
 
-# Los geht's: Gluon auf EdgeRouer X flashen
+# Los geht's: Gluon auf EdgeRouter X flashen
 Wenn ein EdgeRouter X mit Gluon geflasht werde soll, dann wird folgendes benötigt:
 - Das hier bereitgestellen Gluon-initramfs-Factory-Image: [gluon-ramips-mt7621-ubnt-erx-initramfs-factory.tar](http://)
 
