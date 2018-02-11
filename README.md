@@ -2,7 +2,7 @@
   
 Mit diesem Projekt kann eine Gluon-Firmware sehr einfach über das Web-GUI der UBNT-Stockfirmware auf einen EdgeRouter X geflasht werden.  
   
-Weiterhin wird beschrieben, wie ein EdgeRouter X mit einer bereits aufgespielter Gluon- bzw. Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
+Weiterhin wird beschrieben, wie ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware einfach über die Konsole auf die UBNT-Stockfirmware zurückgeflasht werden kann.  
   
 Die folgende Anleitung gilt gleichwertig für folgend aufgeführte Ubiquiti Router:
   
@@ -64,7 +64,7 @@ Done!
 
 # Per Konsole zurück zur UBNT-Stockfirmware
 Gute Nachrichten:  
-Ein EdgeRouter X mit Gluon- oder Lede-Firmware läßt sich sehr einfach über die Konsole auf die original UBNT-Stockfrimware zurückflashen.  
+Ein EdgeRouter X mit einer bereits aufgespielten Gluon- oder Lede-Firmware läßt sich sehr einfach über die Konsole auf die original UBNT-Stockfrimware zurückflashen.  
   
   
 Bei diesem Projekt fällt auch ein initramfs-Kernel ab. Der EdgeRouter X kann durch folgende Beschreibung überredet werden, dieses beim Booten zu laden. Danach liegt ein Gluon-System vor, welches vollständig im RAM abläuft (der Kernel, wie auch das Filesystem). Dadurch kann die UBNT-Stockfirmware dann im nicht benutzten Flash-Speicher abgelegt werden. Dieses Umflashen ist wieder mehrphasig.  
