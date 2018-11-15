@@ -1,0 +1,136 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Frankfurter Dev-Firmware</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>BUILD_TARGETS</name>
+          <description>Liste der Targets: 
+ar71xx-generic ar71xx-tiny ar71xx-nand brcm2708-bcm2708 brcm2708-bcm2709 mpc85xx-generic ramips-mt7621 sunxi x86-generic x86-geode x86-64 ipq806x ramips-mt7620 ramips-mt7628 ramips-rt305x ar71xx-mikrotik brcm2708-bcm2710 mvebu
+</description>
+          <defaultValue>ar71xx-generic ar71xx-tiny ar71xx-nand brcm2708-bcm2708 brcm2708-bcm2709 mpc85xx-generic ramips-mt7621 sunxi x86-generic x86-geode x86-64 ipq806x ramips-mt7620 ramips-mt7628 ramips-rt305x ar71xx-mikrotik brcm2708-bcm2710 mvebu</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>FW_GIT_BRANCH</name>
+          <description>Bezeichnung Git-Branche des Gluon- und Site-Repositories.</description>
+          <defaultValue>dev</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>AUTOUPDATER_BRANCH</name>
+          <description>Bezeichnung des Autoupdater-Branches</description>
+          <defaultValue>dev</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>This is the firmware version.</description>
+          <defaultValue>v2.4.6.6</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>UPDATE_PRIORITY</name>
+          <description>[int] GLUON_PRIORITY</description>
+          <defaultValue>0</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>BROKEN_IMAGES</name>
+          <description>BROKEN Targets bauen?</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>BROKEN_TARGETS</name>
+          <description>BROKEN Images bauen?</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>CREATE_IMAGE_ARCHIV</name>
+          <description>Ein .xz Gesamtarchiv mit allen Images erzeugen?</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>FRESH_WORKSPACE</name>
+          <description>Den FirmwareReleaseBuilder-Workspace vor dem Bauen löschen?</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>MAKE_PARAMETER</name>
+          <description>Zusätzliche Make-Parameter.</description>
+          <defaultValue>-j9</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PATH_SIGNKEY</name>
+          <description>Absoluter Pfad zum privaten ECDSA-Signkey.</description>
+          <defaultValue>/var/lib/jenkins/ecdsa-secret-jenkins</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/freifunk-ffm/Firmware-Release-Builder.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>
+./firmware-release-builder.sh \
+-B ${FW_GIT_BRANCH} \
+-U ${AUTOUPDATER_BRANCH} \
+-T &quot;${BUILD_TARGETS}&quot; \
+-V ${VERSION} \
+-P ${UPDATE_PRIORITY} \
+-c ${FRESH_WORKSPACE} \
+-b ${BROKEN_IMAGES} \
+-t ${BROKEN_TARGETS} \
+-a ${CREATE_IMAGE_ARCHIV} \
+-p &quot;${MAKE_PARAMETER}&quot; \
+-s ${PATH_SIGNKEY} </command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>wspace/output/images/*.tar.xz</artifacts>
+      <allowEmptyArchive>false</allowEmptyArchive>
+      <onlyIfSuccessful>false</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
+      <caseSensitive>true</caseSensitive>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.10"/>
+  </buildWrappers>
+</project>
