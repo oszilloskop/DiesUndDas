@@ -29,7 +29,7 @@ json_get_var TX tx
 echo
 #echo Frequency: $FREQUENCY
 #echo Noise: $NOISE
-#echo Active: $(expr $ACTIVE - $LAST_ACTIVE) ms
+echo Active: $(expr $ACTIVE - $LAST_ACTIVE) ms
 echo Busy: $(expr $BUSY - $LAST_BUSY) ms
 echo Rx: $(expr $RX - $LAST_RX) ms
 echo Tx: $(expr $TX - $LAST_TX) ms
@@ -37,8 +37,11 @@ echo Tx: $(expr $TX - $LAST_TX) ms
 AIRTIME_BUSY=`awk "BEGIN { print 100 * ($BUSY-$LAST_BUSY) / ($ACTIVE-$LAST_ACTIVE) }"`
 echo Airtime busy: $AIRTIME_BUSY %
 
-AIRTIME_RX_TX=`awk "BEGIN { print 100 * ($RX-$LAST_RX+$TX-$LAST_TX) / ($ACTIVE-$LAST_ACTIVE) }"`
-echo Airtime RX/TX: $AIRTIME_RX_TX %
+AIRTIME_TX=`awk "BEGIN { print 100 * ($TX-$LAST_TX) / ($ACTIVE-$LAST_ACTIVE) }"`
+echo Airtime TX: $AIRTIME_TX %
+
+AIRTIME_RX=`awk "BEGIN { print 100 * ($RX-$LAST_RX) / ($ACTIVE-$LAST_ACTIVE) }"`
+echo Airtime RX: $AIRTIME_RX %
 
 LAST_ACTIVE=$ACTIVE
 LAST_BUSY=$BUSY
