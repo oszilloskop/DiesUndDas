@@ -1,4 +1,4 @@
-Date: 2016-03-06  
+Date: 2019-02-23  
 Title: Fiktive Frankfurter Freifunk Versioning Policy  
 Published: false  
 
@@ -9,31 +9,21 @@ Published: false
 
 ---
 
-## Ist-Zustand
-
-Für den Freifunk-Router-Betreiber sollte immer ersichtlich sein, welche Firmware er aktuell einsetzt und ob eine neuere Firmware angeboten wird.
-
-Informationen der aktuell eingesetzten Router-Firmware kann über die Frankfurter Map, oder durch den Aufruf der Router-Statusseite ermittelt werden. 
-
-Die aktuellste verfügbare Firmware kann über die Änderungshistorie oder über den Frankfurter Download-Server bestimmt werden.
-
-In Frankfurt existieren folgende drei Freifunk Firmware-Varianten (Branches):
+## Vorabanmerkung
+In Frankfurt existieren folgende drei Freifunk Firmware-Ausprägungen (Branches):
 
 - **stable** -> Stabiles Gluon Release
 - **test** -> Feldtest zukünftiger stabiler Gluon Releases   
-- **dev** -> Entwicklungszweig eines aktuellen oder zukünftigen Gluon Releases (z.B. v2016.1.x)
+- **dev** -> Entwicklungszweig eines aktuellen oder zukünftigen Gluon Releases (z.B. Gluon v2018.2.x)
 
-Die Mehrzahl der Router-Betreiber setzen das ofizielle Frankfurter Firmware-Release (stable-Branch) ein. 
- 
+Die Mehrzahl der Router-Betreiber setzen das Frankfurter Firmware-Release aus dem stable-Branch ein. 
 
- 
+Für den Freifunk-Router-Betreiber sollte immer ersichtlich sein, welche Firmware er aktuell einsetzt und ob eine neuere Firmware angeboten wird.
 
-## Ziel
-Um neueren **Branch-Rauf-Runter-Updatewünschen** einiger Routerbetreiber zu genügen, ist eine Anpassung der Firmware-Versionsbezeichnung notwendig. 
+Die aktuellste verfügbare Firmware kann über eine Änderungshistorie oder über den Frankfurter Download-Server bestimmt werden.
 
 Ziel ist:
 
-- Erfüllung aller bisherigen Vorgaben des **Autoupdaters** 
 - Priorisierung der Firmware-Branches: stabel > test > dev
 - Erfüllung aller **Branch-Rauf-Runter-Updatewünsche** der Routerbetreiber.
 
@@ -59,7 +49,7 @@ Es muß dabei sichergestellt sein, dass:
 
 
 
-## Grundsätze der Firmware Benamung
+## Grundsätze der Firmware-Benamung
 Es gilt zu beachten, dass die Benamung einer Firmware einen großen Einfluss auf die Funktionsweise des **Autoupdaters** hat. Der **Autoupdater** soll nicht nur dafür genutzt werden, einfachst immer auf das neueste Firmware-Release zu aktualisieren, sondern er soll auch Branch-Rauf-Runter-Update-Möglichkeiten ermöglichen.  
 
 Es steht hinter dem Firmware-Namen also auch eine nicht zu vernachlässigende Funktionalität!  
@@ -82,6 +72,7 @@ Für den Autoupdater hat innerhalb eines Branches die Versionsnummer eine höher
 Haben innerhalb eines Branches zwei Firmware-Images identische Versionsnummern, aber unterschiedliche Buildnummer, so wird der Autoupdater die Buildnummer zur Größenbestimmung heranziehen.
 
 <br>
+
 **Anmerkung:**  
 Wenn folgend von dem Namen einer Firmware gesprochen wird, so ist ausschließlich die Kombination  
 <Versionsnummer&gt;-<Branch Name&gt;-<Branch Buildnummer&gt; gemeint.
@@ -134,7 +125,7 @@ Start einer neuen '**dev**'-Entwicklung beginnt immer mit **X** und **Y** der le
 
 
 ## Ergebnis
-Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch die vorgegebenen Branch-Rauf-Runter-Update**wünsche** erfüllt.
+Mit folgender Benamung werden alle Vorgaben des **Autoupdaters** und auch Branch-Rauf-Runter-Update**wünsche** erfüllt.
 
 - X.Y-stable-ABC
 - X.Y.Z-test-DEF
@@ -186,46 +177,17 @@ Nr | stable        | test           | dev |
 14 | 1.12-stable-13 |                |
 15 | 1.13-stable-14 |                |
 
-## Vorteile
+## Ergebnis
 - Die einzelnen Branches lassen sich unabhängig von einander entwickeln.  
     - Soll z.B. eine neue '**Test**', basierend auf der aktuellen '**dev**', erstellt werden, so ist das Wissen über die genaue '**dev**' Version nicht notwendig. Es muß lediglich das '**Z**' der '**Test**' erhöht werden.
     -  '**dev**' Entwickler können ohne zwingend der '**Test**' Versionierung folgen zu müssen (siehe Beispiel 5.), z.B. an Packages weiter entwickeln.  
 - Die Darstellung und Bedeutung der Map-Versions-Statistiken ist mit schnellem Blick zu erfassen.   
 - Routerbetreiber werden nicht durch unterschiedlich große '**X.Y**' irritiert. 
 
-## Nachteile
-
-- Umstellungsarbeiten
-    - Anpassung der Buildumgebung (gering)
-    - Testaufwände (mittel bis hoch)
-
 
 
 
 ---
-
-# Umstellungskonzept
-Es muß sichergestellt sein, dass es bei einer Umstellung von dem aktuellen Versions-Konzept auf ein neues Versions-Konzept, es zu keinem Autoupdate-Abriss kommt.
-
-### Aktuelle Firmware-Bezeichnung
-
-- ffmstable-1.10
-- ffmtest-3.62
-- ffmdev-3.106
-
-### Neue Firmware-Bezeichnung
-Das weiter oben beschriebene neue Firmware-Bezeichnungskonzept wird zu Grunde gelegt.  
-Aus Sicht des **Autoupdater** sind leider die Bezeichnungen des neuen Konzeptes immer kleiner als die Bezeichnungen des bisherigen Konzeptes.  
-
-Dieses kann jedoch sehr einfach umgekehrt werden.  
-
-Es kann zum Beispiel einfach ein '**v**' vor die weiter oben beschriebene Firmware-Benamung voran gestellt werden.
-
-#### Beispiel:
-
-- **v**1.10-stable-12
-- **v**1.10.2-test-62
-- **v**1.10.2.1-dev-106
 
 
 ## Done!
