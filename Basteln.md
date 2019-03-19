@@ -2,14 +2,16 @@
 
 # ToDo
 
----
+### Firmware
+- [ ] Aktiviertes MoL wird bei einem Update zurückgesetzt. Siehe [MoL](https://github.com/freifunk-gluon/gluon/blob/master/package/gluon-core/luasrc/lib/gluon/upgrade/220-interface-lan) und [MoM](https://github.com/freifunk-gluon/gluon/blob/master/package/gluon-core/luasrc/lib/gluon/upgrade/210-interface-wan) 
 
 ### Map
 - [ ] Offline-Knoten verschwinden erst nach 3 Monaten von der Map
 - [ ] Map: Es werden sehr oft nicht alle Knoten-Grafen aktualisiert.
+- [ ] Die verwendeten Frequenzen/Kanäle der Knoten werden nicht angezeigt.
 
 ### Backend
-- [ ] Nurt noch ca. 10 neue FF-Router im Netz, dann sind alle GWs voll und fastd1 ist am Anschlag.
+- [ ] Nur noch Platz für ca. 10 neue FF-Router im Netz. Danach sind alle GWs voll und fastd1 ist am Anschlag.
 - [ ] FW-Updates von an fastd1-hängenden Routern führt zu Störungen (langsame Verbindung Fastd1 zu DL-Server)
 
 ### Sonstiges
