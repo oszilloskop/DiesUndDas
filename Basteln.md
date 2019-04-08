@@ -14,6 +14,7 @@
 - [ ] Nur noch Platz für ca. 10 neue FF-Router im Netz. Danach sind alle GWs voll und fastd1 ist am Anschlag.
 - [ ] FW-Updates von an fastd1-hängenden Routern führt zu Störungen (langsame Verbindung Fastd1 zu DL-Server)
 - [ ] GW06 hängt sich auffällig oft auf ( 2 x im März 2019)
+- [ ] Public DL-Bereich: Der Inhalt vom Gitrepo wird nicht wirklich auf https://dl.ffm.freifunk.net/public/ gespiegelt. Arbeit verpufft. 
 ### Sonstiges
 - [ ] Zugriff auf Statusseite gestört.  
 Aufrufe auf beliebige Statusseiten über fddd: sind gestört. Erst wenn die identische Statusseite mind. einmal per 2a06: aufgerufen wurde, lässt sie sich "dann" auch per fddd: aufrufen.  
