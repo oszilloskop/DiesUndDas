@@ -1,4 +1,4 @@
-### Liste für Sysupgrade und Firstboot 
+### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
 - [ ] Texte Konfigmodus
 - [ ] Autoupdate Konfig-Check
@@ -17,11 +17,17 @@
 - [ ] Client LAN (ON/OFF)
 - [ ] Wifi-Taster
 - [ ] Offline-SSID
-
-### Sonstiges
 - [ ] Autoupdater
 - [ ] Sysupgrade nach Sysupgrade
-- [ ] Check Firmwarewizard
+- [ ] opkg Testinstallation
+
+### Firstboot
+- [ ] 'firstboot'
+- [ ] weiter mit dem Sysupgrade-Check
 
 ### Factory
-- [ ] Installation
+- [ ] Factpryinstallation
+- [ ] weiter mit dem Sysupgrade-Check
+
+### Sonstiges
+- [ ] Check Listungen Firmwarewizard
