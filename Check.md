@@ -17,9 +17,9 @@
 - [ ] Client LAN (ON/OFF)
 - [ ] Wifi-Taster
 - [ ] Offline-SSID
-- [ ] Autoupdater
-- [ ] Sysupgrade nach Sysupgrade
 - [ ] opkg Testinstallation
+- [ ] Sysupgrade nach Sysupgrade
+- [ ] Autoupdater (Nachtzeit selbsständig)
 
 ### Firstboot
 - [ ] 'firstboot'
