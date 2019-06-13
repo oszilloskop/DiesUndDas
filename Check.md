@@ -26,7 +26,7 @@
 - [ ] weiter mit dem Sysupgrade-Check
 
 ### Factory
-- [ ] Factpryinstallation
+- [ ] Factoryinstallation
 - [ ] weiter mit dem Sysupgrade-Check
 
 ### Sonstiges
