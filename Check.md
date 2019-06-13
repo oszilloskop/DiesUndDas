@@ -2,8 +2,9 @@
 - [ ] SSH Login
 - [ ] Nodeinfo
 - [ ] Kanalübernahme
-- [ | Meshverhalten
-- [ ] Aufruf Konfigmod zur Konfig-Überprüfung
+- [ ] Meshverhalten
+- [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
+- [ ] Texte Konfigmodus
 - [ ] Autoupdate Konfig-Check
 - [ ] Updatebranch 
 - [ ] Revisioninformation (FW/Gluon)
