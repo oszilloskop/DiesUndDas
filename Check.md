@@ -1,13 +1,14 @@
 ### Liste für Sysupgrade und Firstboot 
-- [ ] SSH Login
-- [ ] Nodeinfo
-- [ ] Kanalübernahme
-- [ ] Meshverhalten
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
 - [ ] Texte Konfigmodus
 - [ ] Autoupdate Konfig-Check
 - [ ] Updatebranch 
 - [ ] Revisioninformation (FW/Gluon)
+- [ ] Sichtung auf Map
+- [ ] SSH Login
+- [ ] Nodeinfo
+- [ ] Kanalübernahme
+- [ ] Meshverhalten
 - [ ] Mesh-VPN (ON/OFF)
 - [ ] Wifi-mesh (ON/OFF)
 - [ ] MoL (ON/OFF)
@@ -20,3 +21,7 @@
 ### Sonstiges
 - [ ] Autoupdater
 - [ ] Sysupgrade nach Sysupgrade
+- [ ] Check Firmwarewizard
+
+### Factory
+- [ ] Installation
