@@ -20,6 +20,7 @@
 - [ ] opkg Testinstallation
 - [ ] Sysupgrade nach Sysupgrade
 - [ ] Autoupdater (Nachtzeit selbsständig)
+- [ ] Autoupdater use-site-conf-branch
 
 ### Firstboot
 - [ ] 'firstboot'
