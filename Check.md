@@ -17,6 +17,7 @@
 - [ ] Client LAN (ON/OFF)
 - [ ] Wifi-Taster
 - [ ] Offline-SSID
+- [ ] opkg update
 - [ ] opkg Testinstallation
 - [ ] Sysupgrade nach Sysupgrade
 - [ ] Autoupdater (Nachtzeit selbsständig)
