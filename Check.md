@@ -56,4 +56,4 @@
 - [ ] Release-Bekanntgabe auf User-Liste
 
 ### Sonstiges
-- [ ] Check Listungen auf FirmwareSelector
+- [ ] Check Listung auf FirmwareSelector
