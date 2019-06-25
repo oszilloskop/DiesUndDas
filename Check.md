@@ -8,6 +8,7 @@
 - [ ] Bekanntgabe der verwendeten site.conf/site.mk auf Admin-Liste oder IRC
 - [ ] Erfolgreicher Aufruf 'date' auf neu gestartetem Test-Router (Backbone-NTP-Check)
 - [ ] Erfolgreicher Aufruf 'autoupdater' auf Test-Router (Backbone-DNS-Check)
+- [ ] Upload der Firmware auf DL-Server
 
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus mittels unterschiedlicher Web-Browser (z.B. Edge, Chromium, Firefox, Safari)
