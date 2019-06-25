@@ -58,7 +58,7 @@
 ### Nacharbeiten
 - [ ] Taggen
   - [ ] Verwendeter Frankfurter Gluon-Branche
-  - [ ] Verwendetetn Frankfurter Site-Branche
+  - [ ] Verwendeter Frankfurter Site-Branche
 - [ ] Dokumentation Frankfurter Release-Änderungshistorie
 - [ ] Release- Bekanntgabe
   - [ ] Auf Admin-Liste
