@@ -7,7 +7,7 @@
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
 - [ ] Texte und Inhalte im Konfigmodus
-- [ ] Autoupdate gesetzt/vorhanden (Konfig-Tab)
+- [ ] ist Autoupdate entsprechend gesetzt/vorhanden (Konfig-Tab)
 - [ ] Ist Updatebranch korrekt gesetzt 
 - [ ] ggf. korrekte Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
 - [ ] Revision-Information (Firmware/Gluon)
