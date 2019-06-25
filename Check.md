@@ -44,8 +44,9 @@
 - [ ] WLAN-Taster - Funktions-Chek
 - [ ] Offline-SSID
   - [ ] Direkt nach Reboot
+    - [ ] Herstellung von Normalbedingungen (normale SSID kommt wieder)
   - [ ] Im laufenden Betrieb
-  - [ ] Herstellung von Normalbedingungen (normale SSID kommt wieder)
+    - [ ] Herstellung von Normalbedingungen (normale SSID kommt wieder)
 - [ ] opkg
   - [ ] 'opkg update'
   - [ ] opkg-Installation eines Testpackages (z.B. htop)
