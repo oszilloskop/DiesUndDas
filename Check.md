@@ -43,7 +43,7 @@
   - [ ] WLAN
 - [ ] WLAN-Taster - Funktions-Chek
 - [ ] Offline-SSID
-  - [ ] Direkt nach Reboot
+  - [ ] Direkt nach Reboot
   - [ ] Im laufenden Betrieb
 - [ ] opkg
   - [ ] 'opkg update'
