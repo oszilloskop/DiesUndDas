@@ -70,7 +70,7 @@
 - [ ] Repo-Tagging 
   - [ ] Verwendeter Frankfurter Gluon-Branche
   - [ ] Verwendeter Frankfurter Site-Branche
-- [ ] Release- Bekanntgabe
+- [ ] Release-Bekanntgabe
   - [ ] Auf Admin-Liste
   - [ ] Auf User-Liste
 
