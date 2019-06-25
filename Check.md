@@ -16,7 +16,7 @@
 - [ ] Ist Autoupdate entsprechend gesetzt/vorhanden (Konfig-Tab)
 - [ ] Ist Updatebranch korrekt gesetzt (Konfig-Tab)
 - [ ] Ggf. korrekter Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
-- [ ] Revision-Information Firmware/Gluon (Konfig-Tab)
+- [ ] Korrekte Revision-Information Firmware/Gluon (Konfig-Tab)
 - [ ] Speicherung Konfiguration (inkl. Reboot)
 - [ ] Aufruf Statusseite
   - [ ] 2a06:xyz innerhalb vom Freifunknetz
