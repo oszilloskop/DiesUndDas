@@ -14,7 +14,7 @@
 - [ ] Texte und Inhalte im Konfigmodus
 - [ ] Ist Autoupdate entsprechend gesetzt/vorhanden (Konfig-Tab)
 - [ ] Ist Updatebranch korrekt gesetzt 
-- [ ] Ggf. korrekte Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
+- [ ] Ggf. korrekter Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
 - [ ] Revision-Information (Firmware/Gluon)
 - [ ] Speicherung Konfiguration (inkl. Reboot)
 - [ ] Aufruf Statusseite innerhalb vom Freifunknetz (2a06:xyz)
