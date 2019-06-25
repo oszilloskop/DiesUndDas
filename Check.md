@@ -13,7 +13,7 @@
 - [ ] Aufruf Konfigmodus mittels unterschiedlicher Web-Browser (z.B. Edge, Chromium, Firefox, Safari)
   - [ ] Texte, Inhalte und Eingabenübernahme im Konfigmodus korrekt
 - [ ] Ist Autoupdate entsprechend gesetzt/vorhanden (Konfig-Tab)
-- [ ] Ist Updatebranch korrekt gesetzt 
+- [ ] Ist Updatebranch korrekt gesetzt (Konfig-Tab)
 - [ ] Ggf. korrekter Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
 - [ ] Revision-Information Firmware/Gluon (Konfig-Tab)
 - [ ] Speicherung Konfiguration (inkl. Reboot)
