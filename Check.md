@@ -35,13 +35,13 @@
 - [ ] Clientverbindung (IPv4, IPv6, DNS)
 - [ ] OFF/ON Check
   - [ ] Mesh-VPN
-  - [ ] Wifi-mesh
+  - [ ] WLAN-mesh
   - [ ] MoL
   - [ ] MoW
-  - [ ] Client Wifi
+  - [ ] Client WLAN
   - [ ] Client LAN
   - [ ] WLAN
-- [ ] Wifi-Taster - Funktions-Chek
+- [ ] WLAN-Taster - Funktions-Chek
 - [ ] Offline-SSID
 - [ ] opkg
   - [ ] 'opkg update'
