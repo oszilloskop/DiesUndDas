@@ -66,5 +66,5 @@
   - [ ] Auf User-Liste
 
 ### Sonstiges
-- [ ] Listung auf FirmwareSelector
+- [ ] Listung im Frankfurter FirmwareSelector
 - [ ] Checkliste abgearbeitet auf mehreren unterschiedlichen Router-Modellen
