@@ -4,12 +4,15 @@
 - [ ] Stable
 - [ ] Benennung der Release-Version
 
+### Vorarbeiten
+- [ ] Bekanntgabe der entsprechenden site.conf/.mk auf Admin-Liste
+
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
 - [ ] Texte und Inhalte im Konfigmodus
-- [ ] ist Autoupdate entsprechend gesetzt/vorhanden (Konfig-Tab)
+- [ ] Ist Autoupdate entsprechend gesetzt/vorhanden (Konfig-Tab)
 - [ ] Ist Updatebranch korrekt gesetzt 
-- [ ] ggf. korrekte Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
+- [ ] Ggf. korrekte Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
 - [ ] Revision-Information (Firmware/Gluon)
 - [ ] Speicherung Konfiguration (inkl. Reboot)
 - [ ] Aufruf Statusseite innerhalb vom Freifunknetz (2a06:xyz)
@@ -45,11 +48,11 @@
 - [ ] weiter mit dem komplettem Sysupgrade-Check
 
 ### Nacharbeiten
-- [ ] Taggen des verwendetetn Frankfurter Gluon-Branch
-- [ ] Taggen des verwendetetn Frankfurter Site-Branch
-- [ ] Dokumentation Änderungshistorie
-- [ ] Bekanntgabe auf Admin-Liste
-- [ ] Bekanntgabe auf User-Liste
+- [ ] Taggen des verwendetetn Frankfurter Gluon-Branches
+- [ ] Taggen des verwendetetn Frankfurter Site-Branches
+- [ ] Dokumentation Frankfurter Release-Änderungshistorie
+- [ ] Release-Bekanntgabe auf Admin-Liste
+- [ ] Release-Bekanntgabe auf User-Liste
 
 ### Sonstiges
 - [ ] Check Listungen auf FirmwareSelector
