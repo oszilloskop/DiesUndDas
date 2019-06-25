@@ -49,7 +49,7 @@
 - [ ] opkg
   - [ ] 'opkg update'
   - [ ] opkg-Installation eines Testpackages (z.B. htop)
-- [ ] Sysupgrade nur nach korrekter Anzahl der gegebenen Manifest-Signaturen 
+- [ ] Sysupgrade nur nach korrekter Anzahl der geforderten Manifest-Signaturen 
 - [ ] Sysupgrade gefolgt nach Sysupgrade
 - [ ] Autoupdater (Nachtzeit, selbsständig durch Router)
 
