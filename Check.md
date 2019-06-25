@@ -1,4 +1,4 @@
-## Frankfurter Firmware-Release Vorabcheckliste
+## Frankfurter Firmware-Release Vorab-Checkliste
 - [ ] Dev
 - [ ] Test
 - [ ] Stable
