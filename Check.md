@@ -66,10 +66,10 @@
 - [ ] Weiter mit dem komplettem Sysupgrade-Check
 
 ### Nacharbeiten
+- [ ] Dokumentation der Release-Änderungshistorie
 - [ ] Repo-Tagging 
   - [ ] Verwendeter Frankfurter Gluon-Branche
   - [ ] Verwendeter Frankfurter Site-Branche
-- [ ] Dokumentation  Release-Änderungshistorie
 - [ ] Release- Bekanntgabe
   - [ ] Auf Admin-Liste
   - [ ] Auf User-Liste
