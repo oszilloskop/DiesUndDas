@@ -5,7 +5,7 @@
 - [ ] Benennung der Release-Version
 
 ### Vorarbeiten
-- [ ] Bekanntgabe der entsprechenden site.conf/site.mk auf Admin-Liste oder IRC
+- [ ] Bekanntgabe der verwendeten site.conf/site.mk auf Admin-Liste oder IRC
 - [ ] Erfolgreicher Aufruf 'date' auf Test-Router (Backbone-Check)
 - [ ] Erfolgreicher Aufruf 'autoupdater' auf Test-Router (Backbone-Check)
 
