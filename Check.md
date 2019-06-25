@@ -30,7 +30,7 @@
 - [ ] WLAN-Kanalübernahme nach Sysupgrade (2,4GHz und 5GHz)
 - [ ] Meshverhalten generell
 - [ ] Clientverbindung (IPv4, IPv6, DNS)
-- [ ] OFF/ON Check
+- [ ] OFF/ON Check
   - [ ] Mesh-VPN
   - [ ] Wifi-mesh
   - [ ] MoL
