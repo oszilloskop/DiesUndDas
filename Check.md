@@ -7,7 +7,7 @@
 - [ ] Benennung der Firmware-Release-Version
 
 ### Vorarbeiten
-- [ ] Bekanntgabe der verwendeten site.conf/site.mk auf Admin-Liste oder IRC
+- [ ] Bekanntgabe der geplanten site.conf/site.mk auf Admin-Liste oder IRC
 - [ ] Bauen der Firmware mit allen zur Zeit verfügbaren Targets
 - [ ] DL-Server
   - [ ] Upload der Firmware auf DL-Server
