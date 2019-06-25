@@ -24,7 +24,7 @@
   - [ ] 2a06:xyz innerhalb vom Freifunknetz
   - [ ] fddd:xyz innerhalb vom Freifunknetz
   - [ ] 2a06:xyz ausserhalb vom Freifunknetz
-- [ ] Ist Sichtung auf Map vorhanden 
+- [ ] Ist Sichtung des Knotens auf Map vorhanden 
 - [ ] SSH Login
   - [ ] innerhalb vom Freifunknetz
   - [ ] ausserhalb vom Freifunknetz
