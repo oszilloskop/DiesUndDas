@@ -11,33 +11,38 @@
 
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung - mittels unterschiedlicher Web-Browser (z.B. Edge, Chromium, FireFox, Safari)
-- [ ] Texte und Inhalte im Konfigmodus
+  - [ ] Texte, Inhalte und Eingabenübernahme im Konfigmodus korrekt
 - [ ] Ist Autoupdate entsprechend gesetzt/vorhanden (Konfig-Tab)
 - [ ] Ist Updatebranch korrekt gesetzt 
 - [ ] Ggf. korrekter Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
 - [ ] Revision-Information (Firmware/Gluon)
 - [ ] Speicherung Konfiguration (inkl. Reboot)
-- [ ] Aufruf Statusseite innerhalb vom Freifunknetz (2a06:xyz)
-- [ ] Aufruf Statusseite innerhalb vom Freifunknetz (fddd:xyz)
-- [ ] Aufruf Statusseite ausserhalb vom Freifunknetz (2a06:xyz)
+- [ ] Aufruf Statusseite
+  - [ ] 2a06:xyz innerhalb vom Freifunknetz
+  - [ ] fddd:xyz innerhalb vom Freifunknetz
+  - [ ] 2a06:xyz ausserhalb vom Freifunknetz
 - [ ] Ist Sichtung auf Map vorhanden 
 - [ ] SSH Login
+  - [ ] innerhalb vom Freifunknetz
+  - [ ] ausserhalb vom Freifunknetz
 - [ ] 'nodeinfo' - korrekte Inhalts-Ausgabe
 - [ ] 'help' - korrekte Inhalts-Ausgabe
 - [ ] WLAN-Kanalübernahme nach Sysupgrade (2,4GHz und 5GHz)
 - [ ] Meshverhalten generell
 - [ ] Clientverbindung (IPv4, IPv6, DNS)
-- [ ] Mesh-VPN (ON/OFF)
-- [ ] Wifi-mesh (ON/OFF)
-- [ ] MoL (ON/OFF)
-- [ ] MoW (ON/OFF)
-- [ ] Client Wifi (ON/OFF)
-- [ ] Client LAN (ON/OFF)
-- [ ] WLAN (ON/OFF)
+- [ ] OFF/ON Check
+  - [ ] Mesh-VPN
+  - [ ] Wifi-mesh
+  - [ ] MoL
+  - [ ] MoW
+  - [ ] Client Wifi
+  - [ ] Client LAN
+  - [ ] WLAN
 - [ ] Wifi-Taster - Funktions-Chek
 - [ ] Offline-SSID
-- [ ] 'opkg update'
-- [ ] opkg - Installation eines Testpackages (z.B. htop)
+- [ ] opkg
+  - [ ] 'opkg update'
+  - [ ] opkg-Installation eines Testpackages (z.B. htop)
 - [ ] Sysupgrade gefolgt nach Sysupgrade
 - [ ] Autoupdater (Nachtzeit, selbsständig durch Router)
 
@@ -51,11 +56,13 @@
 - [ ] weiter mit dem komplettem Sysupgrade-Check
 
 ### Nacharbeiten
-- [ ] Taggen des verwendetetn Frankfurter Gluon-Branches
-- [ ] Taggen des verwendetetn Frankfurter Site-Branches
+- [ ] Taggen
+  - [ ] Verwendeter Frankfurter Gluon-Branche
+  - [ ] Verwendetetn Frankfurter Site-Branche
 - [ ] Dokumentation Frankfurter Release-Änderungshistorie
-- [ ] Release-Bekanntgabe auf Admin-Liste
-- [ ] Release-Bekanntgabe auf User-Liste
+- [ ] Release- Bekanntgabe
+  - [ ] Auf Admin-Liste
+  - [ ] Auf User-Liste
 
 ### Sonstiges
 - [ ] Check Listung auf FirmwareSelector
