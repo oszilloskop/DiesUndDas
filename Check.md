@@ -1,3 +1,9 @@
+## Frankfurter Firmware-Release Checkliste
+- [ ] Dev
+- [ ] Test
+- [ ] Stable
+- [ ] Benennung der Release-Version
+
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
 - [ ] Texte und Inhalte im Konfigmodus
@@ -37,3 +43,10 @@
 
 ### Sonstiges
 - [ ] Check Listungen auf FirmwareSelector
+
+### Nacharbeiten
+- [ ] Taggen des verwendetetn Frankfurter Gluon-Branch
+- [ ] Taggen des verwendetetn Frankfurter Site-Branch
+- [ ] Dokumentation Änderungshistorie
+- [ ] Bekanntgabe auf Admin-Liste
+- [ ] Bekanntgabe auf User-Liste
