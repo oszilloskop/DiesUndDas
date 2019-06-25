@@ -49,11 +49,11 @@
 
 ### Firstboot
 - [ ] 'firstboot' absetzen
-- [ ] weiter mit dem komplettem Sysupgrade-Check
+- [ ] Weiter mit dem komplettem Sysupgrade-Check
 
 ### Factory
 - [ ] Factory-Installation
-- [ ] weiter mit dem komplettem Sysupgrade-Check
+- [ ] Weiter mit dem komplettem Sysupgrade-Check
 
 ### Nacharbeiten
 - [ ] Taggen
