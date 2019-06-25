@@ -57,7 +57,7 @@
 - [ ] Weiter mit dem komplettem Sysupgrade-Check
 
 ### Nacharbeiten
-- [ ] Taggen
+- [ ] Repo-Tagging 
   - [ ] Verwendeter Frankfurter Gluon-Branche
   - [ ] Verwendeter Frankfurter Site-Branche
 - [ ] Dokumentation Frankfurter Release-Änderungshistorie
