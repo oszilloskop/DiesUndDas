@@ -6,6 +6,8 @@
 
 ### Vorarbeiten
 - [ ] Bekanntgabe der entsprechenden site.conf/site.mk auf Admin-Liste oder IRC
+- [ ] Erfolgreicher Aufruf 'date' (Backbone)
+- [ ] Erfolgreicher Aufruf 'autoupdater' (Backbone)
 
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung - mittels unterschiedlicher Web-Browser (z.B. Edge, Chromium, FireFox, Safari)
