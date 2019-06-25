@@ -4,17 +4,21 @@
 - [ ] Autoupdate gesetzt/vorhanden (Konfig-Tab)
 - [ ] Welcher Updatebranch ist gesetzt 
 - [ ] Revision-Information (Firmware/Gluon)
+- [ ] Aufruf Statusseite innerhalb vom Freifunknetz (2a06:xyz)
+- [ ] Aufruf Statusseite innerhalb vom Freifunknetz (fddd:xyz)
+- [ ] Aufruf Statusseite ausserhalb vom Freifunknetz (2a06:xyz)
 - [ ] Ist Sichtung auf Map vorhanden 
 - [ ] SSH Login
 - [ ] Nodeinfo - korrekte Inhalts-Ausgabe
-- [ ] WLAN-Kanalübernahme (beide Frequenzen)
-- [ ] Meshverhalten
+- [ ] WLAN-Kanalübernahme (2,4GHz und 5GHz)
+- [ ] Meshverhalten generell
 - [ ] Mesh-VPN (ON/OFF)
 - [ ] Wifi-mesh (ON/OFF)
 - [ ] MoL (ON/OFF)
 - [ ] MoW (ON/OFF)
 - [ ] Client Wifi (ON/OFF)
 - [ ] Client LAN (ON/OFF)
+- [ ] WLAN (ON/OFF)
 - [ ] Wifi-Taster - Funktions-Chek
 - [ ] Offline-SSID
 - [ ] 'opkg update'
