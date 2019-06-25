@@ -1,12 +1,12 @@
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
-- [ ] Texte im Konfigmodus
+- [ ] Texte und Inhalte im Konfigmodus
 - [ ] Autoupdate gesetzt/vorhanden (Konfig-Tab)
 - [ ] Welcher Updatebranch ist gesetzt 
 - [ ] Revision-Information (Firmware/Gluon)
-- [ ] Sichtung auf Map
+- [ ] Ist Sichtung auf Map vorhanden 
 - [ ] SSH Login
-- [ ] Nodeinfo - korrekte Ausgabe
+- [ ] Nodeinfo - korrekte Inhalts-Ausgabe
 - [ ] WLAN-Kanalübernahme (beide Frequenzen)
 - [ ] Meshverhalten
 - [ ] Mesh-VPN (ON/OFF)
@@ -17,7 +17,7 @@
 - [ ] Client LAN (ON/OFF)
 - [ ] Wifi-Taster - Funktions-Chek
 - [ ] Offline-SSID
-- [ ] opkg update
+- [ ] 'opkg update'
 - [ ] opkg - Installation eines Testpackages (z.B. htop)
 - [ ] Sysupgrade gefolgt nach Sysupgrade
 - [ ] Autoupdater (Nachtzeit, selbsständig durch Router)
