@@ -66,3 +66,4 @@
 
 ### Sonstiges
 - [ ] Check Listung auf FirmwareSelector
+- [ ] Checkliste abgearbeitet auf mehreren unterschiedlichen Router-Modellen
