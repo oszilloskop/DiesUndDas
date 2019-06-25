@@ -6,8 +6,8 @@
 
 ### Vorarbeiten
 - [ ] Bekanntgabe der verwendeten site.conf/site.mk auf Admin-Liste oder IRC
-- [ ] Erfolgreicher Aufruf 'date' auf neu gestartetem Test-Router (Backbone-Check)
-- [ ] Erfolgreicher Aufruf 'autoupdater' auf Test-Router (Backbone-Check)
+- [ ] Erfolgreicher Aufruf 'date' auf neu gestartetem Test-Router (Backbone-NTP-Check)
+- [ ] Erfolgreicher Aufruf 'autoupdater' auf Test-Router (Backbone-DNS-Check)
 
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung - mittels unterschiedlicher Web-Browser (z.B. Edge, Chromium, FireFox, Safari)
