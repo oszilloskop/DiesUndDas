@@ -45,6 +45,7 @@
 - [ ] Offline-SSID
   - [ ] Direkt nach Reboot
   - [ ] Im laufenden Betrieb
+  - [ ] Herstellung von Normalbedingungen (normale SSID kommt wieder)
 - [ ] opkg
   - [ ] 'opkg update'
   - [ ] opkg-Installation eines Testpackages (z.B. htop)
