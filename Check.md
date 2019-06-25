@@ -11,6 +11,7 @@
 - [ ] Ist Updatebranch korrekt gesetzt 
 - [ ] ggf. korrekte Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
 - [ ] Revision-Information (Firmware/Gluon)
+- [ ] Speicherung Konfiguration (inkl. Reboot)
 - [ ] Aufruf Statusseite innerhalb vom Freifunknetz (2a06:xyz)
 - [ ] Aufruf Statusseite innerhalb vom Freifunknetz (fddd:xyz)
 - [ ] Aufruf Statusseite ausserhalb vom Freifunknetz (2a06:xyz)
