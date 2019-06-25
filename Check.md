@@ -5,7 +5,7 @@
 - [ ] Benennung der Release-Version
 
 ### Vorarbeiten
-- [ ] Bekanntgabe der entsprechenden site.conf/.mk auf Admin-Liste oder IRC
+- [ ] Bekanntgabe der entsprechenden site.conf/site.mk auf Admin-Liste oder IRC
 
 ### Sysupgrade 
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
