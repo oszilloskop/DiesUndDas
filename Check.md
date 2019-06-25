@@ -8,15 +8,17 @@
 - [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
 - [ ] Texte und Inhalte im Konfigmodus
 - [ ] Autoupdate gesetzt/vorhanden (Konfig-Tab)
-- [ ] Welcher Updatebranch ist gesetzt 
+- [ ] Ist Updatebranch korrekt gesetzt 
+- [ ] ggf. korrekte Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
 - [ ] Revision-Information (Firmware/Gluon)
 - [ ] Aufruf Statusseite innerhalb vom Freifunknetz (2a06:xyz)
 - [ ] Aufruf Statusseite innerhalb vom Freifunknetz (fddd:xyz)
 - [ ] Aufruf Statusseite ausserhalb vom Freifunknetz (2a06:xyz)
 - [ ] Ist Sichtung auf Map vorhanden 
 - [ ] SSH Login
-- [ ] Nodeinfo - korrekte Inhalts-Ausgabe
-- [ ] WLAN-Kanalübernahme (2,4GHz und 5GHz)
+- [ ] 'nodeinfo' - korrekte Inhalts-Ausgabe
+- [ ] 'help' - korrekte Inhalts-Ausgabe
+- [ ] WLAN-Kanalübernahme nach Sysupgrade (2,4GHz und 5GHz)
 - [ ] Meshverhalten generell
 - [ ] Mesh-VPN (ON/OFF)
 - [ ] Wifi-mesh (ON/OFF)
@@ -31,7 +33,7 @@
 - [ ] opkg - Installation eines Testpackages (z.B. htop)
 - [ ] Sysupgrade gefolgt nach Sysupgrade
 - [ ] Autoupdater (Nachtzeit, selbsständig durch Router)
-- [ ] Korrekte Autoupdater Branch-Übernahme bei verwendetetm Package "use-site-conf-branch"
+
 
 ### Firstboot
 - [ ] 'firstboot' absetzen
