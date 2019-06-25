@@ -9,9 +9,6 @@
 ### Vorarbeiten
 - [ ] Bekanntgabe der geplanten site.conf/site.mk auf Admin-Liste oder IRC
 - [ ] Bauen der Firmware mit allen zur Zeit verfügbaren Targets
-- [ ] DL-Server
-  - [ ] Upload der Firmware auf DL-Server
-  - [ ] Update der vormaligen Firmware-Version und Modulen korrekt durchgeführt
 - [ ] Erfolgreicher Aufruf 'date' auf neu gestartetem Test-Router (Backbone-NTP-Check)
 - [ ] Erfolgreicher Aufruf 'autoupdater' auf Test-Router (Backbone-DNS-Check)  
 
@@ -74,3 +71,6 @@
 ### Sonstiges
 - [ ] Listung im Frankfurter FirmwareSelector
 - [ ] Checkliste abgearbeitet auf mehreren unterschiedlichen Router-Modellen
+- [ ] DL-Server
+  - [ ] Upload der Firmware auf DL-Server
+  - [ ] Update der vormaligen Firmware-Version und Modulen korrekt durchgeführt
