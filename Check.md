@@ -8,7 +8,7 @@
 - [ ] Bekanntgabe der entsprechenden site.conf/site.mk auf Admin-Liste oder IRC
 
 ### Sysupgrade 
-- [ ] Aufruf Konfigmodus zur Konfig-Überprüfung
+- [ ] Aufruf Konfigmodus zur Konfig-Überprüfung - mittels unterschiedlicher Web-Browser (z.B. Edge, Chromium, FireFox, Safari)
 - [ ] Texte und Inhalte im Konfigmodus
 - [ ] Ist Autoupdate entsprechend gesetzt/vorhanden (Konfig-Tab)
 - [ ] Ist Updatebranch korrekt gesetzt 
