@@ -60,7 +60,7 @@
 - [ ] Repo-Tagging 
   - [ ] Verwendeter Frankfurter Gluon-Branche
   - [ ] Verwendeter Frankfurter Site-Branche
-- [ ] Dokumentation Frankfurter Release-Änderungshistorie
+- [ ] Dokumentation  Release-Änderungshistorie
 - [ ] Release- Bekanntgabe
   - [ ] Auf Admin-Liste
   - [ ] Auf User-Liste
