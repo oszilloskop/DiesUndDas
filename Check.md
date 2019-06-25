@@ -47,7 +47,7 @@
 - [ ] weiter mit dem komplettem Sysupgrade-Check
 
 ### Factory
-- [ ] Factoryinstallation
+- [ ] Factory-Installation
 - [ ] weiter mit dem komplettem Sysupgrade-Check
 
 ### Nacharbeiten
