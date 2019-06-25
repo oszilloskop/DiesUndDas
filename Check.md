@@ -2,7 +2,7 @@
 - [ ] Dev
 - [ ] Test
 - [ ] Stable
-- [ ] Benennung der Release-Version
+- [ ] Benennung der Firmware-Release-Version
 
 ### Vorarbeiten
 - [ ] Bekanntgabe der verwendeten site.conf/site.mk auf Admin-Liste oder IRC
