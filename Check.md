@@ -1,4 +1,4 @@
-## Frankfurter Firmware-Release Scnell-Test
+## Frankfurter Firmware-Release Schnell-Test
 
 ### Firmwaren
 - [ ] Dev
