@@ -1,4 +1,4 @@
-## Frankfurter Firmware-Release Checkliste
+## Frankfurter Firmware-Release Scnell-Test
 
 ### Firmwaren
 - [ ] Dev
