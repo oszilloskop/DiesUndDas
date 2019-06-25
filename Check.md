@@ -41,12 +41,12 @@
 - [ ] Factoryinstallation
 - [ ] weiter mit dem komplettem Sysupgrade-Check
 
-### Sonstiges
-- [ ] Check Listungen auf FirmwareSelector
-
 ### Nacharbeiten
 - [ ] Taggen des verwendetetn Frankfurter Gluon-Branch
 - [ ] Taggen des verwendetetn Frankfurter Site-Branch
 - [ ] Dokumentation Änderungshistorie
 - [ ] Bekanntgabe auf Admin-Liste
 - [ ] Bekanntgabe auf User-Liste
+
+### Sonstiges
+- [ ] Check Listungen auf FirmwareSelector
