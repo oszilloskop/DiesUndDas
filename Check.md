@@ -73,4 +73,4 @@
 - [ ] Checkliste abgearbeitet auf mehreren unterschiedlichen Router-Modellen
 - [ ] DL-Server
   - [ ] Upload der Firmware auf DL-Server
-  - [ ] Update der vormaligen Firmware-Version und Modulen korrekt durchgeführt
+  - [ ] Backup der vormaligen Firmware-Version und Modulen korrekt durchgeführt
