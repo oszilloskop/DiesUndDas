@@ -65,5 +65,5 @@
   - [ ] Auf User-Liste
 
 ### Sonstiges
-- [ ] Check Listung auf FirmwareSelector
+- [ ] Listung auf FirmwareSelector
 - [ ] Checkliste abgearbeitet auf mehreren unterschiedlichen Router-Modellen
