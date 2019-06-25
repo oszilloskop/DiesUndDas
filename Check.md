@@ -44,7 +44,7 @@
 - [ ] WLAN-Taster - Funktions-Chek
 - [ ] Offline-SSID
   - [ ] Direkt nach Reboot
-  - [ ] Im laufendem Betrieb
+  - [ ] Im laufenden Betrieb
 - [ ] opkg
   - [ ] 'opkg update'
   - [ ] opkg-Installation eines Testpackages (z.B. htop)
