@@ -44,8 +44,10 @@
 - [ ] WLAN-Taster - Funktions-Chek
 - [ ] Offline-SSID
   - [ ] Direkt nach Reboot
+    - [ ] Mit Mesh / Mesh-VPN
     - [ ] Herstellung von Normalbedingungen (normale SSID kommt wieder)
   - [ ] Im laufenden Betrieb
+    - [ ] Mit Mesh / Mesh-VPN
     - [ ] Herstellung von Normalbedingungen (normale SSID kommt wieder)
 - [ ] opkg
   - [ ] 'opkg update'
