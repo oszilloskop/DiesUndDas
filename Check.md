@@ -6,7 +6,7 @@
 
 ### Vorarbeiten
 - [ ] Bekanntgabe der verwendeten site.conf/site.mk auf Admin-Liste oder IRC
-- [ ] Erfolgreicher Aufruf 'date' auf Test-Router (Backbone-Check)
+- [ ] Erfolgreicher Aufruf 'date' auf neu gestartetem Test-Router (Backbone-Check)
 - [ ] Erfolgreicher Aufruf 'autoupdater' auf Test-Router (Backbone-Check)
 
 ### Sysupgrade 
