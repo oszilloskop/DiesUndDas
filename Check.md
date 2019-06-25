@@ -75,8 +75,8 @@
   - [ ] Auf User-Liste
 
 ### Sonstiges
-- [ ] Listung im Frankfurter FirmwareSelector
 - [ ] Checkliste abgearbeitet auf mehreren unterschiedlichen Router-Modellen
+- [ ] Listung im Frankfurter FirmwareSelector
 - [ ] DL-Server
   - [ ] Upload der Firmware auf DL-Server
   - [ ] Backup der vormaligen Firmware-Version und -Modulen korrekt durchgeführt
