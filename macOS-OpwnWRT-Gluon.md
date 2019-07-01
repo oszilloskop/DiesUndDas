@@ -10,6 +10,10 @@ hdiutil attach OpenWrt.sparseimage
 
 #### Patch
 -> https://github.com/openwrt/packages/issues/6844#issuecomment-417886000
+```
+nano ./packages/packages/net/xtables-addons/Makefile
+```
+alles mit ```perl``` rauswerfen
 
 #### PATH
 
