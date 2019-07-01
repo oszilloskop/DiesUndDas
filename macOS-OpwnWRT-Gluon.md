@@ -8,6 +8,8 @@ hdiutil create -size 20g -type SPARSE -fs "Case-sensitive HFS+" -volname OpenWrt
 hdiutil attach OpenWrt.sparseimage
 ```
 
+#### Patch
+-> https://github.com/openwrt/packages/issues/6844#issuecomment-417886000
 
 ```
 #!/usr/local/bin/bash
