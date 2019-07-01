@@ -23,9 +23,7 @@ PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 echo $PATH
   
   
-  
-  
-  
+#### PATH
    
 ==> bash
 In order to use this build of bash as your login shell,
