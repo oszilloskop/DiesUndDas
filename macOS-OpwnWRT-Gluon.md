@@ -11,6 +11,8 @@ hdiutil attach OpenWrt.sparseimage
 #### Patch
 -> https://github.com/openwrt/packages/issues/6844#issuecomment-417886000
 
+#### PATH
+
 ```
 #!/usr/local/bin/bash
 echo $PATH
@@ -21,9 +23,6 @@ PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 echo $PATH
-  
-  
-#### PATH
    
 ==> bash
 In order to use this build of bash as your login shell,
