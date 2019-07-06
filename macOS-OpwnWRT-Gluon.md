@@ -13,7 +13,26 @@ hdiutil attach OpenWrt.sparseimage
 ```
 nano ./wspace/packages/packages/net/xtables-addons/Makefile
 ```
-alles mit ```perl``` rauswerfen
+alles mit ```perl``` rauswerfen.
+
+Dazu folgenden Patch im Gluon-Verzeichnis anwenden:
+```
+patch -N -p1 -i ../DarwinBuildEnvironment.patch
+```
+```
+diff --git a/packages/packages/net/xtables-addons/Makefile b/packages/packages/net/xtables-addons/Makefile
+index 5c78ff89..c0bef064 100644
+--- a/packages/packages/net/xtables-addons/Makefile
++++ b/packages/packages/net/xtables-addons/Makefile
+@@ -126,7 +126,6 @@ define Package/iptgeoip
+   # we could also use wget-nossl but that's more complicated than our
+   # syntax of dependencies permits...
+   DEPENDS:=iptables +iptables-mod-geoip \
+-               +perl +perlbase-getopt +perlbase-io +perl-text-csv_xs \
+                +!BUSYBOX_CONFIG_WGET:wget +!BUSYBOX_CONFIG_GZIP:gzip +!BUSYBOX_CONFIG_UNZIP:unzip
+ endef
+
+```
 
 #### PATH
 
