@@ -8,7 +8,7 @@ hdiutil create -size 120g -type SPARSE -fs "Case-sensitive HFS+" -volname OpenWr
 hdiutil attach OpenWrt.sparseimage
 ```
 
-#### Patch
+#### Perl Build Patch
 -> https://github.com/openwrt/packages/issues/6844#issuecomment-417886000
 ```
 nano ./wspace/packages/packages/net/xtables-addons/Makefile
