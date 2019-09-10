@@ -13,9 +13,9 @@ hdiutil attach OpenWrt.sparseimage
 ```
 nano ./wspace/packages/packages/net/xtables-addons/Makefile
 ```
-alles mit ```perl``` rauswerfen.
+Alles mit ```perl``` rauswerfen,
 
-Dazu folgenden Patch im Gluon-Verzeichnis anwenden:
+oder folgenden Patch im Gluon-Verzeichnis anwenden:
 ```
 patch -N -p1 -i ../DarwinBuildEnvironment.patch
 ```
