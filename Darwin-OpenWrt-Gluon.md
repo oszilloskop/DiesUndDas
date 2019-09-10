@@ -4,7 +4,7 @@ brew install bash git subversion python gawk coreutils gnu-sed gnu-getopt gnu-ti
 
 #### OpwnWRT baut nur mit einem case-sensitive filesystem
 ```
-hdiutil create -size 20g -type SPARSE -fs "Case-sensitive HFS+" -volname OpenWrt OpenWrt.sparseimage
+hdiutil create -size 120g -type SPARSE -fs "Case-sensitive HFS+" -volname OpenWrt OpenWrt.sparseimage
 hdiutil attach OpenWrt.sparseimage
 ```
 
