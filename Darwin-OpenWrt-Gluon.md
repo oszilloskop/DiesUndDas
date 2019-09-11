@@ -1,5 +1,5 @@
 ```
-brew install bash git subversion python gawk coreutils gnu-sed gnu-getopt gnu-time grep wget gnu-tar findutils unzip quilt xz
+brew install bash git subversion python gawk coreutils ed make gnu-sed gnu-getopt gnu-time gnu-tar grep wget findutils unzip quilt xz
 ```
 
 #### OpwnWRT baut nur mit einem case-sensitive filesystem
@@ -45,7 +45,16 @@ patch -N -p1 -i ../301-fix_macos_static_linking.patch
 ```
 
 #### PATH
+neu
+```
+# Get list of gnubin directories
+export GNUBINS="$(find /usr/local/opt -type d -follow -name gnubin -print)";
 
+for bindir in ${GNUBINS[@]}; do
+  export PATH=$bindir:$PATH;
+done;
+```
+oder alt
 ```
 #!/usr/local/bin/bash
 echo $PATH
@@ -55,8 +64,7 @@ PATH="/usr/local/opt/unzip/bin:$PATH"
 PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
-
-PATH="/usr/local/opt:$PATH"
+echo ""
 echo $PATH
    
 ==> bash
