@@ -17,24 +17,31 @@ Alles mit ```perl``` rauswerfen,
 
 oder folgenden Patch im Gluon-Verzeichnis anwenden:
 ```
-patch -N -p1 -i ../DarwinBuildEnvironment.patch
+patch -N -p1 -i ../301-fix_macos_static_linking.patch
 ```
 
 
-DarwinBuildEnvironment.patch:
+[301-fix_macos_static_linking.patch](https://github.com/openwrt/packages/pull/9791):
 ```
-diff --git a/packages/packages/net/xtables-addons/Makefile b/packages/packages/net/xtables-addons/Makefile
-index 5c78ff89..c0bef064 100644
---- a/packages/packages/net/xtables-addons/Makefile
-+++ b/packages/packages/net/xtables-addons/Makefile
-@@ -126,7 +126,6 @@ define Package/iptgeoip
-   # we could also use wget-nossl but that's more complicated than our
-   # syntax of dependencies permits...
-   DEPENDS:=iptables +iptables-mod-geoip \
--               +perl +perlbase-getopt +perlbase-io +perl-text-csv_xs \
-                +!BUSYBOX_CONFIG_WGET:wget +!BUSYBOX_CONFIG_GZIP:gzip +!BUSYBOX_CONFIG_UNZIP:unzip
- endef
-
+--- a/cpan/ExtUtils-MakeMaker/lib/ExtUtils/MM_Unix.pm
++++ b/cpan/ExtUtils-MakeMaker/lib/ExtUtils/MM_Unix.pm
+@@ -2738,14 +2738,14 @@ sub _find_static_libs {
+ 
+ Called by a utility method of makeaperl. Checks whether a given file
+ is an XS library by seeing whether it defines any symbols starting
+-with C<boot_>.
++with C<boot_> (with an optional leading underscore – needed on MacOS).
+ 
+ =cut
+ 
+ sub xs_static_lib_is_xs {
+     my ($self, $libfile) = @_;
+     my $devnull = File::Spec->devnull;
+-    return `nm $libfile 2>$devnull` =~ /\bboot_/;
++    return `nm $libfile 2>$devnull` =~ /\b_?boot_/;
+ }
+ 
+ =item makefile (o)
 ```
 
 #### PATH
