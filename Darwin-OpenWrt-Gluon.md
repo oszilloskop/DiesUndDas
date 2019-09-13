@@ -114,6 +114,13 @@ PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 ```
 
 ### Build-Abbrüche
+#### Master #### 
+Stichword "echo -n"  
+Fehler im Master reproduzieren durch Ausführen im Ordner openwrt/ von:
+```
+make defconfig Config.in
+```
+
 #### Target sunxi-cortexa7 
 ```
 make[4]: Entering directory `/Volumes/Freifunk_128GB/gluon/wspace/openwrt/package/boot/uboot-sunxi'                                                                                             
