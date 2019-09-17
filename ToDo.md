@@ -1,1 +1,2 @@
 - [ ] specific_site.mk (Test-Branch): Im unteren Abschnitt neue Gluon-Targets einpflegen
+- [ ] FirmwarewReleaseBuilder: Hinzufügend von: "Alle Dependencies aus https://gluon.readthedocs.io/en/stable/user/getting_started.html#dependencies müssen installiert sein."
