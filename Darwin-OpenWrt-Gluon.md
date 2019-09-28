@@ -1,5 +1,5 @@
 ```
-brew install bash git subversion python gawk coreutils ed make gnu-sed gnu-getopt gnu-time gnu-tar grep wget findutils unzip quilt xz
+brew install bash git subversion python gawk coreutils ed make gnu-which gnu-sed gnu-getopt gnu-time gnu-tar grep wget findutils unzip quilt xz
 ```
 
 #### OpwnWRT baut nur mit einem case-sensitive filesystem
