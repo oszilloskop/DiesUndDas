@@ -117,6 +117,7 @@ PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 ### Build-Abbrüche
 #### Master #### 
 Stichword "echo -n"  
+https://github.com/freifunk-gluon/gluon/blob/master/targets/generic#L25
 Fehler im Master reproduzieren durch Ausführen im Ordner openwrt/ von:
 ```
 make defconfig Config.in
